@@ -21,7 +21,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "solhint-d0": "./node_modules/.bin/solhint -f table contracts/*.sol",
+    "solhint-d1": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "solhint": "npm run solhint-d0 && npm run solhint-d1",
+    "prettier:solidity-d0": "./node_modules/.bin/prettier --write contracts/*.sol",
+    "prettier:solidity-d1": "./node_modules/.bin/prettier --write contracts/**/*.sol",
+    "prettier:solidity": "npm run prettier:solidity-d0 && npm run prettier:solidity-d1"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +46,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "husky": {
+    "hooks": {
+       "pre-push": "npm run prettier:solidity"
+    }
   }
 }
