@@ -8,15 +8,6 @@ import "./GeneScience.sol";
 contract SwordFactory is GeneScience {
   using SafeMath for uint256;
 
-  /*
-		Total 12 digit for 4 genes with dominant and recessive genes
-		 sword hilt color: 2 digits each, total 4 digits-> 16 colors
-		 sword type: 1 digit each, total 2 digits, 4 types
-		 sword material: 1 digit each, total 2 digits, 8 types
-		 attack power: 2 digits each, total 4 digits, up to 15 ap  
- 	*/
-  uint256 private dnaDigits = 12;
-  uint256 private dnaModulus = 10**dnaDigits;
   // cooldown of each sword to be used or merged again
   uint256 private cooldownTime = 1 days;
 

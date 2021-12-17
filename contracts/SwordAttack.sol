@@ -10,6 +10,9 @@ contract SwordAttack is SwordFactory {
   using SafeMath for uint256;
   using Counters for Counters.Counter;
 
+  // nonce for random number
+  uint256 private randNonceSwordAttack = 0;
+
   struct AttackLog {
     uint8 attacker; // 0 for user, 1 for monster
     uint8 dealtDamage; // if 0, miss
@@ -32,7 +35,7 @@ contract SwordAttack is SwordFactory {
     uint8 userHitRatio = calculateHitMissRatio(_attackPower, monsterAttackPower);
     uint8 monsterHitRatio = 100 - userHitRatio;
 
-    // normaalize their attack powers to not oneshot each other
+    // normalize their attack powers to not oneshot each other
     uint8 userNormalizedAP = normalizeAttackPower(_attackPower, monsterAttackPower);
     uint8 monsterNormalizedAP = normalizeAttackPower(monsterAttackPower, _attackPower);
 
@@ -55,16 +58,12 @@ contract SwordAttack is SwordFactory {
             monsterHealth = monsterHealth - userNormalizedAP;
           }
 
-          AttackLog memory newAttackLog = AttackLog(0, userNormalizedAP, userHealth, monsterHealth);
-          attackLogs.push(newAttackLog);
-          _logIds.increment();
+          addToAttackLog(0, userNormalizedAP, userHealth, monsterHealth);
           endIndex.add(1);
 
           headsOrTails = !headsOrTails;
         } else {
-          AttackLog memory newAttackLog = AttackLog(0, 0, userHealth, monsterHealth);
-          attackLogs.push(newAttackLog);
-          _logIds.increment();
+          addToAttackLog(0, 0, userHealth, monsterHealth);
           endIndex.add(1);
 
           headsOrTails = !headsOrTails;
@@ -78,17 +77,12 @@ contract SwordAttack is SwordFactory {
             userHealth = userHealth - monsterNormalizedAP;
           }
 
-          AttackLog memory newAttackLog = AttackLog(1, monsterNormalizedAP, userHealth, monsterHealth);
-
-          attackLogs.push(newAttackLog);
-          _logIds.increment();
+          addToAttackLog(1, monsterNormalizedAP, userHealth, monsterHealth);
           endIndex.add(1);
 
           headsOrTails = !headsOrTails;
         } else {
-          AttackLog memory newAttackLog = AttackLog(1, 0, userHealth, monsterHealth);
-          attackLogs.push(newAttackLog);
-          _logIds.increment();
+          addToAttackLog(1, 0, userHealth, monsterHealth);
           endIndex.add(1);
 
           headsOrTails = !headsOrTails;
@@ -96,16 +90,34 @@ contract SwordAttack is SwordFactory {
       }
     }
 
+    AttackLog[] memory attackLogArr = generateLocalAttackLog(startIndex, endIndex);
+
+    return (attackLogArr, didUserWon);
+  }
+
+  function generateLocalAttackLog(uint256 _start, uint256 _end) private view returns (AttackLog[] memory) {
     // fill the attack log to be returned
-    uint256 attackLogArrSize = endIndex.sub(startIndex);
+    uint256 attackLogArrSize = _end.sub(_start);
     AttackLog[] memory attackLogArr = new AttackLog[](attackLogArrSize);
     uint256 index = 0;
     while (index < attackLogArrSize) {
-      attackLogArr[index] = attackLogs[startIndex.add(index)];
+      attackLogArr[index] = attackLogs[_start.add(index)];
       index.add(1);
     }
 
-    return (attackLogArr, didUserWon);
+    return attackLogArr;
+  }
+
+  function addToAttackLog(
+    uint8 _attacker,
+    uint8 _dealtDamage,
+    uint8 _remainingUserHealth,
+    uint8 _remainingMonsterHealth
+  ) private {
+    AttackLog memory newAttackLog = AttackLog(_attacker, _dealtDamage, _remainingUserHealth, _remainingMonsterHealth);
+
+    attackLogs.push(newAttackLog);
+    _logIds.increment();
   }
 
   function normalizeAttackPower(uint8 _firstAP, uint8 _secondAP) private pure returns (uint8) {
@@ -115,12 +127,17 @@ contract SwordAttack is SwordFactory {
   function randomNumberUpTo(uint8 _upperLimit) private view returns (uint8) {
     // between 0 and _upperLimit
     require(_upperLimit > 0, "Upper limit should > 0");
-    return uint8(uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % _upperLimit);
+    randNonceSwordAttack.add(1);
+    return
+      uint8(
+        uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, randNonceSwordAttack))) % _upperLimit
+      );
   }
 
   function headsTails() private view returns (bool) {
     // 0 -> heads, 1 -> tails
-    return (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 2) > 0;
+    randNonceSwordAttack.add(1);
+    return (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, randNonceSwordAttack))) % 2) > 0;
   }
 
   function calculateMonsterAttackPower(uint8 _attackPower) private view returns (uint8) {

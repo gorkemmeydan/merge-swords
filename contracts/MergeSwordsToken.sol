@@ -8,15 +8,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
 import "./SwordAttack.sol";
-import "./SwordFactory.sol";
 
 import "./libraries/SafeMath32.sol";
 
 contract MergeSwordsToken is ERC721, Ownable, Pausable, SwordAttack {
   constructor() ERC721("MERGESWORDS", "SWORD") {}
 
-  /////////////////////////////////////////////////////////////////////
-  // Fees
   uint256 private basicSwordFee = 0.1 ether;
   uint256 private mergeFee = 0.05 ether;
   uint256 private attackFee = 0.01 ether;
@@ -33,10 +30,6 @@ contract MergeSwordsToken is ERC721, Ownable, Pausable, SwordAttack {
     attackFee = _fee;
   }
 
-  /////////////////////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////////////////////
-  // Sword Creation
   using Counters for Counters.Counter;
   using SafeMath for uint256;
   using SafeMath32 for uint32;
@@ -134,8 +127,6 @@ contract MergeSwordsToken is ERC721, Ownable, Pausable, SwordAttack {
     }
   }
 
-  /////////////////////////////////////////////////////////////////////
-  // Battle
   function battleMonster(uint256 _swordId) public payable onlySwordOwner(_swordId, msg.sender) {
     require(msg.value == attackFee, "Not enough fee");
     (AttackLog[] memory attackLog, bool didUserWon) = attackMonster(_getAttackPowerFromSwordId(_swordId));
