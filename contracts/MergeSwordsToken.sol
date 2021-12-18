@@ -3,15 +3,14 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
 
 import "./SwordAttack.sol";
 
 import "./libraries/SafeMath32.sol";
 
-contract MergeSwordsToken is ERC721, Ownable, Pausable, SwordAttack {
+contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   constructor() ERC721("MERGESWORDS", "SWORD") {}
 
   uint256 private basicSwordFee = 0.1 ether;
@@ -65,6 +64,10 @@ contract MergeSwordsToken is ERC721, Ownable, Pausable, SwordAttack {
     swords.push(_newSword);
 
     _safeMint(_senderAddr, _tokenIds.current());
+
+    // set token uri
+    string memory finalTokenUri = _generateSwordUri(_tokenIds.current(), _newSword);
+    _setTokenURI(_tokenIds.current(), finalTokenUri);
 
     swordToOwner[_tokenIds.current()] = _senderAddr;
     ownerSwordCount[_senderAddr] = ownerSwordCount[_senderAddr].add(1);

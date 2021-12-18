@@ -207,4 +207,35 @@ contract GeneScience {
     uint256 basicGene = 0;
     return basicGene;
   }
+
+  function _calcUriAttributes(uint256 _dna)
+    internal
+    pure
+    returns (
+      uint8,
+      uint8,
+      uint8
+    )
+  {
+    uint256 currentDna = _dna;
+
+    // first four digits are base attack power pair, so skip
+    currentDna = currentDna / 10000;
+
+    // second 2 digits are sword material pair
+    uint16 swordMaterialPair = uint16(currentDna % 100);
+    uint8 dominantSwordMaterial = uint8(swordMaterialPair / 10);
+    currentDna = currentDna / 100;
+
+    // third 2 digits are sword type pair
+    uint16 swordTypePair = uint16(currentDna % 100);
+    uint8 dominantSwordType = uint8(swordTypePair / 10);
+    currentDna = currentDna / 100;
+
+    // last 4 digits are hilt color pair
+    uint16 hiltColorPair = uint16(currentDna % 10000);
+    uint8 dominantHiltColor = uint8(hiltColorPair / 100);
+
+    return (dominantHiltColor, dominantSwordType, dominantSwordMaterial);
+  }
 }
