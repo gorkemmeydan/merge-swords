@@ -18,7 +18,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_swordMaterial\",\"type\":\"string\"}],\"name\":\"makeKonda\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libraries/KondaSvgHelper.sol\":\"KondaSvgHelper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/libraries/KondaSvgHelper.sol\":{\"keccak256\":\"0xe81e759d528428c28cd3cbf1fbd6a0ae7955e9e277c308f4d89172231d7680ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://06096ba0a2dae55d2f4cc3671d7738f6726e71656ddd1e5b851b3b4a403e4e1c\",\"dweb:/ipfs/QmXtHNUNAYS5djFfD4hnLs3jofqgMufd3YBsh75ohkuBs5\"]}},\"version\":1}",
@@ -11715,9 +11716,17 @@
     "name": "solc",
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1640002252453": {
+      "events": {},
+      "links": {},
+      "address": "0x405fC0EE23C7fcd0a41A864505Fe8c969ca3eF6A",
+      "transactionHash": "0x1429b4c5c2e0d0403e1e2cac4731a3786f6d7957610fa05e2d9c64d8fd77bee8"
+    }
+  },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T09:54:22.635Z",
+  "updatedAt": "2021-12-20T14:05:33.469Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -28,7 +28,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -47,7 +48,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -71,7 +73,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_hilt\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"_swordType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_swordMaterial\",\"type\":\"string\"}],\"name\":\"_assembleSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_hilt\",\"type\":\"string\"}],\"name\":\"_makeHiltSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_swordType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_swordMaterial\",\"type\":\"string\"}],\"name\":\"_makeSwordSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libraries/SwordSvgHelper.sol\":\"SwordSvgHelper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/libraries/GladiusSvgHelper.sol\":{\"keccak256\":\"0x4b72883aa5d01416a03273ec774e1a94a253a561a34b7634fefa969dd890375e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9918b36fd163e5ca195460ec0b8b5c670e73a47ba94e77dd7dab788070f9e9ad\",\"dweb:/ipfs/QmZQD4D2AiDTrCxkf9PfG3R9vCWM25Aby1JdgpNAqfCtMQ\"]},\"project:/contracts/libraries/KatanaSvgHelper.sol\":{\"keccak256\":\"0x8b23f3fca57671e22d99ce2301437d6cd5e51dad14376c2d64693d0bd08db2a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d308abb4bd78ba133cbfbb0b5cbb15579f60b4472649df356b5fe62cc27d62a4\",\"dweb:/ipfs/QmfFhVaGjvnpQEoxz5xMMvxEbbQMvKSKh7rnoxQEwnhqfZ\"]},\"project:/contracts/libraries/KondaSvgHelper.sol\":{\"keccak256\":\"0xe81e759d528428c28cd3cbf1fbd6a0ae7955e9e277c308f4d89172231d7680ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://06096ba0a2dae55d2f4cc3671d7738f6726e71656ddd1e5b851b3b4a403e4e1c\",\"dweb:/ipfs/QmXtHNUNAYS5djFfD4hnLs3jofqgMufd3YBsh75ohkuBs5\"]},\"project:/contracts/libraries/SaberSvgHelper.sol\":{\"keccak256\":\"0x63fbd546e9e0342d92d9f9bf2f865271ea0aafbb3e658afe38db1588fda610cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7cafe4dbb3f5de364a837834015bbadc7895779fc9ac49a9afa2bf9f55cf6b8\",\"dweb:/ipfs/QmTkQAwCwAmG6GnjqbRG6MwrgxMXGT2DAdaTzrXsJu6ehs\"]},\"project:/contracts/libraries/SwordSvgHelper.sol\":{\"keccak256\":\"0x47339a568bff151ed1aedde18887faf2f4d7e1ebda0abba66c41251ad65c76e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d0c9342345c0a2d831430ca5cbaba076be6ebdb9b08b8d391803d6249eb6f93\",\"dweb:/ipfs/QmP1Tpkvu4EzmtAwNFrPnuJEzqhmBW5aytzkx8nusekWmy\"]}},\"version\":1}",
@@ -12157,9 +12160,22 @@
     "name": "solc",
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1640002252453": {
+      "events": {},
+      "links": {
+        "GladiusSvgHelper": "0xfd30B6e495CC375Bd98d01BD959F741Dd2772d64",
+        "KatanaSvgHelper": "0x43192D86e8452957D8076908Dc04ddb6a6B63a61",
+        "KondaSvgHelper": "0x405fC0EE23C7fcd0a41A864505Fe8c969ca3eF6A",
+        "SaberSvgHelper": "0x4A1D2A5060C782049Ef966d9412f1239E95183b7"
+      },
+      "address": "0xFE9550608e2acF01694524b1F94d937DfDe806C2",
+      "transactionHash": "0xf237a8708b42f1e3df1f0775faeeee18b5eb052ba6ff7938c441e1f2f3497ea5"
+    }
+  },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T09:54:22.655Z",
+  "updatedAt": "2021-12-20T14:05:33.497Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -270,7 +270,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -289,7 +290,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -308,7 +310,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -347,7 +350,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -371,7 +375,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -384,7 +389,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -397,7 +403,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -416,7 +423,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -435,7 +443,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -530,7 +539,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -549,7 +559,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -588,7 +599,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -601,7 +613,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -620,7 +633,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -702,7 +716,8 @@
       "name": "getBasicSword",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -720,7 +735,8 @@
       "name": "mergeSwords",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -733,7 +749,8 @@
       "name": "battleMonster",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"BurnSword\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"attacker\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"dealtDamage\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingUserHealth\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingMonsterHealth\",\"type\":\"uint8\"}],\"indexed\":false,\"internalType\":\"struct SwordAttack.AttackLog[]\",\"name\":\"attackLog\",\"type\":\"tuple[]\"}],\"name\":\"LostBattle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"NewSword\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"attacker\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"dealtDamage\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingUserHealth\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingMonsterHealth\",\"type\":\"uint8\"}],\"indexed\":false,\"internalType\":\"struct SwordAttack.AttackLog[]\",\"name\":\"attackLog\",\"type\":\"tuple[]\"}],\"name\":\"WonBattle\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"attackLogs\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"attacker\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"dealtDamage\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingUserHealth\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"remainingMonsterHealth\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_swordId\",\"type\":\"uint256\"}],\"name\":\"battleMonster\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBasicSword\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"idToSword\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"dna\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"attackPower\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"generation\",\"type\":\"uint32\"},{\"internalType\":\"uint16\",\"name\":\"winCount\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"lossCount\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"swordOneId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"swordTwoId\",\"type\":\"uint256\"}],\"name\":\"mergeSwords\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"ownerSwordCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"swordToOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"swords\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"dna\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"attackPower\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"generation\",\"type\":\"uint32\"},{\"internalType\":\"uint16\",\"name\":\"winCount\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"lossCount\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"updateAttackFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"updateBasicSwordFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_fee\",\"type\":\"uint256\"}],\"name\":\"updateMergeFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"See {IERC721-approve}.\"},\"balanceOf(address)\":{\"details\":\"See {IERC721-balanceOf}.\"},\"getApproved(uint256)\":{\"details\":\"See {IERC721-getApproved}.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IERC721-isApprovedForAll}.\"},\"name()\":{\"details\":\"See {IERC721Metadata-name}.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"ownerOf(uint256)\":{\"details\":\"See {IERC721-ownerOf}.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IERC721-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"symbol()\":{\"details\":\"See {IERC721Metadata-symbol}.\"},\"tokenURI(uint256)\":{\"details\":\"See {IERC721Metadata-tokenURI}.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-transferFrom}.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/MergeSwordsToken.sol\":\"MergeSwordsToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xa1b27b3f44ff825974e5268e8f63ad3b03add5b464880d860fbb8cae043e17f7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad0fb4425453220f15bdb8c4e009052839804bb725797b6d8c02ee2271bc3c23\",\"dweb:/ipfs/QmPtjdMxzEifPUEUa6cKX1yfTWjaZV6QtdwMdN6bEL9FBM\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x1ba5cf152c15dc0c785310feeb61e1f74387fc7bdc2aba5d90733f791606d4bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://38db14c62d6431df042a7ca07fd021ea52ccdbd03f0be2b5c4ab034a56126d38\",\"dweb:/ipfs/QmbCHTCLP6bz8omQXrP8VuxFGdK9Hh3jqfrSTr38WNpTk4\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x872ba21af7c1f0ae04a715beca31e8fcac764d6c8762940b0fe1bfb6ed8e86f4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://497017741d74878b56a67ad51e98061bd9ec0e6e4fdbfef0e2ab51523f4c16de\",\"dweb:/ipfs/QmWfkpRHksy8jFywqYxdmMqdkQ1hxrGTPoNBXbZ48zTvyv\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x483b106386dd309f168672928252a19f30c30efb4d17d4b8e2b0f587ca784a11\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://189a39d066c6886ddbe86c79bb36d6cbe66e98bc6a94956e28f5503dae4ad406\",\"dweb:/ipfs/QmT3s3PwCdXqHLJk26kcnedrRGTC9T18z52i9Be7PV9ppc\"]},\"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\":{\"keccak256\":\"0x95b01a0017e74216dc94e5babd5a7b0fbabab160347349e51789e75ebb130e4a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5aa621ae63904efeeb4c626edf07da0acf4b3c3eb6bef1d2f5215023e4dc9f83\",\"dweb:/ipfs/QmTDk9fG65qquWQ2VXhacZmiUBYS4ZJgr6HqHdeBC7Xwfs\"]},\"@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x6052c25b1021f2b0e733fb52ca11948cb2f08cb66076397507243a6e8a8d7776\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://32ac4547a76b28021a007853958284aa8a15a64f1aeec83cb797b7fd60a46b56\",\"dweb:/ipfs/QmTJWQF8j586oaYNpdZv55xnzyHVQc68XN4eBNeiLbKX8d\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x9944d1038f27dcebff810d7ba16b3b8058b967173d76874fb72dd7cd84129656\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7c455cda07c5f8978c57e545ddde382552d3a55b6e3682e0f809ed07ec7defbe\",\"dweb:/ipfs/QmXkoKbxyMcMzjYdkXi5t4t3ZjBQ81pj7AaanS9jhePxyt\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x7736c187e6f1358c1ea9350a2a21aa8528dec1c2f43b374a9067465a3a51f5d3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4fd625dca17657403af518cc6c8ab5c54c58898cf6e912ca2e1b0f3194ad0405\",\"dweb:/ipfs/QmQVv7YeeKmaS11bg7YDTeeGDk6i7sV8LMMfohaLM4SiRu\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0x74f630d2664c1581a1cbd0730d4ba119b3a184ef90c65f3a934be4d16d0e58a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cadad0b133129f946a53e0f61fa387803ccdc010d9c794da0738bb7fc5001b66\",\"dweb:/ipfs/QmQdTBpUT9WgDuCm7womDFiAnksepw6Fmi5Z5vv1H17Qr1\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x5fa25f305839292fab713256214f2868e0257d29826b14282bbd7f1e34f5af38\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b3de4074848249e00e1336db857e3fa8f78b4fe11d4a887f71050c22023b2132\",\"dweb:/ipfs/QmbL6k2zFGndQPNPG7vCDivtjKam3quJSrEbRuVsNo4hBw\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x905cd0ecd91d1de79a4679d745b79cf852ca8ccda5d25d1c49c6bd17a5edc0cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8dd1601fcd370546d8c06ea1902d7e7364fc490fbf0ebc3004230ef1f5db473c\",\"dweb:/ipfs/Qmb8zbC3TjWFtcuyP3KEEaegMkPcfeKAcPrwzvkAoMR3cZ\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x6aa521718bf139b44ce56f194f6aea1d590cacef995b5a84703fb1579fa49be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f8d367b5e94eb9cb991914f1de133cf272654c0708faa893bbc17a5b35b93\",\"dweb:/ipfs/QmZeBojmgXq821dL1TJKFb58B1FogM9jL3u7hXQ8hTEBKT\"]},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0x29c462775f5b4c76dce400f120f3530aa3f81da42c839f975dc2b64784d22434\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://063db5d664d3d5bae10d0056c9d00339265229532d06b53d5f2e91778b2e428d\",\"dweb:/ipfs/QmWM92rU59t6BcZSj4w6ikoPL32R9hyTMb9Msg5X8vvu1s\"]},\"project:/contracts/GeneScience.sol\":{\"keccak256\":\"0xa19f7d8717a90a834a35ba8b1c45bec6a7a3bf1509feece2b392a01786b37179\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://43e8fbbbe9210c051f168f94324b5e8a00e9beaeab0beb895d739c37a102f487\",\"dweb:/ipfs/QmVhM92iPkJeJxptPxfB8KVKkGacPb9ebUYgKTTBgdnhX5\"]},\"project:/contracts/MergeSwordsToken.sol\":{\"keccak256\":\"0xeb8ae5f413153ba3207c210e6e4b0bb11fd880304e9c7be306acbe0ff6fe27af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c8f8e8db2d24f0a48932ef63f2ee47bd1f7e490f8064b7007d28b756032a9ba\",\"dweb:/ipfs/QmYUmayfS2smABRuDCbGN2fiULpFLpCKTU1mgkEXTJLGuQ\"]},\"project:/contracts/SwordAttack.sol\":{\"keccak256\":\"0x836035a1543c589d92c464152941efc7fab9d8b574a55f14f967fb17d7088b21\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://72393b5d3e0c2be7a6c7d87ae67a1f9ac31609ecee41a8d0894150b671cf38bf\",\"dweb:/ipfs/QmY9d41tukCbGaCzmoxB7tBaiZSS9USYUGN43qp4sPwttB\"]},\"project:/contracts/SwordFactory.sol\":{\"keccak256\":\"0xbbfb330452aee6dda85ab9ebf65d3baae4760152265b92723d349c02a653576f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://89fdced8d0645d83dee660cc47ff35611d6488c64c2f3c153377c970f88862f3\",\"dweb:/ipfs/QmdJzt9yeTPMhdkLk2sW7TXxgPR9jJpanCKuV1Lb4ypRCn\"]},\"project:/contracts/SwordUriHelper.sol\":{\"keccak256\":\"0x7b9d558030aee3939b63049a8b2f91d0160ca52176a7b19cf2942449466938d6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://043ae747255e9aa519d2fb69b51113dd2ab233e39227bfd36ba5154219386492\",\"dweb:/ipfs/QmYg7EYYz5vGU2PXgRs3GRdZV3XM4FKibAFpJi2ghP9LfM\"]},\"project:/contracts/libraries/Base64.sol\":{\"keccak256\":\"0xa67b7ea9a97c00152bf2557aa8398438f33ec55e7c83ed070d09a1436fa7e9b4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a1b54bf6a65383e486c822041fd9915dd991d7582b3891c2f553be688ff9b3f\",\"dweb:/ipfs/QmaRkmMJtKccS4E21od97NgsfYFnwCCnVNmDenkoecQzqz\"]},\"project:/contracts/libraries/GladiusSvgHelper.sol\":{\"keccak256\":\"0x4b72883aa5d01416a03273ec774e1a94a253a561a34b7634fefa969dd890375e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9918b36fd163e5ca195460ec0b8b5c670e73a47ba94e77dd7dab788070f9e9ad\",\"dweb:/ipfs/QmZQD4D2AiDTrCxkf9PfG3R9vCWM25Aby1JdgpNAqfCtMQ\"]},\"project:/contracts/libraries/KatanaSvgHelper.sol\":{\"keccak256\":\"0x8b23f3fca57671e22d99ce2301437d6cd5e51dad14376c2d64693d0bd08db2a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d308abb4bd78ba133cbfbb0b5cbb15579f60b4472649df356b5fe62cc27d62a4\",\"dweb:/ipfs/QmfFhVaGjvnpQEoxz5xMMvxEbbQMvKSKh7rnoxQEwnhqfZ\"]},\"project:/contracts/libraries/KondaSvgHelper.sol\":{\"keccak256\":\"0xe81e759d528428c28cd3cbf1fbd6a0ae7955e9e277c308f4d89172231d7680ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://06096ba0a2dae55d2f4cc3671d7738f6726e71656ddd1e5b851b3b4a403e4e1c\",\"dweb:/ipfs/QmXtHNUNAYS5djFfD4hnLs3jofqgMufd3YBsh75ohkuBs5\"]},\"project:/contracts/libraries/SaberSvgHelper.sol\":{\"keccak256\":\"0x63fbd546e9e0342d92d9f9bf2f865271ea0aafbb3e658afe38db1588fda610cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7cafe4dbb3f5de364a837834015bbadc7895779fc9ac49a9afa2bf9f55cf6b8\",\"dweb:/ipfs/QmTkQAwCwAmG6GnjqbRG6MwrgxMXGT2DAdaTzrXsJu6ehs\"]},\"project:/contracts/libraries/SafeMath32.sol\":{\"keccak256\":\"0xb2c3a31722763da720657b2af6b6ca6ab4716028356e238a70beec331dfc834f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b0618482c73f758e5a0424a80967967c5f824622e9c8cc1c664a632e43788632\",\"dweb:/ipfs/QmZ8JfnPBgu5MYPZAYRJAzbazAEUGWfbMieHhGhEnhJdsc\"]},\"project:/contracts/libraries/SafeMath8.sol\":{\"keccak256\":\"0xd763abcf42a63119d01d430107c449039e651be834f1fab7b9d8beb812eeabb1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e735764a349908314d2681dd77654d9aeb2f0f58105e3898fb8d137595df5377\",\"dweb:/ipfs/QmTR87ZqCbebibwbMT8XNveFHQtAmAzy75skaykwshUydB\"]},\"project:/contracts/libraries/SwordSvgHelper.sol\":{\"keccak256\":\"0x47339a568bff151ed1aedde18887faf2f4d7e1ebda0abba66c41251ad65c76e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d0c9342345c0a2d831430ca5cbaba076be6ebdb9b08b8d391803d6249eb6f93\",\"dweb:/ipfs/QmP1Tpkvu4EzmtAwNFrPnuJEzqhmBW5aytzkx8nusekWmy\"]}},\"version\":1}",
@@ -34996,9 +35013,234 @@
     "name": "solc",
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1640002252453": {
+      "events": {
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "approved",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "approved",
+              "type": "bool"
+            }
+          ],
+          "name": "ApprovalForAll",
+          "type": "event"
+        },
+        "0xc7b64cadc933e9668a02ac176a26f449d9d98b90181758d8bc600850d447d413": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "BurnSword",
+          "type": "event"
+        },
+        "0xd50af1657d9a2597d27d7616ec28ad2943661e12cfdb6499fefe946aa109e893": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint8",
+                  "name": "attacker",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "dealtDamage",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "remainingUserHealth",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "remainingMonsterHealth",
+                  "type": "uint8"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct SwordAttack.AttackLog[]",
+              "name": "attackLog",
+              "type": "tuple[]"
+            }
+          ],
+          "name": "LostBattle",
+          "type": "event"
+        },
+        "0xb9e9899b84f4affb2c40b3c644e3ac91ded134d040120e7fc42b68ca0c25c1e7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewSword",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        },
+        "0xd940590aa6de74f6c7f9bbe72866dc1f933fe5e3236c01df95e5756a3ad67e37": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint8",
+                  "name": "attacker",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "dealtDamage",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "remainingUserHealth",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "remainingMonsterHealth",
+                  "type": "uint8"
+                }
+              ],
+              "indexed": false,
+              "internalType": "struct SwordAttack.AttackLog[]",
+              "name": "attackLog",
+              "type": "tuple[]"
+            }
+          ],
+          "name": "WonBattle",
+          "type": "event"
+        }
+      },
+      "links": {
+        "SwordSvgHelper": "0xFE9550608e2acF01694524b1F94d937DfDe806C2"
+      },
+      "address": "0x5c6e56EC21Ad546db425180E2534Ae05e88734D3",
+      "transactionHash": "0xe5b257d140281ddda078a2f3d7c0ae07789d9b517c54666430c35510914bf9c7"
+    }
+  },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T09:54:22.586Z",
+  "updatedAt": "2021-12-20T14:05:33.527Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {
