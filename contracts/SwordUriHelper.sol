@@ -5,9 +5,9 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "./libraries/Base64.sol";
 
-import "./SwordSvgFactory.sol";
+import "./libraries/SwordSvgHelper.sol";
 
-contract SwordUriHelper is SwordSvgFactory {
+contract SwordUriHelper  {
   string[] private hiltColorNames = [
     "white",
     "yellow",
@@ -40,6 +40,36 @@ contract SwordUriHelper is SwordSvgFactory {
     "carbon-fibre"
   ];
 
+  string[] private hiltColor = [
+    "#ffffff",
+    "#ffff02",
+    "#ff6600",
+    "#ff0000",
+    "#ff00ff",
+    "#000080",
+    "#0000ff",
+    "#00ffff",
+    "#00ff00",
+    "#008000",
+    "#803300",
+    "#d45500",
+    "#916f6f",
+    "#6c5353",
+    "#483737",
+    "#241c1c"
+  ];
+
+  string[] private swordColor = [
+    "#803300",
+    "#ac9393",
+    "#ff6600",
+    "#6c5353",
+    "#ffcc00",
+    "#008000",
+    "#00ffff",
+    "#241c1c"
+  ];
+
   function _makeSwordUri(
     uint256 _swordId,
     uint8 _attackPower,
@@ -48,10 +78,8 @@ contract SwordUriHelper is SwordSvgFactory {
     uint8 _swordType,
     uint8 _swordMaterial
   ) internal view returns (string memory) {
-    string memory finalSvg = _assembleSvg(_hilt, _swordType, _swordMaterial);
-
     // prettier-ignore
-    string memory json = Base64.encode(
+    return Base64.encode(
       bytes(
         string(
           abi.encodePacked(
@@ -60,15 +88,13 @@ contract SwordUriHelper is SwordSvgFactory {
             ",",
             "'description': 'This is an NFT that lets people play in the game Merge Swords!'",
             ",",
-            "'image': 'data:image/svg+xml;base64,", Base64.encode(bytes(finalSvg)), "'",
+            "'image': 'data:image/svg+xml;base64,", Base64.encode(bytes(SwordSvgHelper._assembleSvg(hiltColor[_hilt], _swordType, swordColor[_swordMaterial]))), "'",
             _makeAttributes(_attackPower, _generation, _swordType, _swordMaterial, _hilt),
             "}"
           )
         )
       )
     );
-
-    return json;
   }
 
   function _makeAttributes(

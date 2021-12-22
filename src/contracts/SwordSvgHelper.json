@@ -28,8 +28,7 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -48,8 +47,7 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -73,8 +71,7 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_hilt\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"_swordType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_swordMaterial\",\"type\":\"string\"}],\"name\":\"_assembleSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_hilt\",\"type\":\"string\"}],\"name\":\"_makeHiltSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_swordType\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_swordMaterial\",\"type\":\"string\"}],\"name\":\"_makeSwordSvg\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/libraries/SwordSvgHelper.sol\":\"SwordSvgHelper\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/libraries/GladiusSvgHelper.sol\":{\"keccak256\":\"0x4b72883aa5d01416a03273ec774e1a94a253a561a34b7634fefa969dd890375e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9918b36fd163e5ca195460ec0b8b5c670e73a47ba94e77dd7dab788070f9e9ad\",\"dweb:/ipfs/QmZQD4D2AiDTrCxkf9PfG3R9vCWM25Aby1JdgpNAqfCtMQ\"]},\"project:/contracts/libraries/KatanaSvgHelper.sol\":{\"keccak256\":\"0x8b23f3fca57671e22d99ce2301437d6cd5e51dad14376c2d64693d0bd08db2a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d308abb4bd78ba133cbfbb0b5cbb15579f60b4472649df356b5fe62cc27d62a4\",\"dweb:/ipfs/QmfFhVaGjvnpQEoxz5xMMvxEbbQMvKSKh7rnoxQEwnhqfZ\"]},\"project:/contracts/libraries/KondaSvgHelper.sol\":{\"keccak256\":\"0xe81e759d528428c28cd3cbf1fbd6a0ae7955e9e277c308f4d89172231d7680ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://06096ba0a2dae55d2f4cc3671d7738f6726e71656ddd1e5b851b3b4a403e4e1c\",\"dweb:/ipfs/QmXtHNUNAYS5djFfD4hnLs3jofqgMufd3YBsh75ohkuBs5\"]},\"project:/contracts/libraries/SaberSvgHelper.sol\":{\"keccak256\":\"0x63fbd546e9e0342d92d9f9bf2f865271ea0aafbb3e658afe38db1588fda610cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f7cafe4dbb3f5de364a837834015bbadc7895779fc9ac49a9afa2bf9f55cf6b8\",\"dweb:/ipfs/QmTkQAwCwAmG6GnjqbRG6MwrgxMXGT2DAdaTzrXsJu6ehs\"]},\"project:/contracts/libraries/SwordSvgHelper.sol\":{\"keccak256\":\"0x47339a568bff151ed1aedde18887faf2f4d7e1ebda0abba66c41251ad65c76e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0d0c9342345c0a2d831430ca5cbaba076be6ebdb9b08b8d391803d6249eb6f93\",\"dweb:/ipfs/QmP1Tpkvu4EzmtAwNFrPnuJEzqhmBW5aytzkx8nusekWmy\"]}},\"version\":1}",
@@ -9118,27 +9115,27 @@
     "absolutePath": "project:/contracts/libraries/SwordSvgHelper.sol",
     "exportedSymbols": {
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ]
     },
-    "id": 4844,
+    "id": 4707,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4736,
+        "id": 4599,
         "literals": [
           "solidity",
           "^",
@@ -9151,11 +9148,11 @@
       {
         "absolutePath": "project:/contracts/libraries/GladiusSvgHelper.sol",
         "file": "./GladiusSvgHelper.sol",
-        "id": 4737,
+        "id": 4600,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4347,
+        "scope": 4707,
+        "sourceUnit": 4210,
         "src": "57:32:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9163,11 +9160,11 @@
       {
         "absolutePath": "project:/contracts/libraries/SaberSvgHelper.sol",
         "file": "./SaberSvgHelper.sol",
-        "id": 4738,
+        "id": 4601,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4440,
+        "scope": 4707,
+        "sourceUnit": 4303,
         "src": "90:30:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9175,11 +9172,11 @@
       {
         "absolutePath": "project:/contracts/libraries/KatanaSvgHelper.sol",
         "file": "./KatanaSvgHelper.sol",
-        "id": 4739,
+        "id": 4602,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4378,
+        "scope": 4707,
+        "sourceUnit": 4241,
         "src": "121:31:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9187,11 +9184,11 @@
       {
         "absolutePath": "project:/contracts/libraries/KondaSvgHelper.sol",
         "file": "./KondaSvgHelper.sol",
-        "id": 4740,
+        "id": 4603,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4409,
+        "scope": 4707,
+        "sourceUnit": 4272,
         "src": "153:30:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9203,9 +9200,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 4843,
+        "id": 4706,
         "linearizedBaseContracts": [
-          4843
+          4706
         ],
         "name": "SwordSvgHelper",
         "nameLocation": "212:14:27",
@@ -9213,7 +9210,7 @@
         "nodes": [
           {
             "body": {
-              "id": 4767,
+              "id": 4630,
               "nodeType": "Block",
               "src": "374:258:27",
               "statements": [
@@ -9224,7 +9221,7 @@
                         "arguments": [
                           {
                             "hexValue": "3c73766720786d6c6e733d27687474703a2f2f7777772e77332e6f72672f323030302f737667272077696474683d2732303027206865696768743d27323030273e",
-                            "id": 4755,
+                            "id": 4618,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9241,11 +9238,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4757,
+                                "id": 4620,
                                 "name": "_hilt",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4742,
+                                "referencedDeclaration": 4605,
                                 "src": "530:5:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -9260,18 +9257,18 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 4756,
+                              "id": 4619,
                               "name": "_makeHiltSvg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4796,
+                              "referencedDeclaration": 4659,
                               "src": "517:12:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4758,
+                            "id": 4621,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9289,11 +9286,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4760,
+                                "id": 4623,
                                 "name": "_swordType",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4744,
+                                "referencedDeclaration": 4607,
                                 "src": "562:10:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint8",
@@ -9301,11 +9298,11 @@
                                 }
                               },
                               {
-                                "id": 4761,
+                                "id": 4624,
                                 "name": "_swordMaterial",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4746,
+                                "referencedDeclaration": 4609,
                                 "src": "574:14:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -9324,18 +9321,18 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 4759,
+                              "id": 4622,
                               "name": "_makeSwordSvg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4842,
+                              "referencedDeclaration": 4705,
                               "src": "548:13:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint8_$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (uint8,string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4762,
+                            "id": 4625,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9352,7 +9349,7 @@
                           },
                           {
                             "hexValue": "3c2f7376673e",
-                            "id": 4763,
+                            "id": 4626,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9387,7 +9384,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4753,
+                            "id": 4616,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -9398,7 +9395,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4754,
+                          "id": 4617,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -9411,7 +9408,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4764,
+                        "id": 4627,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9434,7 +9431,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4752,
+                      "id": 4615,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -9446,14 +9443,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4751,
+                        "id": 4614,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "394:6:27",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4765,
+                    "id": 4628,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9468,15 +9465,15 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4750,
-                  "id": 4766,
+                  "functionReturnParameters": 4613,
+                  "id": 4629,
                   "nodeType": "Return",
                   "src": "380:247:27"
                 }
               ]
             },
             "functionSelector": "dbd3d75b",
-            "id": 4768,
+            "id": 4631,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9484,17 +9481,17 @@
             "nameLocation": "240:12:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4747,
+              "id": 4610,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4742,
+                  "id": 4605,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "272:5:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "258:19:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -9503,7 +9500,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4741,
+                    "id": 4604,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "258:6:27",
@@ -9516,12 +9513,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4744,
+                  "id": 4607,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "289:10:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "283:16:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9530,7 +9527,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4743,
+                    "id": 4606,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "283:5:27",
@@ -9543,12 +9540,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4746,
+                  "id": 4609,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "319:14:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "305:28:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -9557,7 +9554,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4745,
+                    "id": 4608,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "305:6:27",
@@ -9572,17 +9569,17 @@
               "src": "252:85:27"
             },
             "returnParameters": {
-              "id": 4750,
+              "id": 4613,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4749,
+                  "id": 4612,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "359:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -9591,7 +9588,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4748,
+                    "id": 4611,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "359:6:27",
@@ -9605,7 +9602,7 @@
               ],
               "src": "358:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "231:401:27",
             "stateMutability": "pure",
             "virtual": false,
@@ -9613,7 +9610,7 @@
           },
           {
             "body": {
-              "id": 4795,
+              "id": 4658,
               "nodeType": "Block",
               "src": "715:3255:27",
               "statements": [
@@ -9624,7 +9621,7 @@
                         "arguments": [
                           {
                             "hexValue": "3c7376672076696577426f783d273020302035322e3931363636362035322e393136363638273e",
-                            "id": 4779,
+                            "id": 4642,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9640,7 +9637,7 @@
                           },
                           {
                             "hexValue": "3c673e",
-                            "id": 4780,
+                            "id": 4643,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9656,7 +9653,7 @@
                           },
                           {
                             "hexValue": "3c70617468",
-                            "id": 4781,
+                            "id": 4644,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9672,7 +9669,7 @@
                           },
                           {
                             "hexValue": "7374796c653d27646973706c61793a696e6c696e653b66696c6c3a233030303030313b7374726f6b652d77696474683a302e32363435383327",
-                            "id": 4782,
+                            "id": 4645,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9688,7 +9685,7 @@
                           },
                           {
                             "hexValue": "643d276d2031372e3139373931362c34372e363235206820312e333232393137207620312e3332323931372068202d312e333232393137207a206d20302c2d312e333232393138206820312e333232393137207620312e33323239313720482031372e313937393136205a204d20332e393638373439352c33342e333935383332206820312e33323239313637207620312e333232393137204820332e39363837343935205a204d2031352e3837352c34372e363235206820312e333232393137207620312e33323239313720482031352e383735205a206d202d312e3332323931372c3020482031352e383735207620312e33323239313720482031342e353532303833205a204d2031352e3837352c34342e393739313638206820312e333232393137207620312e33323239313720482031352e383735205a204d2031342e3535323038332c34332e363536323520482031352e383735207620312e3332323931372068202d312e333232393137207a206d202d312e3332323931362c2d312e333232393138206820312e333232393137207620312e33323239313720482031332e323239313637205a204d2031312e39303632352c34312e303130343138206820312e333232393137207620312e33323239313720482031312e3930363235205a204d2031302e3538333333332c33392e36383735206820312e333232393137207620312e33323239313720482031302e353833333333205a204d20392e3236303431362c33382e333634353832206820312e333232393137207620312e333232393137204820392e323630343136205a204d20372e393337343939352c33372e303431363638206820312e33323239313637207620312e333232393137204820372e39333734393935205a204d20362e3631343538332c33352e3731383735206820312e33323239313636207620312e333232393137204820362e363134353833205a204d20352e323931363636352c33342e333935383332206820312e33323239313636207620312e333232393137204820352e32393136363635205a206d202d312e3332323931372c312e333232393138206820312e33323239313637207620312e333232393137204820332e39363837343935205a206d20302c312e333232393138206820312e33323239313637207620312e333232393137204820332e39363837343935205a206d20392e323630343137352c392e323630343134206820312e333232393137207620312e33323239313720482031332e323239313637205a204d2031312e39303632352c34342e393739313638206820312e333232393137207620312e33323239313720482031312e3930363235205a204d20352e323931363636352c33382e333634353832206820312e33323239313636207620312e333232393137204820352e32393136363635205a204d20362e3631343538332c33392e36383735206820312e33323239313636207620312e333232393137204820362e363134353833205a206d20332e39363837352c332e3936383735206820312e333232393137207620312e33323239313720482031302e353833333333205a204d20372e393337343939352c34312e303130343138206820312e33323239313637207620312e333232393137204820372e39333734393935205a206d202d312e3332323931362c312e333232393134206820312e33323239313636207620312e333232393137204820362e36313435383335205a206d20322e363435383333352c322e363435383336206820312e333232393137207620312e333232393137204820392e323630343137205a204d20372e393337352c34362e333032303832206820312e33323239313636207620312e333232393137204820372e39333735205a204d20362e363134353833352c34372e363235206820312e33323239313636207620312e333232393137204820362e36313435383335205a206d202d312e3332323931372c2d332e3936383735206820312e33323239313636207620312e333232393137204820352e32393136363635205a204d20332e39363837352c34342e393739313638206820312e33323239313636207620312e333232393137204820332e3936383735205a206d202d312e333232393136372c312e333232393134206820312e33323239313636207620312e333232393137204820322e36343538333333205a206d20322e363435383333322c322e363435383336206820312e33323239313636207620312e333232393137204820352e32393136363635205a206d202d312e333232393136352c30206820312e33323239313636207620312e333232393137204820332e3936383735205a204d20322e363435383333332c34372e363235206820312e33323239313636207620312e333232393137204820322e36343538333333205a206d20302c312e333232393138206820312e33323239313636207620312e333232393137204820322e36343538333333205a27202f3e",
-                            "id": 4783,
+                            "id": 4646,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9704,7 +9701,7 @@
                           },
                           {
                             "hexValue": "3c70617468",
-                            "id": 4784,
+                            "id": 4647,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9720,7 +9717,7 @@
                           },
                           {
                             "hexValue": "7374796c653d2766696c6c3a",
-                            "id": 4785,
+                            "id": 4648,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9735,11 +9732,11 @@
                             "value": "style='fill:"
                           },
                           {
-                            "id": 4786,
+                            "id": 4649,
                             "name": "_hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4770,
+                            "referencedDeclaration": 4633,
                             "src": "2829:5:27",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -9748,7 +9745,7 @@
                           },
                           {
                             "hexValue": "3b7374726f6b652d77696474683a302e31393736393627",
-                            "id": 4787,
+                            "id": 4650,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9764,7 +9761,7 @@
                           },
                           {
                             "hexValue": "643d276d2031352e30323438382c3138302e30303230312076202d342e3934323339206820322e35373030343520322e3537303034352076202d322e34373132202d322e34373132206820322e34373131393720322e3437313139382076202d322e3437313139202d322e34373132206820322e34373131393720322e3437313139372076202d322e3537303035202d322e3537303034206820322e35373030343520322e3537303034362076202d322e3537303035202d322e35373030342068202d322e353730303436202d322e3537303034352076202d322e34373132202d322e343731322068202d322e343731313937202d322e3437313139372076202d322e3537303034202d322e353730303520482032322e3633363136372032302e31363439372076202d342e3834333534202d342e3834333535206820322e33373233343920322e3337323335207620322e3437313220322e3437313139206820322e34373131393720322e343731313937207620322e3437313220322e34373132206820322e35373030343620322e353730303435207620322e353730303420322e3537303035206820322e34373131393720322e343731313937207620322e3437313220322e3437313139206820322e34373131393820322e343731313937207620322e3437313220322e34373132206820322e34373131393720322e343731313938207620322e353730303420322e3537303035206820322e35373030343520322e353730303435207620322e3437313220322e3437313139206820322e34373131393720322e343731313938207620322e3437313220322e34373132206820322e34373131393720322e343731313937207620322e333732333520322e33373233352068202d342e383433353436202d342e3834333534372076202d322e34373132202d322e343731322068202d322e353730303435202d322e3537303034362076202d322e34373132202d322e34373131392068202d322e343731313937202d322e3437313139372076202d322e34373132202d322e343731322068202d322e353730303435202d322e353730303436207620322e3437313220322e343731322068202d322e343731313937202d322e343731313937207620322e343731313920322e343731322068202d322e353730303435202d322e353730303436207620322e343635313120322e3436353132206c202d322e3432313737332c302e30353535202d322e3432313737332c302e30353535202d302e30353533332c322e3532303633202d302e30353533332c322e353230363220482031392e3936313336382031352e3032343838205a27",
-                            "id": 4788,
+                            "id": 4651,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9780,7 +9777,7 @@
                           },
                           {
                             "hexValue": "7472616e73666f726d3d277363616c6528302e32363435383333332927202f3e",
-                            "id": 4789,
+                            "id": 4652,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9796,7 +9793,7 @@
                           },
                           {
                             "hexValue": "3c2f673e",
-                            "id": 4790,
+                            "id": 4653,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9812,7 +9809,7 @@
                           },
                           {
                             "hexValue": "3c2f7376673e",
-                            "id": 4791,
+                            "id": 4654,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -9883,7 +9880,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4777,
+                            "id": 4640,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -9894,7 +9891,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4778,
+                          "id": 4641,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -9907,7 +9904,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4792,
+                        "id": 4655,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9930,7 +9927,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4776,
+                      "id": 4639,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -9942,14 +9939,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4775,
+                        "id": 4638,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "735:6:27",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4793,
+                    "id": 4656,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9964,15 +9961,15 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4774,
-                  "id": 4794,
+                  "functionReturnParameters": 4637,
+                  "id": 4657,
                   "nodeType": "Return",
                   "src": "721:3244:27"
                 }
               ]
             },
             "functionSelector": "34515a4f",
-            "id": 4796,
+            "id": 4659,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -9980,17 +9977,17 @@
             "nameLocation": "645:12:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4771,
+              "id": 4634,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4770,
+                  "id": 4633,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "672:5:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4796,
+                  "scope": 4659,
                   "src": "658:19:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -9999,7 +9996,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4769,
+                    "id": 4632,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "658:6:27",
@@ -10014,17 +10011,17 @@
               "src": "657:21:27"
             },
             "returnParameters": {
-              "id": 4774,
+              "id": 4637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4773,
+                  "id": 4636,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4796,
+                  "scope": 4659,
                   "src": "700:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10033,7 +10030,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4772,
+                    "id": 4635,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "700:6:27",
@@ -10047,7 +10044,7 @@
               ],
               "src": "699:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "636:3334:27",
             "stateMutability": "pure",
             "virtual": false,
@@ -10055,7 +10052,7 @@
           },
           {
             "body": {
-              "id": 4841,
+              "id": 4704,
               "nodeType": "Block",
               "src": "4081:350:27",
               "statements": [
@@ -10065,17 +10062,17 @@
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
                     },
-                    "id": 4807,
+                    "id": 4670,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4805,
+                      "id": 4668,
                       "name": "_swordType",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4798,
+                      "referencedDeclaration": 4661,
                       "src": "4091:10:27",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -10086,7 +10083,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "hexValue": "33",
-                      "id": 4806,
+                      "id": 4669,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -10112,17 +10109,17 @@
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
                       },
-                      "id": 4816,
+                      "id": 4679,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 4814,
+                        "id": 4677,
                         "name": "_swordType",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4798,
+                        "referencedDeclaration": 4661,
                         "src": "4180:10:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -10133,7 +10130,7 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "32",
-                        "id": 4815,
+                        "id": 4678,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -10159,17 +10156,17 @@
                           "typeIdentifier": "t_uint8",
                           "typeString": "uint8"
                         },
-                        "id": 4825,
+                        "id": 4688,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 4823,
+                          "id": 4686,
                           "name": "_swordType",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4798,
+                          "referencedDeclaration": 4661,
                           "src": "4271:10:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint8",
@@ -10180,7 +10177,7 @@
                         "operator": "==",
                         "rightExpression": {
                           "hexValue": "31",
-                          "id": 4824,
+                          "id": 4687,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -10201,7 +10198,7 @@
                         }
                       },
                       "falseBody": {
-                        "id": 4837,
+                        "id": 4700,
                         "nodeType": "Block",
                         "src": "4361:66:27",
                         "statements": [
@@ -10209,11 +10206,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 4834,
+                                  "id": 4697,
                                   "name": "_swordMaterial",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4800,
+                                  "referencedDeclaration": 4663,
                                   "src": "4405:14:27",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -10229,32 +10226,32 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 4832,
+                                  "id": 4695,
                                   "name": "GladiusSvgHelper",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4346,
+                                  "referencedDeclaration": 4209,
                                   "src": "4376:16:27",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_GladiusSvgHelper_$4346_$",
+                                    "typeIdentifier": "t_type$_t_contract$_GladiusSvgHelper_$4209_$",
                                     "typeString": "type(library GladiusSvgHelper)"
                                   }
                                 },
-                                "id": 4833,
+                                "id": 4696,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "makeGladius",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 4345,
+                                "referencedDeclaration": 4208,
                                 "src": "4376:28:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (string memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 4835,
+                              "id": 4698,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -10269,18 +10266,18 @@
                                 "typeString": "string memory"
                               }
                             },
-                            "functionReturnParameters": 4804,
-                            "id": 4836,
+                            "functionReturnParameters": 4667,
+                            "id": 4699,
                             "nodeType": "Return",
                             "src": "4369:51:27"
                           }
                         ]
                       },
-                      "id": 4838,
+                      "id": 4701,
                       "nodeType": "IfStatement",
                       "src": "4267:160:27",
                       "trueBody": {
-                        "id": 4831,
+                        "id": 4694,
                         "nodeType": "Block",
                         "src": "4288:67:27",
                         "statements": [
@@ -10288,11 +10285,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 4828,
+                                  "id": 4691,
                                   "name": "_swordMaterial",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4800,
+                                  "referencedDeclaration": 4663,
                                   "src": "4328:14:27",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -10308,32 +10305,32 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 4826,
+                                  "id": 4689,
                                   "name": "SaberSvgHelper",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4439,
+                                  "referencedDeclaration": 4302,
                                   "src": "4303:14:27",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_SaberSvgHelper_$4439_$",
+                                    "typeIdentifier": "t_type$_t_contract$_SaberSvgHelper_$4302_$",
                                     "typeString": "type(library SaberSvgHelper)"
                                   }
                                 },
-                                "id": 4827,
+                                "id": 4690,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "makeSaber",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 4438,
+                                "referencedDeclaration": 4301,
                                 "src": "4303:24:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (string memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 4829,
+                              "id": 4692,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -10348,19 +10345,19 @@
                                 "typeString": "string memory"
                               }
                             },
-                            "functionReturnParameters": 4804,
-                            "id": 4830,
+                            "functionReturnParameters": 4667,
+                            "id": 4693,
                             "nodeType": "Return",
                             "src": "4296:47:27"
                           }
                         ]
                       }
                     },
-                    "id": 4839,
+                    "id": 4702,
                     "nodeType": "IfStatement",
                     "src": "4176:251:27",
                     "trueBody": {
-                      "id": 4822,
+                      "id": 4685,
                       "nodeType": "Block",
                       "src": "4197:64:27",
                       "statements": [
@@ -10368,11 +10365,11 @@
                           "expression": {
                             "arguments": [
                               {
-                                "id": 4819,
+                                "id": 4682,
                                 "name": "_swordMaterial",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4800,
+                                "referencedDeclaration": 4663,
                                 "src": "4239:14:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -10388,32 +10385,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4817,
+                                "id": 4680,
                                 "name": "KatanaSvgHelper",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4377,
+                                "referencedDeclaration": 4240,
                                 "src": "4212:15:27",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_KatanaSvgHelper_$4377_$",
+                                  "typeIdentifier": "t_type$_t_contract$_KatanaSvgHelper_$4240_$",
                                   "typeString": "type(library KatanaSvgHelper)"
                                 }
                               },
-                              "id": 4818,
+                              "id": 4681,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "makeKatana",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4376,
+                              "referencedDeclaration": 4239,
                               "src": "4212:26:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4820,
+                            "id": 4683,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -10428,19 +10425,19 @@
                               "typeString": "string memory"
                             }
                           },
-                          "functionReturnParameters": 4804,
-                          "id": 4821,
+                          "functionReturnParameters": 4667,
+                          "id": 4684,
                           "nodeType": "Return",
                           "src": "4205:49:27"
                         }
                       ]
                     }
                   },
-                  "id": 4840,
+                  "id": 4703,
                   "nodeType": "IfStatement",
                   "src": "4087:340:27",
                   "trueBody": {
-                    "id": 4813,
+                    "id": 4676,
                     "nodeType": "Block",
                     "src": "4108:62:27",
                     "statements": [
@@ -10448,11 +10445,11 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 4810,
+                              "id": 4673,
                               "name": "_swordMaterial",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4800,
+                              "referencedDeclaration": 4663,
                               "src": "4148:14:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -10468,32 +10465,32 @@
                               }
                             ],
                             "expression": {
-                              "id": 4808,
+                              "id": 4671,
                               "name": "KondaSvgHelper",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4408,
+                              "referencedDeclaration": 4271,
                               "src": "4123:14:27",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_KondaSvgHelper_$4408_$",
+                                "typeIdentifier": "t_type$_t_contract$_KondaSvgHelper_$4271_$",
                                 "typeString": "type(library KondaSvgHelper)"
                               }
                             },
-                            "id": 4809,
+                            "id": 4672,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "makeKonda",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4407,
+                            "referencedDeclaration": 4270,
                             "src": "4123:24:27",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                               "typeString": "function (string memory) pure returns (string memory)"
                             }
                           },
-                          "id": 4811,
+                          "id": 4674,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -10508,8 +10505,8 @@
                             "typeString": "string memory"
                           }
                         },
-                        "functionReturnParameters": 4804,
-                        "id": 4812,
+                        "functionReturnParameters": 4667,
+                        "id": 4675,
                         "nodeType": "Return",
                         "src": "4116:47:27"
                       }
@@ -10519,7 +10516,7 @@
               ]
             },
             "functionSelector": "62db80db",
-            "id": 4842,
+            "id": 4705,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -10527,17 +10524,17 @@
             "nameLocation": "3983:13:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4801,
+              "id": 4664,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4798,
+                  "id": 4661,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "4003:10:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "3997:16:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10546,7 +10543,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4797,
+                    "id": 4660,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3997:5:27",
@@ -10559,12 +10556,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4800,
+                  "id": 4663,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "4029:14:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "4015:28:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10573,7 +10570,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4799,
+                    "id": 4662,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "4015:6:27",
@@ -10588,17 +10585,17 @@
               "src": "3996:48:27"
             },
             "returnParameters": {
-              "id": 4804,
+              "id": 4667,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4803,
+                  "id": 4666,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "4066:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10607,7 +10604,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4802,
+                    "id": 4665,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "4066:6:27",
@@ -10621,14 +10618,14 @@
               ],
               "src": "4065:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "3974:457:27",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4844,
+        "scope": 4707,
         "src": "204:4229:27",
         "usedErrors": []
       }
@@ -10639,27 +10636,27 @@
     "absolutePath": "project:/contracts/libraries/SwordSvgHelper.sol",
     "exportedSymbols": {
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ]
     },
-    "id": 4844,
+    "id": 4707,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4736,
+        "id": 4599,
         "literals": [
           "solidity",
           "^",
@@ -10672,11 +10669,11 @@
       {
         "absolutePath": "project:/contracts/libraries/GladiusSvgHelper.sol",
         "file": "./GladiusSvgHelper.sol",
-        "id": 4737,
+        "id": 4600,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4347,
+        "scope": 4707,
+        "sourceUnit": 4210,
         "src": "57:32:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10684,11 +10681,11 @@
       {
         "absolutePath": "project:/contracts/libraries/SaberSvgHelper.sol",
         "file": "./SaberSvgHelper.sol",
-        "id": 4738,
+        "id": 4601,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4440,
+        "scope": 4707,
+        "sourceUnit": 4303,
         "src": "90:30:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10696,11 +10693,11 @@
       {
         "absolutePath": "project:/contracts/libraries/KatanaSvgHelper.sol",
         "file": "./KatanaSvgHelper.sol",
-        "id": 4739,
+        "id": 4602,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4378,
+        "scope": 4707,
+        "sourceUnit": 4241,
         "src": "121:31:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10708,11 +10705,11 @@
       {
         "absolutePath": "project:/contracts/libraries/KondaSvgHelper.sol",
         "file": "./KondaSvgHelper.sol",
-        "id": 4740,
+        "id": 4603,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4844,
-        "sourceUnit": 4409,
+        "scope": 4707,
+        "sourceUnit": 4272,
         "src": "153:30:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10724,9 +10721,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 4843,
+        "id": 4706,
         "linearizedBaseContracts": [
-          4843
+          4706
         ],
         "name": "SwordSvgHelper",
         "nameLocation": "212:14:27",
@@ -10734,7 +10731,7 @@
         "nodes": [
           {
             "body": {
-              "id": 4767,
+              "id": 4630,
               "nodeType": "Block",
               "src": "374:258:27",
               "statements": [
@@ -10745,7 +10742,7 @@
                         "arguments": [
                           {
                             "hexValue": "3c73766720786d6c6e733d27687474703a2f2f7777772e77332e6f72672f323030302f737667272077696474683d2732303027206865696768743d27323030273e",
-                            "id": 4755,
+                            "id": 4618,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -10762,11 +10759,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4757,
+                                "id": 4620,
                                 "name": "_hilt",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4742,
+                                "referencedDeclaration": 4605,
                                 "src": "530:5:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -10781,18 +10778,18 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 4756,
+                              "id": 4619,
                               "name": "_makeHiltSvg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4796,
+                              "referencedDeclaration": 4659,
                               "src": "517:12:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4758,
+                            "id": 4621,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -10810,11 +10807,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4760,
+                                "id": 4623,
                                 "name": "_swordType",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4744,
+                                "referencedDeclaration": 4607,
                                 "src": "562:10:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint8",
@@ -10822,11 +10819,11 @@
                                 }
                               },
                               {
-                                "id": 4761,
+                                "id": 4624,
                                 "name": "_swordMaterial",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4746,
+                                "referencedDeclaration": 4609,
                                 "src": "574:14:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -10845,18 +10842,18 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 4759,
+                              "id": 4622,
                               "name": "_makeSwordSvg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4842,
+                              "referencedDeclaration": 4705,
                               "src": "548:13:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint8_$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (uint8,string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4762,
+                            "id": 4625,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -10873,7 +10870,7 @@
                           },
                           {
                             "hexValue": "3c2f7376673e",
-                            "id": 4763,
+                            "id": 4626,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -10908,7 +10905,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4753,
+                            "id": 4616,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -10919,7 +10916,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4754,
+                          "id": 4617,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -10932,7 +10929,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4764,
+                        "id": 4627,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -10955,7 +10952,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4752,
+                      "id": 4615,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -10967,14 +10964,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4751,
+                        "id": 4614,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "394:6:27",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4765,
+                    "id": 4628,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10989,15 +10986,15 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4750,
-                  "id": 4766,
+                  "functionReturnParameters": 4613,
+                  "id": 4629,
                   "nodeType": "Return",
                   "src": "380:247:27"
                 }
               ]
             },
             "functionSelector": "dbd3d75b",
-            "id": 4768,
+            "id": 4631,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -11005,17 +11002,17 @@
             "nameLocation": "240:12:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4747,
+              "id": 4610,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4742,
+                  "id": 4605,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "272:5:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "258:19:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -11024,7 +11021,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4741,
+                    "id": 4604,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "258:6:27",
@@ -11037,12 +11034,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4744,
+                  "id": 4607,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "289:10:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "283:16:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -11051,7 +11048,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4743,
+                    "id": 4606,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "283:5:27",
@@ -11064,12 +11061,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4746,
+                  "id": 4609,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "319:14:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "305:28:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -11078,7 +11075,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4745,
+                    "id": 4608,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "305:6:27",
@@ -11093,17 +11090,17 @@
               "src": "252:85:27"
             },
             "returnParameters": {
-              "id": 4750,
+              "id": 4613,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4749,
+                  "id": 4612,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4768,
+                  "scope": 4631,
                   "src": "359:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -11112,7 +11109,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4748,
+                    "id": 4611,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "359:6:27",
@@ -11126,7 +11123,7 @@
               ],
               "src": "358:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "231:401:27",
             "stateMutability": "pure",
             "virtual": false,
@@ -11134,7 +11131,7 @@
           },
           {
             "body": {
-              "id": 4795,
+              "id": 4658,
               "nodeType": "Block",
               "src": "715:3255:27",
               "statements": [
@@ -11145,7 +11142,7 @@
                         "arguments": [
                           {
                             "hexValue": "3c7376672076696577426f783d273020302035322e3931363636362035322e393136363638273e",
-                            "id": 4779,
+                            "id": 4642,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11161,7 +11158,7 @@
                           },
                           {
                             "hexValue": "3c673e",
-                            "id": 4780,
+                            "id": 4643,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11177,7 +11174,7 @@
                           },
                           {
                             "hexValue": "3c70617468",
-                            "id": 4781,
+                            "id": 4644,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11193,7 +11190,7 @@
                           },
                           {
                             "hexValue": "7374796c653d27646973706c61793a696e6c696e653b66696c6c3a233030303030313b7374726f6b652d77696474683a302e32363435383327",
-                            "id": 4782,
+                            "id": 4645,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11209,7 +11206,7 @@
                           },
                           {
                             "hexValue": "643d276d2031372e3139373931362c34372e363235206820312e333232393137207620312e3332323931372068202d312e333232393137207a206d20302c2d312e333232393138206820312e333232393137207620312e33323239313720482031372e313937393136205a204d20332e393638373439352c33342e333935383332206820312e33323239313637207620312e333232393137204820332e39363837343935205a204d2031352e3837352c34372e363235206820312e333232393137207620312e33323239313720482031352e383735205a206d202d312e3332323931372c3020482031352e383735207620312e33323239313720482031342e353532303833205a204d2031352e3837352c34342e393739313638206820312e333232393137207620312e33323239313720482031352e383735205a204d2031342e3535323038332c34332e363536323520482031352e383735207620312e3332323931372068202d312e333232393137207a206d202d312e3332323931362c2d312e333232393138206820312e333232393137207620312e33323239313720482031332e323239313637205a204d2031312e39303632352c34312e303130343138206820312e333232393137207620312e33323239313720482031312e3930363235205a204d2031302e3538333333332c33392e36383735206820312e333232393137207620312e33323239313720482031302e353833333333205a204d20392e3236303431362c33382e333634353832206820312e333232393137207620312e333232393137204820392e323630343136205a204d20372e393337343939352c33372e303431363638206820312e33323239313637207620312e333232393137204820372e39333734393935205a204d20362e3631343538332c33352e3731383735206820312e33323239313636207620312e333232393137204820362e363134353833205a204d20352e323931363636352c33342e333935383332206820312e33323239313636207620312e333232393137204820352e32393136363635205a206d202d312e3332323931372c312e333232393138206820312e33323239313637207620312e333232393137204820332e39363837343935205a206d20302c312e333232393138206820312e33323239313637207620312e333232393137204820332e39363837343935205a206d20392e323630343137352c392e323630343134206820312e333232393137207620312e33323239313720482031332e323239313637205a204d2031312e39303632352c34342e393739313638206820312e333232393137207620312e33323239313720482031312e3930363235205a204d20352e323931363636352c33382e333634353832206820312e33323239313636207620312e333232393137204820352e32393136363635205a204d20362e3631343538332c33392e36383735206820312e33323239313636207620312e333232393137204820362e363134353833205a206d20332e39363837352c332e3936383735206820312e333232393137207620312e33323239313720482031302e353833333333205a204d20372e393337343939352c34312e303130343138206820312e33323239313637207620312e333232393137204820372e39333734393935205a206d202d312e3332323931362c312e333232393134206820312e33323239313636207620312e333232393137204820362e36313435383335205a206d20322e363435383333352c322e363435383336206820312e333232393137207620312e333232393137204820392e323630343137205a204d20372e393337352c34362e333032303832206820312e33323239313636207620312e333232393137204820372e39333735205a204d20362e363134353833352c34372e363235206820312e33323239313636207620312e333232393137204820362e36313435383335205a206d202d312e3332323931372c2d332e3936383735206820312e33323239313636207620312e333232393137204820352e32393136363635205a204d20332e39363837352c34342e393739313638206820312e33323239313636207620312e333232393137204820332e3936383735205a206d202d312e333232393136372c312e333232393134206820312e33323239313636207620312e333232393137204820322e36343538333333205a206d20322e363435383333322c322e363435383336206820312e33323239313636207620312e333232393137204820352e32393136363635205a206d202d312e333232393136352c30206820312e33323239313636207620312e333232393137204820332e3936383735205a204d20322e363435383333332c34372e363235206820312e33323239313636207620312e333232393137204820322e36343538333333205a206d20302c312e333232393138206820312e33323239313636207620312e333232393137204820322e36343538333333205a27202f3e",
-                            "id": 4783,
+                            "id": 4646,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11225,7 +11222,7 @@
                           },
                           {
                             "hexValue": "3c70617468",
-                            "id": 4784,
+                            "id": 4647,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11241,7 +11238,7 @@
                           },
                           {
                             "hexValue": "7374796c653d2766696c6c3a",
-                            "id": 4785,
+                            "id": 4648,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11256,11 +11253,11 @@
                             "value": "style='fill:"
                           },
                           {
-                            "id": 4786,
+                            "id": 4649,
                             "name": "_hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4770,
+                            "referencedDeclaration": 4633,
                             "src": "2829:5:27",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -11269,7 +11266,7 @@
                           },
                           {
                             "hexValue": "3b7374726f6b652d77696474683a302e31393736393627",
-                            "id": 4787,
+                            "id": 4650,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11285,7 +11282,7 @@
                           },
                           {
                             "hexValue": "643d276d2031352e30323438382c3138302e30303230312076202d342e3934323339206820322e35373030343520322e3537303034352076202d322e34373132202d322e34373132206820322e34373131393720322e3437313139382076202d322e3437313139202d322e34373132206820322e34373131393720322e3437313139372076202d322e3537303035202d322e3537303034206820322e35373030343520322e3537303034362076202d322e3537303035202d322e35373030342068202d322e353730303436202d322e3537303034352076202d322e34373132202d322e343731322068202d322e343731313937202d322e3437313139372076202d322e3537303034202d322e353730303520482032322e3633363136372032302e31363439372076202d342e3834333534202d342e3834333535206820322e33373233343920322e3337323335207620322e3437313220322e3437313139206820322e34373131393720322e343731313937207620322e3437313220322e34373132206820322e35373030343620322e353730303435207620322e353730303420322e3537303035206820322e34373131393720322e343731313937207620322e3437313220322e3437313139206820322e34373131393820322e343731313937207620322e3437313220322e34373132206820322e34373131393720322e343731313938207620322e353730303420322e3537303035206820322e35373030343520322e353730303435207620322e3437313220322e3437313139206820322e34373131393720322e343731313938207620322e3437313220322e34373132206820322e34373131393720322e343731313937207620322e333732333520322e33373233352068202d342e383433353436202d342e3834333534372076202d322e34373132202d322e343731322068202d322e353730303435202d322e3537303034362076202d322e34373132202d322e34373131392068202d322e343731313937202d322e3437313139372076202d322e34373132202d322e343731322068202d322e353730303435202d322e353730303436207620322e3437313220322e343731322068202d322e343731313937202d322e343731313937207620322e343731313920322e343731322068202d322e353730303435202d322e353730303436207620322e343635313120322e3436353132206c202d322e3432313737332c302e30353535202d322e3432313737332c302e30353535202d302e30353533332c322e3532303633202d302e30353533332c322e353230363220482031392e3936313336382031352e3032343838205a27",
-                            "id": 4788,
+                            "id": 4651,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11301,7 +11298,7 @@
                           },
                           {
                             "hexValue": "7472616e73666f726d3d277363616c6528302e32363435383333332927202f3e",
-                            "id": 4789,
+                            "id": 4652,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11317,7 +11314,7 @@
                           },
                           {
                             "hexValue": "3c2f673e",
-                            "id": 4790,
+                            "id": 4653,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11333,7 +11330,7 @@
                           },
                           {
                             "hexValue": "3c2f7376673e",
-                            "id": 4791,
+                            "id": 4654,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -11404,7 +11401,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4777,
+                            "id": 4640,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -11415,7 +11412,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4778,
+                          "id": 4641,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -11428,7 +11425,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4792,
+                        "id": 4655,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -11451,7 +11448,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4776,
+                      "id": 4639,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -11463,14 +11460,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4775,
+                        "id": 4638,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "735:6:27",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4793,
+                    "id": 4656,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -11485,15 +11482,15 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4774,
-                  "id": 4794,
+                  "functionReturnParameters": 4637,
+                  "id": 4657,
                   "nodeType": "Return",
                   "src": "721:3244:27"
                 }
               ]
             },
             "functionSelector": "34515a4f",
-            "id": 4796,
+            "id": 4659,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -11501,17 +11498,17 @@
             "nameLocation": "645:12:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4771,
+              "id": 4634,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4770,
+                  "id": 4633,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "672:5:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4796,
+                  "scope": 4659,
                   "src": "658:19:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -11520,7 +11517,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4769,
+                    "id": 4632,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "658:6:27",
@@ -11535,17 +11532,17 @@
               "src": "657:21:27"
             },
             "returnParameters": {
-              "id": 4774,
+              "id": 4637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4773,
+                  "id": 4636,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4796,
+                  "scope": 4659,
                   "src": "700:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -11554,7 +11551,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4772,
+                    "id": 4635,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "700:6:27",
@@ -11568,7 +11565,7 @@
               ],
               "src": "699:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "636:3334:27",
             "stateMutability": "pure",
             "virtual": false,
@@ -11576,7 +11573,7 @@
           },
           {
             "body": {
-              "id": 4841,
+              "id": 4704,
               "nodeType": "Block",
               "src": "4081:350:27",
               "statements": [
@@ -11586,17 +11583,17 @@
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
                     },
-                    "id": 4807,
+                    "id": 4670,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 4805,
+                      "id": 4668,
                       "name": "_swordType",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4798,
+                      "referencedDeclaration": 4661,
                       "src": "4091:10:27",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
@@ -11607,7 +11604,7 @@
                     "operator": "==",
                     "rightExpression": {
                       "hexValue": "33",
-                      "id": 4806,
+                      "id": 4669,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -11633,17 +11630,17 @@
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
                       },
-                      "id": 4816,
+                      "id": 4679,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 4814,
+                        "id": 4677,
                         "name": "_swordType",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4798,
+                        "referencedDeclaration": 4661,
                         "src": "4180:10:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -11654,7 +11651,7 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "32",
-                        "id": 4815,
+                        "id": 4678,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -11680,17 +11677,17 @@
                           "typeIdentifier": "t_uint8",
                           "typeString": "uint8"
                         },
-                        "id": 4825,
+                        "id": 4688,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 4823,
+                          "id": 4686,
                           "name": "_swordType",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4798,
+                          "referencedDeclaration": 4661,
                           "src": "4271:10:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint8",
@@ -11701,7 +11698,7 @@
                         "operator": "==",
                         "rightExpression": {
                           "hexValue": "31",
-                          "id": 4824,
+                          "id": 4687,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -11722,7 +11719,7 @@
                         }
                       },
                       "falseBody": {
-                        "id": 4837,
+                        "id": 4700,
                         "nodeType": "Block",
                         "src": "4361:66:27",
                         "statements": [
@@ -11730,11 +11727,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 4834,
+                                  "id": 4697,
                                   "name": "_swordMaterial",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4800,
+                                  "referencedDeclaration": 4663,
                                   "src": "4405:14:27",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -11750,32 +11747,32 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 4832,
+                                  "id": 4695,
                                   "name": "GladiusSvgHelper",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4346,
+                                  "referencedDeclaration": 4209,
                                   "src": "4376:16:27",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_GladiusSvgHelper_$4346_$",
+                                    "typeIdentifier": "t_type$_t_contract$_GladiusSvgHelper_$4209_$",
                                     "typeString": "type(library GladiusSvgHelper)"
                                   }
                                 },
-                                "id": 4833,
+                                "id": 4696,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "makeGladius",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 4345,
+                                "referencedDeclaration": 4208,
                                 "src": "4376:28:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (string memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 4835,
+                              "id": 4698,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -11790,18 +11787,18 @@
                                 "typeString": "string memory"
                               }
                             },
-                            "functionReturnParameters": 4804,
-                            "id": 4836,
+                            "functionReturnParameters": 4667,
+                            "id": 4699,
                             "nodeType": "Return",
                             "src": "4369:51:27"
                           }
                         ]
                       },
-                      "id": 4838,
+                      "id": 4701,
                       "nodeType": "IfStatement",
                       "src": "4267:160:27",
                       "trueBody": {
-                        "id": 4831,
+                        "id": 4694,
                         "nodeType": "Block",
                         "src": "4288:67:27",
                         "statements": [
@@ -11809,11 +11806,11 @@
                             "expression": {
                               "arguments": [
                                 {
-                                  "id": 4828,
+                                  "id": 4691,
                                   "name": "_swordMaterial",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4800,
+                                  "referencedDeclaration": 4663,
                                   "src": "4328:14:27",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_string_memory_ptr",
@@ -11829,32 +11826,32 @@
                                   }
                                 ],
                                 "expression": {
-                                  "id": 4826,
+                                  "id": 4689,
                                   "name": "SaberSvgHelper",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 4439,
+                                  "referencedDeclaration": 4302,
                                   "src": "4303:14:27",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_SaberSvgHelper_$4439_$",
+                                    "typeIdentifier": "t_type$_t_contract$_SaberSvgHelper_$4302_$",
                                     "typeString": "type(library SaberSvgHelper)"
                                   }
                                 },
-                                "id": 4827,
+                                "id": 4690,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "makeSaber",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 4438,
+                                "referencedDeclaration": 4301,
                                 "src": "4303:24:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                   "typeString": "function (string memory) pure returns (string memory)"
                                 }
                               },
-                              "id": 4829,
+                              "id": 4692,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -11869,19 +11866,19 @@
                                 "typeString": "string memory"
                               }
                             },
-                            "functionReturnParameters": 4804,
-                            "id": 4830,
+                            "functionReturnParameters": 4667,
+                            "id": 4693,
                             "nodeType": "Return",
                             "src": "4296:47:27"
                           }
                         ]
                       }
                     },
-                    "id": 4839,
+                    "id": 4702,
                     "nodeType": "IfStatement",
                     "src": "4176:251:27",
                     "trueBody": {
-                      "id": 4822,
+                      "id": 4685,
                       "nodeType": "Block",
                       "src": "4197:64:27",
                       "statements": [
@@ -11889,11 +11886,11 @@
                           "expression": {
                             "arguments": [
                               {
-                                "id": 4819,
+                                "id": 4682,
                                 "name": "_swordMaterial",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4800,
+                                "referencedDeclaration": 4663,
                                 "src": "4239:14:27",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -11909,32 +11906,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4817,
+                                "id": 4680,
                                 "name": "KatanaSvgHelper",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4377,
+                                "referencedDeclaration": 4240,
                                 "src": "4212:15:27",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_KatanaSvgHelper_$4377_$",
+                                  "typeIdentifier": "t_type$_t_contract$_KatanaSvgHelper_$4240_$",
                                   "typeString": "type(library KatanaSvgHelper)"
                                 }
                               },
-                              "id": 4818,
+                              "id": 4681,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "makeKatana",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 4376,
+                              "referencedDeclaration": 4239,
                               "src": "4212:26:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                 "typeString": "function (string memory) pure returns (string memory)"
                               }
                             },
-                            "id": 4820,
+                            "id": 4683,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -11949,19 +11946,19 @@
                               "typeString": "string memory"
                             }
                           },
-                          "functionReturnParameters": 4804,
-                          "id": 4821,
+                          "functionReturnParameters": 4667,
+                          "id": 4684,
                           "nodeType": "Return",
                           "src": "4205:49:27"
                         }
                       ]
                     }
                   },
-                  "id": 4840,
+                  "id": 4703,
                   "nodeType": "IfStatement",
                   "src": "4087:340:27",
                   "trueBody": {
-                    "id": 4813,
+                    "id": 4676,
                     "nodeType": "Block",
                     "src": "4108:62:27",
                     "statements": [
@@ -11969,11 +11966,11 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 4810,
+                              "id": 4673,
                               "name": "_swordMaterial",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4800,
+                              "referencedDeclaration": 4663,
                               "src": "4148:14:27",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -11989,32 +11986,32 @@
                               }
                             ],
                             "expression": {
-                              "id": 4808,
+                              "id": 4671,
                               "name": "KondaSvgHelper",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4408,
+                              "referencedDeclaration": 4271,
                               "src": "4123:14:27",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_KondaSvgHelper_$4408_$",
+                                "typeIdentifier": "t_type$_t_contract$_KondaSvgHelper_$4271_$",
                                 "typeString": "type(library KondaSvgHelper)"
                               }
                             },
-                            "id": 4809,
+                            "id": 4672,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "makeKonda",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4407,
+                            "referencedDeclaration": 4270,
                             "src": "4123:24:27",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                               "typeString": "function (string memory) pure returns (string memory)"
                             }
                           },
-                          "id": 4811,
+                          "id": 4674,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -12029,8 +12026,8 @@
                             "typeString": "string memory"
                           }
                         },
-                        "functionReturnParameters": 4804,
-                        "id": 4812,
+                        "functionReturnParameters": 4667,
+                        "id": 4675,
                         "nodeType": "Return",
                         "src": "4116:47:27"
                       }
@@ -12040,7 +12037,7 @@
               ]
             },
             "functionSelector": "62db80db",
-            "id": 4842,
+            "id": 4705,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -12048,17 +12045,17 @@
             "nameLocation": "3983:13:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4801,
+              "id": 4664,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4798,
+                  "id": 4661,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "4003:10:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "3997:16:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -12067,7 +12064,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4797,
+                    "id": 4660,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3997:5:27",
@@ -12080,12 +12077,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4800,
+                  "id": 4663,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "4029:14:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "4015:28:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -12094,7 +12091,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4799,
+                    "id": 4662,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "4015:6:27",
@@ -12109,17 +12106,17 @@
               "src": "3996:48:27"
             },
             "returnParameters": {
-              "id": 4804,
+              "id": 4667,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4803,
+                  "id": 4666,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4842,
+                  "scope": 4705,
                   "src": "4066:13:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -12128,7 +12125,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4802,
+                    "id": 4665,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "4066:6:27",
@@ -12142,14 +12139,14 @@
               ],
               "src": "4065:15:27"
             },
-            "scope": 4843,
+            "scope": 4706,
             "src": "3974:457:27",
             "stateMutability": "pure",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4844,
+        "scope": 4707,
         "src": "204:4229:27",
         "usedErrors": []
       }
@@ -12160,22 +12157,9 @@
     "name": "solc",
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
-  "networks": {
-    "1640002252453": {
-      "events": {},
-      "links": {
-        "GladiusSvgHelper": "0xfd30B6e495CC375Bd98d01BD959F741Dd2772d64",
-        "KatanaSvgHelper": "0x43192D86e8452957D8076908Dc04ddb6a6B63a61",
-        "KondaSvgHelper": "0x405fC0EE23C7fcd0a41A864505Fe8c969ca3eF6A",
-        "SaberSvgHelper": "0x4A1D2A5060C782049Ef966d9412f1239E95183b7"
-      },
-      "address": "0xFE9550608e2acF01694524b1F94d937DfDe806C2",
-      "transactionHash": "0xf237a8708b42f1e3df1f0775faeeee18b5eb052ba6ff7938c441e1f2f3497ea5"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T14:05:33.497Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-12-22T12:36:49.776Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

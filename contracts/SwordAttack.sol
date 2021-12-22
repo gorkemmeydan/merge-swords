@@ -4,6 +4,8 @@ pragma solidity >=0.4.22 <0.9.0;
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+import "./libraries/SafeMath8.sol";
+
 import "./SwordFactory.sol";
 
 contract SwordAttack is SwordFactory {
@@ -14,26 +16,20 @@ contract SwordAttack is SwordFactory {
   uint256 private randNonceSwordAttack = 0;
 
   struct AttackLog {
-    uint8 attacker; // 0 for user, 1 for monster
-    uint8 dealtDamage; // if 0, miss
-    uint8 remainingUserHealth;
-    uint8 remainingMonsterHealth;
+    bool userStart;
+    uint8 userAttackPower;
+    uint8 monsterAttackPower;
+    uint8 userNormalizedAP;
+    uint8 monsterNormalizedAP;
+    bool didUserWin;
   }
 
-  AttackLog[] public attackLogs;
   Counters.Counter private _logIds;
 
   // make fight mechanic idle, monster and user autofights until one is done
-  function attackMonster(uint8 _attackPower) internal returns (AttackLog[] memory, bool) {
-    uint256 startIndex = _logIds.current();
-    uint256 endIndex = _logIds.current();
-
+  function attackMonster(uint8 _attackPower) internal view returns (AttackLog memory) {
     // monster stats
-    uint8 monsterHealth = 100;
-    uint8 userHealth = 100;
     uint8 monsterAttackPower = calculateMonsterAttackPower(_attackPower);
-    uint8 userHitRatio = calculateHitMissRatio(_attackPower, monsterAttackPower);
-    uint8 monsterHitRatio = 100 - userHitRatio;
 
     // normalize their attack powers to not oneshot each other
     uint8 userNormalizedAP = normalizeAttackPower(_attackPower, monsterAttackPower);
@@ -41,83 +37,62 @@ contract SwordAttack is SwordFactory {
 
     // randomly select the first attacker
     // 1 means user starts
-    bool headsOrTails = headsTails();
+    bool userStarts = headsTails();
 
-    bool didUserWon = false;
-    while (userHealth > 0 && monsterHealth > 0) {
-      uint8 hitNumber = randomNumberUpTo(100);
+    uint8 userHits = SafeMath8.div((uint8(100)),userNormalizedAP);
+    uint8 monsterHits = SafeMath8.div((uint8(100)),monsterNormalizedAP);
 
-      if (headsOrTails) {
-        // user attacks
-        if (hitNumber > userHitRatio) {
-          // check if we make monsters health zero
-          if (userNormalizedAP >= monsterHealth) {
-            monsterHealth = 0;
-            didUserWon = true;
-          } else {
-            monsterHealth = monsterHealth - userNormalizedAP;
-          }
+    if (userStarts) {
+      userHits = SafeMath8.sub(userHits, 1);
 
-          addToAttackLog(0, userNormalizedAP, userHealth, monsterHealth);
-          endIndex.add(1);
-
-          headsOrTails = !headsOrTails;
-        } else {
-          addToAttackLog(0, 0, userHealth, monsterHealth);
-          endIndex.add(1);
-
-          headsOrTails = !headsOrTails;
-        }
+      if (userHits <= monsterHits) {
+        return
+          AttackLog(
+            true, // user starts
+            _attackPower,
+            monsterAttackPower,
+            userNormalizedAP,
+            monsterNormalizedAP,
+            true // user wins
+          );
       } else {
-        // monster attacks
-        if (hitNumber > monsterHitRatio) {
-          if (monsterNormalizedAP >= userHealth) {
-            userHealth = 0;
-          } else {
-            userHealth = userHealth - monsterNormalizedAP;
-          }
+        return
+          AttackLog(
+            true, // user starts
+            _attackPower,
+            monsterAttackPower,
+            userNormalizedAP,
+            monsterNormalizedAP,
+            false  // monster wins
+          );
+      }
+    } else {
+      // monster starts
+      monsterHits = SafeMath8.sub(monsterHits, 1);
 
-          addToAttackLog(1, monsterNormalizedAP, userHealth, monsterHealth);
-          endIndex.add(1);
-
-          headsOrTails = !headsOrTails;
-        } else {
-          addToAttackLog(1, 0, userHealth, monsterHealth);
-          endIndex.add(1);
-
-          headsOrTails = !headsOrTails;
-        }
+      if (monsterHits <= userHits) {
+        return
+          AttackLog(
+            false, // monster starts
+            _attackPower,
+            monsterAttackPower,
+            userNormalizedAP,
+            monsterNormalizedAP,
+            false // monster wins
+          );
+      } else {
+        return
+          AttackLog(
+            false, // monster starts
+            _attackPower,
+            monsterAttackPower,
+            userNormalizedAP,
+            monsterNormalizedAP,
+            true  // user wins
+          );
       }
     }
 
-    AttackLog[] memory attackLogArr = generateLocalAttackLog(startIndex, endIndex);
-
-    return (attackLogArr, didUserWon);
-  }
-
-  function generateLocalAttackLog(uint256 _start, uint256 _end) private view returns (AttackLog[] memory) {
-    // fill the attack log to be returned
-    uint256 attackLogArrSize = _end.sub(_start);
-    AttackLog[] memory attackLogArr = new AttackLog[](attackLogArrSize);
-    uint256 index = 0;
-    while (index < attackLogArrSize) {
-      attackLogArr[index] = attackLogs[_start.add(index)];
-      index.add(1);
-    }
-
-    return attackLogArr;
-  }
-
-  function addToAttackLog(
-    uint8 _attacker,
-    uint8 _dealtDamage,
-    uint8 _remainingUserHealth,
-    uint8 _remainingMonsterHealth
-  ) private {
-    AttackLog memory newAttackLog = AttackLog(_attacker, _dealtDamage, _remainingUserHealth, _remainingMonsterHealth);
-
-    attackLogs.push(newAttackLog);
-    _logIds.increment();
   }
 
   function normalizeAttackPower(uint8 _firstAP, uint8 _secondAP) private pure returns (uint8) {
@@ -148,12 +123,12 @@ contract SwordAttack is SwordFactory {
     if (posOrNegative) {
       return _attackPower + (_attackPower % monsterModifierMod);
     } else {
-      return _attackPower - (_attackPower % monsterModifierMod);
+      uint8 randomMod = _attackPower % monsterModifierMod; 
+      if ( randomMod != _attackPower) {
+        return _attackPower - randomMod; 
+      } else {
+        return _attackPower;
+      }
     }
-  }
-
-  function calculateHitMissRatio(uint8 _userAP, uint8 _monsterAP) private pure returns (uint8) {
-    // returns hit or miss ratio for user for given monster
-    return uint8(SafeMath.div(SafeMath.mul(_userAP, 100), _monsterAP));
   }
 }

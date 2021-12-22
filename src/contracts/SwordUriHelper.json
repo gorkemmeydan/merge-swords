@@ -343,36 +343,36 @@
     "absolutePath": "project:/contracts/SwordUriHelper.sol",
     "exportedSymbols": {
       "Base64": [
-        4315
+        4178
       ],
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "Strings": [
         1820
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ],
       "SwordUriHelper": [
-        4257
+        4120
       ]
     },
-    "id": 4258,
+    "id": 4121,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4057,
+        "id": 3920,
         "literals": [
           "solidity",
           ">=",
@@ -388,10 +388,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
         "file": "@openzeppelin/contracts/utils/Strings.sol",
-        "id": 4058,
+        "id": 3921,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
+        "scope": 4121,
         "sourceUnit": 1821,
         "src": "66:51:18",
         "symbolAliases": [],
@@ -400,11 +400,11 @@
       {
         "absolutePath": "project:/contracts/libraries/Base64.sol",
         "file": "./libraries/Base64.sol",
-        "id": 4059,
+        "id": 3922,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
-        "sourceUnit": 4316,
+        "scope": 4121,
+        "sourceUnit": 4179,
         "src": "119:32:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -412,11 +412,11 @@
       {
         "absolutePath": "project:/contracts/libraries/SwordSvgHelper.sol",
         "file": "./libraries/SwordSvgHelper.sol",
-        "id": 4060,
+        "id": 3923,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
-        "sourceUnit": 4844,
+        "scope": 4121,
+        "sourceUnit": 4707,
         "src": "153:40:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -428,9 +428,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4257,
+        "id": 4120,
         "linearizedBaseContracts": [
-          4257
+          4120
         ],
         "name": "SwordUriHelper",
         "nameLocation": "204:14:18",
@@ -438,12 +438,12 @@
         "nodes": [
           {
             "constant": false,
-            "id": 4080,
+            "id": 3943,
             "mutability": "mutable",
             "name": "hiltColorNames",
             "nameLocation": "241:14:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "224:274:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -453,7 +453,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4061,
+                "id": 3924,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "224:6:18",
@@ -462,7 +462,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4062,
+              "id": 3925,
               "nodeType": "ArrayTypeName",
               "src": "224:8:18",
               "typeDescriptions": {
@@ -474,7 +474,7 @@
               "components": [
                 {
                   "hexValue": "7768697465",
-                  "id": 4063,
+                  "id": 3926,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -490,7 +490,7 @@
                 },
                 {
                   "hexValue": "79656c6c6f77",
-                  "id": 4064,
+                  "id": 3927,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -506,7 +506,7 @@
                 },
                 {
                   "hexValue": "6f72616e6765",
-                  "id": 4065,
+                  "id": 3928,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -522,7 +522,7 @@
                 },
                 {
                   "hexValue": "726564",
-                  "id": 4066,
+                  "id": 3929,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -538,7 +538,7 @@
                 },
                 {
                   "hexValue": "707572706c65",
-                  "id": 4067,
+                  "id": 3930,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -554,7 +554,7 @@
                 },
                 {
                   "hexValue": "6461726b20626c7565",
-                  "id": 4068,
+                  "id": 3931,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -570,7 +570,7 @@
                 },
                 {
                   "hexValue": "626c7565",
-                  "id": 4069,
+                  "id": 3932,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -586,7 +586,7 @@
                 },
                 {
                   "hexValue": "6c6967687420626c7565",
-                  "id": 4070,
+                  "id": 3933,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -602,7 +602,7 @@
                 },
                 {
                   "hexValue": "677265656e",
-                  "id": 4071,
+                  "id": 3934,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -618,7 +618,7 @@
                 },
                 {
                   "hexValue": "6461726b20677265656e",
-                  "id": 4072,
+                  "id": 3935,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -634,7 +634,7 @@
                 },
                 {
                   "hexValue": "62726f776e",
-                  "id": 4073,
+                  "id": 3936,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -650,7 +650,7 @@
                 },
                 {
                   "hexValue": "6c696768742062726f776e",
-                  "id": 4074,
+                  "id": 3937,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -666,7 +666,7 @@
                 },
                 {
                   "hexValue": "6c696768742067726579",
-                  "id": 4075,
+                  "id": 3938,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -682,7 +682,7 @@
                 },
                 {
                   "hexValue": "67726579",
-                  "id": 4076,
+                  "id": 3939,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -698,7 +698,7 @@
                 },
                 {
                   "hexValue": "6461726b2067726579",
-                  "id": 4077,
+                  "id": 3940,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -714,7 +714,7 @@
                 },
                 {
                   "hexValue": "626c61636b",
-                  "id": 4078,
+                  "id": 3941,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -729,7 +729,7 @@
                   "value": "black"
                 }
               ],
-              "id": 4079,
+              "id": 3942,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -746,12 +746,12 @@
           },
           {
             "constant": false,
-            "id": 4088,
+            "id": 3951,
             "mutability": "mutable",
             "name": "swordTypeNames",
             "nameLocation": "520:14:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "503:73:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -761,7 +761,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4081,
+                "id": 3944,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "503:6:18",
@@ -770,7 +770,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4082,
+              "id": 3945,
               "nodeType": "ArrayTypeName",
               "src": "503:8:18",
               "typeDescriptions": {
@@ -782,7 +782,7 @@
               "components": [
                 {
                   "hexValue": "676c6164697573",
-                  "id": 4083,
+                  "id": 3946,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -798,7 +798,7 @@
                 },
                 {
                   "hexValue": "7361626572",
-                  "id": 4084,
+                  "id": 3947,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -814,7 +814,7 @@
                 },
                 {
                   "hexValue": "6b6174616e61",
-                  "id": 4085,
+                  "id": 3948,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -830,7 +830,7 @@
                 },
                 {
                   "hexValue": "6b6f6e6461",
-                  "id": 4086,
+                  "id": 3949,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -845,7 +845,7 @@
                   "value": "konda"
                 }
               ],
-              "id": 4087,
+              "id": 3950,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -862,12 +862,12 @@
           },
           {
             "constant": false,
-            "id": 4100,
+            "id": 3963,
             "mutability": "mutable",
             "name": "swordMaterialNames",
             "nameLocation": "598:18:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "581:156:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -877,7 +877,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4089,
+                "id": 3952,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "581:6:18",
@@ -886,7 +886,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4090,
+              "id": 3953,
               "nodeType": "ArrayTypeName",
               "src": "581:8:18",
               "typeDescriptions": {
@@ -898,7 +898,7 @@
               "components": [
                 {
                   "hexValue": "776f6f64",
-                  "id": 4091,
+                  "id": 3954,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -914,7 +914,7 @@
                 },
                 {
                   "hexValue": "73746f6e65",
-                  "id": 4092,
+                  "id": 3955,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -930,7 +930,7 @@
                 },
                 {
                   "hexValue": "62726f6e7a65",
-                  "id": 4093,
+                  "id": 3956,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -946,7 +946,7 @@
                 },
                 {
                   "hexValue": "737465656c",
-                  "id": 4094,
+                  "id": 3957,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -962,7 +962,7 @@
                 },
                 {
                   "hexValue": "676f6c64",
-                  "id": 4095,
+                  "id": 3958,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -978,7 +978,7 @@
                 },
                 {
                   "hexValue": "656d6572616c64",
-                  "id": 4096,
+                  "id": 3959,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -994,7 +994,7 @@
                 },
                 {
                   "hexValue": "6469616d6f6e64",
-                  "id": 4097,
+                  "id": 3960,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1010,7 +1010,7 @@
                 },
                 {
                   "hexValue": "636172626f6e2d6669627265",
-                  "id": 4098,
+                  "id": 3961,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1025,7 +1025,7 @@
                   "value": "carbon-fibre"
                 }
               ],
-              "id": 4099,
+              "id": 3962,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -1042,12 +1042,12 @@
           },
           {
             "constant": false,
-            "id": 4120,
+            "id": 3983,
             "mutability": "mutable",
             "name": "hiltColor",
             "nameLocation": "759:9:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "742:273:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1057,7 +1057,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4101,
+                "id": 3964,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "742:6:18",
@@ -1066,7 +1066,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4102,
+              "id": 3965,
               "nodeType": "ArrayTypeName",
               "src": "742:8:18",
               "typeDescriptions": {
@@ -1078,7 +1078,7 @@
               "components": [
                 {
                   "hexValue": "23666666666666",
-                  "id": 4103,
+                  "id": 3966,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1094,7 +1094,7 @@
                 },
                 {
                   "hexValue": "23666666663032",
-                  "id": 4104,
+                  "id": 3967,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1110,7 +1110,7 @@
                 },
                 {
                   "hexValue": "23666636363030",
-                  "id": 4105,
+                  "id": 3968,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1126,7 +1126,7 @@
                 },
                 {
                   "hexValue": "23666630303030",
-                  "id": 4106,
+                  "id": 3969,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1142,7 +1142,7 @@
                 },
                 {
                   "hexValue": "23666630306666",
-                  "id": 4107,
+                  "id": 3970,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1158,7 +1158,7 @@
                 },
                 {
                   "hexValue": "23303030303830",
-                  "id": 4108,
+                  "id": 3971,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1174,7 +1174,7 @@
                 },
                 {
                   "hexValue": "23303030306666",
-                  "id": 4109,
+                  "id": 3972,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1190,7 +1190,7 @@
                 },
                 {
                   "hexValue": "23303066666666",
-                  "id": 4110,
+                  "id": 3973,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1206,7 +1206,7 @@
                 },
                 {
                   "hexValue": "23303066663030",
-                  "id": 4111,
+                  "id": 3974,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1222,7 +1222,7 @@
                 },
                 {
                   "hexValue": "23303038303030",
-                  "id": 4112,
+                  "id": 3975,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1238,7 +1238,7 @@
                 },
                 {
                   "hexValue": "23383033333030",
-                  "id": 4113,
+                  "id": 3976,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1254,7 +1254,7 @@
                 },
                 {
                   "hexValue": "23643435353030",
-                  "id": 4114,
+                  "id": 3977,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1270,7 +1270,7 @@
                 },
                 {
                   "hexValue": "23393136663666",
-                  "id": 4115,
+                  "id": 3978,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1286,7 +1286,7 @@
                 },
                 {
                   "hexValue": "23366335333533",
-                  "id": 4116,
+                  "id": 3979,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1302,7 +1302,7 @@
                 },
                 {
                   "hexValue": "23343833373337",
-                  "id": 4117,
+                  "id": 3980,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1318,7 +1318,7 @@
                 },
                 {
                   "hexValue": "23323431633163",
-                  "id": 4118,
+                  "id": 3981,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1333,7 +1333,7 @@
                   "value": "#241c1c"
                 }
               ],
-              "id": 4119,
+              "id": 3982,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -1350,12 +1350,12 @@
           },
           {
             "constant": false,
-            "id": 4132,
+            "id": 3995,
             "mutability": "mutable",
             "name": "swordColor",
             "nameLocation": "1037:10:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "1020:154:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1365,7 +1365,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4121,
+                "id": 3984,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "1020:6:18",
@@ -1374,7 +1374,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4122,
+              "id": 3985,
               "nodeType": "ArrayTypeName",
               "src": "1020:8:18",
               "typeDescriptions": {
@@ -1386,7 +1386,7 @@
               "components": [
                 {
                   "hexValue": "23383033333030",
-                  "id": 4123,
+                  "id": 3986,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1402,7 +1402,7 @@
                 },
                 {
                   "hexValue": "23616339333933",
-                  "id": 4124,
+                  "id": 3987,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1418,7 +1418,7 @@
                 },
                 {
                   "hexValue": "23666636363030",
-                  "id": 4125,
+                  "id": 3988,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1434,7 +1434,7 @@
                 },
                 {
                   "hexValue": "23366335333533",
-                  "id": 4126,
+                  "id": 3989,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1450,7 +1450,7 @@
                 },
                 {
                   "hexValue": "23666663633030",
-                  "id": 4127,
+                  "id": 3990,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1466,7 +1466,7 @@
                 },
                 {
                   "hexValue": "23303038303030",
-                  "id": 4128,
+                  "id": 3991,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1482,7 +1482,7 @@
                 },
                 {
                   "hexValue": "23303066666666",
-                  "id": 4129,
+                  "id": 3992,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1498,7 +1498,7 @@
                 },
                 {
                   "hexValue": "23323431633163",
-                  "id": 4130,
+                  "id": 3993,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1513,7 +1513,7 @@
                   "value": "#241c1c"
                 }
               ],
-              "id": 4131,
+              "id": 3994,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -1530,7 +1530,7 @@
           },
           {
             "body": {
-              "id": 4198,
+              "id": 4061,
               "nodeType": "Block",
               "src": "1379:632:18",
               "statements": [
@@ -1545,7 +1545,7 @@
                                 "arguments": [
                                   {
                                     "hexValue": "7b",
-                                    "id": 4157,
+                                    "id": 4020,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1561,7 +1561,7 @@
                                   },
                                   {
                                     "hexValue": "276e616d65273a202753776f72642023",
-                                    "id": 4158,
+                                    "id": 4021,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1578,11 +1578,11 @@
                                   {
                                     "arguments": [
                                       {
-                                        "id": 4161,
+                                        "id": 4024,
                                         "name": "_swordId",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4134,
+                                        "referencedDeclaration": 3997,
                                         "src": "1553:8:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint256",
@@ -1598,7 +1598,7 @@
                                         }
                                       ],
                                       "expression": {
-                                        "id": 4159,
+                                        "id": 4022,
                                         "name": "Strings",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
@@ -1609,7 +1609,7 @@
                                           "typeString": "type(library Strings)"
                                         }
                                       },
-                                      "id": 4160,
+                                      "id": 4023,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
@@ -1623,7 +1623,7 @@
                                         "typeString": "function (uint256) pure returns (string memory)"
                                       }
                                     },
-                                    "id": 4162,
+                                    "id": 4025,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -1640,7 +1640,7 @@
                                   },
                                   {
                                     "hexValue": "27",
-                                    "id": 4163,
+                                    "id": 4026,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1656,7 +1656,7 @@
                                   },
                                   {
                                     "hexValue": "2c",
-                                    "id": 4164,
+                                    "id": 4027,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1672,7 +1672,7 @@
                                   },
                                   {
                                     "hexValue": "276465736372697074696f6e273a20275468697320697320616e204e46542074686174206c6574732070656f706c6520706c617920696e207468652067616d65204d657267652053776f7264732127",
-                                    "id": 4165,
+                                    "id": 4028,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1688,7 +1688,7 @@
                                   },
                                   {
                                     "hexValue": "2c",
-                                    "id": 4166,
+                                    "id": 4029,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1704,7 +1704,7 @@
                                   },
                                   {
                                     "hexValue": "27696d616765273a2027646174613a696d6167652f7376672b786d6c3b6261736536342c",
-                                    "id": 4167,
+                                    "id": 4030,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1726,24 +1726,24 @@
                                             "arguments": [
                                               {
                                                 "baseExpression": {
-                                                  "id": 4174,
+                                                  "id": 4037,
                                                   "name": "hiltColor",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4120,
+                                                  "referencedDeclaration": 3983,
                                                   "src": "1798:9:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                                     "typeString": "string storage ref[] storage ref"
                                                   }
                                                 },
-                                                "id": 4176,
+                                                "id": 4039,
                                                 "indexExpression": {
-                                                  "id": 4175,
+                                                  "id": 4038,
                                                   "name": "_hilt",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4140,
+                                                  "referencedDeclaration": 4003,
                                                   "src": "1808:5:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
@@ -1762,11 +1762,11 @@
                                                 }
                                               },
                                               {
-                                                "id": 4177,
+                                                "id": 4040,
                                                 "name": "_swordType",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 4142,
+                                                "referencedDeclaration": 4005,
                                                 "src": "1816:10:18",
                                                 "typeDescriptions": {
                                                   "typeIdentifier": "t_uint8",
@@ -1775,24 +1775,24 @@
                                               },
                                               {
                                                 "baseExpression": {
-                                                  "id": 4178,
+                                                  "id": 4041,
                                                   "name": "swordColor",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4132,
+                                                  "referencedDeclaration": 3995,
                                                   "src": "1828:10:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                                     "typeString": "string storage ref[] storage ref"
                                                   }
                                                 },
-                                                "id": 4180,
+                                                "id": 4043,
                                                 "indexExpression": {
-                                                  "id": 4179,
+                                                  "id": 4042,
                                                   "name": "_swordMaterial",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4144,
+                                                  "referencedDeclaration": 4007,
                                                   "src": "1839:14:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
@@ -1827,32 +1827,32 @@
                                                 }
                                               ],
                                               "expression": {
-                                                "id": 4172,
+                                                "id": 4035,
                                                 "name": "SwordSvgHelper",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 4843,
+                                                "referencedDeclaration": 4706,
                                                 "src": "1770:14:18",
                                                 "typeDescriptions": {
-                                                  "typeIdentifier": "t_type$_t_contract$_SwordSvgHelper_$4843_$",
+                                                  "typeIdentifier": "t_type$_t_contract$_SwordSvgHelper_$4706_$",
                                                   "typeString": "type(library SwordSvgHelper)"
                                                 }
                                               },
-                                              "id": 4173,
+                                              "id": 4036,
                                               "isConstant": false,
                                               "isLValue": false,
                                               "isPure": false,
                                               "lValueRequested": false,
                                               "memberName": "_assembleSvg",
                                               "nodeType": "MemberAccess",
-                                              "referencedDeclaration": 4768,
+                                              "referencedDeclaration": 4631,
                                               "src": "1770:27:18",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$_t_uint8_$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                                 "typeString": "function (string memory,uint8,string memory) pure returns (string memory)"
                                               }
                                             },
-                                            "id": 4181,
+                                            "id": 4044,
                                             "isConstant": false,
                                             "isLValue": false,
                                             "isPure": false,
@@ -1875,7 +1875,7 @@
                                               "typeString": "string memory"
                                             }
                                           ],
-                                          "id": 4171,
+                                          "id": 4034,
                                           "isConstant": false,
                                           "isLValue": false,
                                           "isPure": true,
@@ -1887,14 +1887,14 @@
                                             "typeString": "type(bytes storage pointer)"
                                           },
                                           "typeName": {
-                                            "id": 4170,
+                                            "id": 4033,
                                             "name": "bytes",
                                             "nodeType": "ElementaryTypeName",
                                             "src": "1764:5:18",
                                             "typeDescriptions": {}
                                           }
                                         },
-                                        "id": 4182,
+                                        "id": 4045,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -1918,32 +1918,32 @@
                                         }
                                       ],
                                       "expression": {
-                                        "id": 4168,
+                                        "id": 4031,
                                         "name": "Base64",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4315,
+                                        "referencedDeclaration": 4178,
                                         "src": "1750:6:18",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Base64_$4315_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Base64_$4178_$",
                                           "typeString": "type(library Base64)"
                                         }
                                       },
-                                      "id": 4169,
+                                      "id": 4032,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "memberName": "encode",
                                       "nodeType": "MemberAccess",
-                                      "referencedDeclaration": 4314,
+                                      "referencedDeclaration": 4177,
                                       "src": "1750:13:18",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_string_memory_ptr_$",
                                         "typeString": "function (bytes memory) pure returns (string memory)"
                                       }
                                     },
-                                    "id": 4183,
+                                    "id": 4046,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -1960,7 +1960,7 @@
                                   },
                                   {
                                     "hexValue": "27",
-                                    "id": 4184,
+                                    "id": 4047,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -1977,11 +1977,11 @@
                                   {
                                     "arguments": [
                                       {
-                                        "id": 4186,
+                                        "id": 4049,
                                         "name": "_attackPower",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4136,
+                                        "referencedDeclaration": 3999,
                                         "src": "1892:12:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -1989,11 +1989,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4187,
+                                        "id": 4050,
                                         "name": "_generation",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4138,
+                                        "referencedDeclaration": 4001,
                                         "src": "1906:11:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint32",
@@ -2001,11 +2001,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4188,
+                                        "id": 4051,
                                         "name": "_swordType",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4142,
+                                        "referencedDeclaration": 4005,
                                         "src": "1919:10:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -2013,11 +2013,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4189,
+                                        "id": 4052,
                                         "name": "_swordMaterial",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4144,
+                                        "referencedDeclaration": 4007,
                                         "src": "1931:14:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -2025,11 +2025,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4190,
+                                        "id": 4053,
                                         "name": "_hilt",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4140,
+                                        "referencedDeclaration": 4003,
                                         "src": "1947:5:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -2060,18 +2060,18 @@
                                           "typeString": "uint8"
                                         }
                                       ],
-                                      "id": 4185,
+                                      "id": 4048,
                                       "name": "_makeAttributes",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4256,
+                                      "referencedDeclaration": 4119,
                                       "src": "1876:15:18",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_function_internal_view$_t_uint8_$_t_uint32_$_t_uint8_$_t_uint8_$_t_uint8_$returns$_t_string_memory_ptr_$",
                                         "typeString": "function (uint8,uint32,uint8,uint8,uint8) view returns (string memory)"
                                       }
                                     },
-                                    "id": 4191,
+                                    "id": 4054,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -2088,7 +2088,7 @@
                                   },
                                   {
                                     "hexValue": "7d",
-                                    "id": 4192,
+                                    "id": 4055,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -2155,7 +2155,7 @@
                                     }
                                   ],
                                   "expression": {
-                                    "id": 4155,
+                                    "id": 4018,
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
@@ -2166,7 +2166,7 @@
                                       "typeString": "abi"
                                     }
                                   },
-                                  "id": 4156,
+                                  "id": 4019,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -2179,7 +2179,7 @@
                                     "typeString": "function () pure returns (bytes memory)"
                                   }
                                 },
-                                "id": 4193,
+                                "id": 4056,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -2202,7 +2202,7 @@
                                   "typeString": "bytes memory"
                                 }
                               ],
-                              "id": 4154,
+                              "id": 4017,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2214,14 +2214,14 @@
                                 "typeString": "type(string storage pointer)"
                               },
                               "typeName": {
-                                "id": 4153,
+                                "id": 4016,
                                 "name": "string",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "1451:6:18",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 4194,
+                            "id": 4057,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2244,7 +2244,7 @@
                               "typeString": "string memory"
                             }
                           ],
-                          "id": 4152,
+                          "id": 4015,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2256,14 +2256,14 @@
                             "typeString": "type(bytes storage pointer)"
                           },
                           "typeName": {
-                            "id": 4151,
+                            "id": 4014,
                             "name": "bytes",
                             "nodeType": "ElementaryTypeName",
                             "src": "1436:5:18",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 4195,
+                        "id": 4058,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2287,32 +2287,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 4149,
+                        "id": 4012,
                         "name": "Base64",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4315,
+                        "referencedDeclaration": 4178,
                         "src": "1415:6:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Base64_$4315_$",
+                          "typeIdentifier": "t_type$_t_contract$_Base64_$4178_$",
                           "typeString": "type(library Base64)"
                         }
                       },
-                      "id": 4150,
+                      "id": 4013,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "encode",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4177,
                       "src": "1415:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_string_memory_ptr_$",
                         "typeString": "function (bytes memory) pure returns (string memory)"
                       }
                     },
-                    "id": 4196,
+                    "id": 4059,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2327,14 +2327,14 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4148,
-                  "id": 4197,
+                  "functionReturnParameters": 4011,
+                  "id": 4060,
                   "nodeType": "Return",
                   "src": "1408:598:18"
                 }
               ]
             },
-            "id": 4199,
+            "id": 4062,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -2342,17 +2342,17 @@
             "nameLocation": "1188:13:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4145,
+              "id": 4008,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4134,
+                  "id": 3997,
                   "mutability": "mutable",
                   "name": "_swordId",
                   "nameLocation": "1215:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1207:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2361,7 +2361,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4133,
+                    "id": 3996,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1207:7:18",
@@ -2374,12 +2374,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4136,
+                  "id": 3999,
                   "mutability": "mutable",
                   "name": "_attackPower",
                   "nameLocation": "1235:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1229:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2388,7 +2388,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4135,
+                    "id": 3998,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1229:5:18",
@@ -2401,12 +2401,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4138,
+                  "id": 4001,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "1260:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1253:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2415,7 +2415,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4137,
+                    "id": 4000,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1253:6:18",
@@ -2428,12 +2428,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4140,
+                  "id": 4003,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "1283:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1277:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2442,7 +2442,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4139,
+                    "id": 4002,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1277:5:18",
@@ -2455,12 +2455,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4142,
+                  "id": 4005,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "1300:10:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1294:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2469,7 +2469,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4141,
+                    "id": 4004,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1294:5:18",
@@ -2482,12 +2482,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4144,
+                  "id": 4007,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "1322:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1316:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2496,7 +2496,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4143,
+                    "id": 4006,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1316:5:18",
@@ -2511,17 +2511,17 @@
               "src": "1201:139:18"
             },
             "returnParameters": {
-              "id": 4148,
+              "id": 4011,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4147,
+                  "id": 4010,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1364:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2530,7 +2530,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4146,
+                    "id": 4009,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:6:18",
@@ -2544,7 +2544,7 @@
               ],
               "src": "1363:15:18"
             },
-            "scope": 4257,
+            "scope": 4120,
             "src": "1179:832:18",
             "stateMutability": "view",
             "virtual": false,
@@ -2552,23 +2552,23 @@
           },
           {
             "body": {
-              "id": 4255,
+              "id": 4118,
               "nodeType": "Block",
               "src": "2190:705:18",
               "statements": [
                 {
                   "assignments": [
-                    4215
+                    4078
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4215,
+                      "id": 4078,
                       "mutability": "mutable",
                       "name": "attributes",
                       "nameLocation": "2212:10:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4255,
+                      "scope": 4118,
                       "src": "2198:24:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -2577,7 +2577,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 4214,
+                        "id": 4077,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2198:6:18",
@@ -2589,14 +2589,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4252,
+                  "id": 4115,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "2761747472696275746573273a20",
-                            "id": 4220,
+                            "id": 4083,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2612,7 +2612,7 @@
                           },
                           {
                             "hexValue": "5b",
-                            "id": 4221,
+                            "id": 4084,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2628,7 +2628,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202741747461636b20506f776572272c2020202776616c7565273a2027",
-                            "id": 4222,
+                            "id": 4085,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2645,11 +2645,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4225,
+                                "id": 4088,
                                 "name": "_attackPower",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4201,
+                                "referencedDeclaration": 4064,
                                 "src": "2400:12:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint8",
@@ -2665,7 +2665,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4223,
+                                "id": 4086,
                                 "name": "Strings",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2676,7 +2676,7 @@
                                   "typeString": "type(library Strings)"
                                 }
                               },
-                              "id": 4224,
+                              "id": 4087,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2690,7 +2690,7 @@
                                 "typeString": "function (uint256) pure returns (string memory)"
                               }
                             },
-                            "id": 4226,
+                            "id": 4089,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2707,7 +2707,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4227,
+                            "id": 4090,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2723,7 +2723,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202747656e65726174696f6e272c20202020202776616c756527203a27",
-                            "id": 4228,
+                            "id": 4091,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2740,11 +2740,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4231,
+                                "id": 4094,
                                 "name": "_generation",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4203,
+                                "referencedDeclaration": 4066,
                                 "src": "2502:11:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint32",
@@ -2760,7 +2760,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4229,
+                                "id": 4092,
                                 "name": "Strings",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -2771,7 +2771,7 @@
                                   "typeString": "type(library Strings)"
                                 }
                               },
-                              "id": 4230,
+                              "id": 4093,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2785,7 +2785,7 @@
                                 "typeString": "function (uint256) pure returns (string memory)"
                               }
                             },
-                            "id": 4232,
+                            "id": 4095,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2802,7 +2802,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4233,
+                            "id": 4096,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2818,7 +2818,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202753776f72642054797065272c20202020202776616c756527203a27",
-                            "id": 4234,
+                            "id": 4097,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2834,24 +2834,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4235,
+                              "id": 4098,
                               "name": "swordTypeNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4088,
+                              "referencedDeclaration": 3951,
                               "src": "2587:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4237,
+                            "id": 4100,
                             "indexExpression": {
-                              "id": 4236,
+                              "id": 4099,
                               "name": "_swordType",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4205,
+                              "referencedDeclaration": 4068,
                               "src": "2602:10:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -2871,7 +2871,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4238,
+                            "id": 4101,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2887,7 +2887,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202753776f7264204d6174657269616c272c202776616c756527203a27",
-                            "id": 4239,
+                            "id": 4102,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2903,24 +2903,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4240,
+                              "id": 4103,
                               "name": "swordMaterialNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4100,
+                              "referencedDeclaration": 3963,
                               "src": "2686:18:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4242,
+                            "id": 4105,
                             "indexExpression": {
-                              "id": 4241,
+                              "id": 4104,
                               "name": "_swordMaterial",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4207,
+                              "referencedDeclaration": 4070,
                               "src": "2705:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -2940,7 +2940,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4243,
+                            "id": 4106,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2956,7 +2956,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202747656e65726174696f6e272c20202020202776616c756527203a27",
-                            "id": 4244,
+                            "id": 4107,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2972,24 +2972,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4245,
+                              "id": 4108,
                               "name": "hiltColorNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4080,
+                              "referencedDeclaration": 3943,
                               "src": "2793:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4247,
+                            "id": 4110,
                             "indexExpression": {
-                              "id": 4246,
+                              "id": 4109,
                               "name": "_hilt",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4209,
+                              "referencedDeclaration": 4072,
                               "src": "2808:5:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -3009,7 +3009,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4248,
+                            "id": 4111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3025,7 +3025,7 @@
                           },
                           {
                             "hexValue": "5d",
-                            "id": 4249,
+                            "id": 4112,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3116,7 +3116,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4218,
+                            "id": 4081,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -3127,7 +3127,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4219,
+                          "id": 4082,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3140,7 +3140,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4250,
+                        "id": 4113,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3163,7 +3163,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4217,
+                      "id": 4080,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3175,14 +3175,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4216,
+                        "id": 4079,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2234:6:18",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4251,
+                    "id": 4114,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3202,25 +3202,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4253,
+                    "id": 4116,
                     "name": "attributes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4215,
+                    "referencedDeclaration": 4078,
                     "src": "2878:10:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4213,
-                  "id": 4254,
+                  "functionReturnParameters": 4076,
+                  "id": 4117,
                   "nodeType": "Return",
                   "src": "2871:17:18"
                 }
               ]
             },
-            "id": 4256,
+            "id": 4119,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3228,17 +3228,17 @@
             "nameLocation": "2024:15:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4210,
+              "id": 4073,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4201,
+                  "id": 4064,
                   "mutability": "mutable",
                   "name": "_attackPower",
                   "nameLocation": "2051:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2045:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3247,7 +3247,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4200,
+                    "id": 4063,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2045:5:18",
@@ -3260,12 +3260,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4203,
+                  "id": 4066,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "2076:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2069:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3274,7 +3274,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4202,
+                    "id": 4065,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2069:6:18",
@@ -3287,12 +3287,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4205,
+                  "id": 4068,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "2099:10:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2093:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3301,7 +3301,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4204,
+                    "id": 4067,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2093:5:18",
@@ -3314,12 +3314,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4207,
+                  "id": 4070,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "2121:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2115:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3328,7 +3328,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4206,
+                    "id": 4069,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2115:5:18",
@@ -3341,12 +3341,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4209,
+                  "id": 4072,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "2147:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2141:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3355,7 +3355,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4208,
+                    "id": 4071,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2141:5:18",
@@ -3370,17 +3370,17 @@
               "src": "2039:114:18"
             },
             "returnParameters": {
-              "id": 4213,
+              "id": 4076,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4212,
+                  "id": 4075,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2175:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3389,7 +3389,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4211,
+                    "id": 4074,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2175:6:18",
@@ -3403,14 +3403,14 @@
               ],
               "src": "2174:15:18"
             },
-            "scope": 4257,
+            "scope": 4120,
             "src": "2015:880:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           }
         ],
-        "scope": 4258,
+        "scope": 4121,
         "src": "195:2702:18",
         "usedErrors": []
       }
@@ -3421,36 +3421,36 @@
     "absolutePath": "project:/contracts/SwordUriHelper.sol",
     "exportedSymbols": {
       "Base64": [
-        4315
+        4178
       ],
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "Strings": [
         1820
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ],
       "SwordUriHelper": [
-        4257
+        4120
       ]
     },
-    "id": 4258,
+    "id": 4121,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4057,
+        "id": 3920,
         "literals": [
           "solidity",
           ">=",
@@ -3466,10 +3466,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
         "file": "@openzeppelin/contracts/utils/Strings.sol",
-        "id": 4058,
+        "id": 3921,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
+        "scope": 4121,
         "sourceUnit": 1821,
         "src": "66:51:18",
         "symbolAliases": [],
@@ -3478,11 +3478,11 @@
       {
         "absolutePath": "project:/contracts/libraries/Base64.sol",
         "file": "./libraries/Base64.sol",
-        "id": 4059,
+        "id": 3922,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
-        "sourceUnit": 4316,
+        "scope": 4121,
+        "sourceUnit": 4179,
         "src": "119:32:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3490,11 +3490,11 @@
       {
         "absolutePath": "project:/contracts/libraries/SwordSvgHelper.sol",
         "file": "./libraries/SwordSvgHelper.sol",
-        "id": 4060,
+        "id": 3923,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4258,
-        "sourceUnit": 4844,
+        "scope": 4121,
+        "sourceUnit": 4707,
         "src": "153:40:18",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3506,9 +3506,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4257,
+        "id": 4120,
         "linearizedBaseContracts": [
-          4257
+          4120
         ],
         "name": "SwordUriHelper",
         "nameLocation": "204:14:18",
@@ -3516,12 +3516,12 @@
         "nodes": [
           {
             "constant": false,
-            "id": 4080,
+            "id": 3943,
             "mutability": "mutable",
             "name": "hiltColorNames",
             "nameLocation": "241:14:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "224:274:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3531,7 +3531,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4061,
+                "id": 3924,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "224:6:18",
@@ -3540,7 +3540,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4062,
+              "id": 3925,
               "nodeType": "ArrayTypeName",
               "src": "224:8:18",
               "typeDescriptions": {
@@ -3552,7 +3552,7 @@
               "components": [
                 {
                   "hexValue": "7768697465",
-                  "id": 4063,
+                  "id": 3926,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3568,7 +3568,7 @@
                 },
                 {
                   "hexValue": "79656c6c6f77",
-                  "id": 4064,
+                  "id": 3927,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3584,7 +3584,7 @@
                 },
                 {
                   "hexValue": "6f72616e6765",
-                  "id": 4065,
+                  "id": 3928,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3600,7 +3600,7 @@
                 },
                 {
                   "hexValue": "726564",
-                  "id": 4066,
+                  "id": 3929,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3616,7 +3616,7 @@
                 },
                 {
                   "hexValue": "707572706c65",
-                  "id": 4067,
+                  "id": 3930,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3632,7 +3632,7 @@
                 },
                 {
                   "hexValue": "6461726b20626c7565",
-                  "id": 4068,
+                  "id": 3931,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3648,7 +3648,7 @@
                 },
                 {
                   "hexValue": "626c7565",
-                  "id": 4069,
+                  "id": 3932,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3664,7 +3664,7 @@
                 },
                 {
                   "hexValue": "6c6967687420626c7565",
-                  "id": 4070,
+                  "id": 3933,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3680,7 +3680,7 @@
                 },
                 {
                   "hexValue": "677265656e",
-                  "id": 4071,
+                  "id": 3934,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3696,7 +3696,7 @@
                 },
                 {
                   "hexValue": "6461726b20677265656e",
-                  "id": 4072,
+                  "id": 3935,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3712,7 +3712,7 @@
                 },
                 {
                   "hexValue": "62726f776e",
-                  "id": 4073,
+                  "id": 3936,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3728,7 +3728,7 @@
                 },
                 {
                   "hexValue": "6c696768742062726f776e",
-                  "id": 4074,
+                  "id": 3937,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3744,7 +3744,7 @@
                 },
                 {
                   "hexValue": "6c696768742067726579",
-                  "id": 4075,
+                  "id": 3938,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3760,7 +3760,7 @@
                 },
                 {
                   "hexValue": "67726579",
-                  "id": 4076,
+                  "id": 3939,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3776,7 +3776,7 @@
                 },
                 {
                   "hexValue": "6461726b2067726579",
-                  "id": 4077,
+                  "id": 3940,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3792,7 +3792,7 @@
                 },
                 {
                   "hexValue": "626c61636b",
-                  "id": 4078,
+                  "id": 3941,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3807,7 +3807,7 @@
                   "value": "black"
                 }
               ],
-              "id": 4079,
+              "id": 3942,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -3824,12 +3824,12 @@
           },
           {
             "constant": false,
-            "id": 4088,
+            "id": 3951,
             "mutability": "mutable",
             "name": "swordTypeNames",
             "nameLocation": "520:14:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "503:73:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3839,7 +3839,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4081,
+                "id": 3944,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "503:6:18",
@@ -3848,7 +3848,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4082,
+              "id": 3945,
               "nodeType": "ArrayTypeName",
               "src": "503:8:18",
               "typeDescriptions": {
@@ -3860,7 +3860,7 @@
               "components": [
                 {
                   "hexValue": "676c6164697573",
-                  "id": 4083,
+                  "id": 3946,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3876,7 +3876,7 @@
                 },
                 {
                   "hexValue": "7361626572",
-                  "id": 4084,
+                  "id": 3947,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3892,7 +3892,7 @@
                 },
                 {
                   "hexValue": "6b6174616e61",
-                  "id": 4085,
+                  "id": 3948,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3908,7 +3908,7 @@
                 },
                 {
                   "hexValue": "6b6f6e6461",
-                  "id": 4086,
+                  "id": 3949,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3923,7 +3923,7 @@
                   "value": "konda"
                 }
               ],
-              "id": 4087,
+              "id": 3950,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -3940,12 +3940,12 @@
           },
           {
             "constant": false,
-            "id": 4100,
+            "id": 3963,
             "mutability": "mutable",
             "name": "swordMaterialNames",
             "nameLocation": "598:18:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "581:156:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3955,7 +3955,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4089,
+                "id": 3952,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "581:6:18",
@@ -3964,7 +3964,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4090,
+              "id": 3953,
               "nodeType": "ArrayTypeName",
               "src": "581:8:18",
               "typeDescriptions": {
@@ -3976,7 +3976,7 @@
               "components": [
                 {
                   "hexValue": "776f6f64",
-                  "id": 4091,
+                  "id": 3954,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3992,7 +3992,7 @@
                 },
                 {
                   "hexValue": "73746f6e65",
-                  "id": 4092,
+                  "id": 3955,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4008,7 +4008,7 @@
                 },
                 {
                   "hexValue": "62726f6e7a65",
-                  "id": 4093,
+                  "id": 3956,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4024,7 +4024,7 @@
                 },
                 {
                   "hexValue": "737465656c",
-                  "id": 4094,
+                  "id": 3957,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4040,7 +4040,7 @@
                 },
                 {
                   "hexValue": "676f6c64",
-                  "id": 4095,
+                  "id": 3958,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4056,7 +4056,7 @@
                 },
                 {
                   "hexValue": "656d6572616c64",
-                  "id": 4096,
+                  "id": 3959,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4072,7 +4072,7 @@
                 },
                 {
                   "hexValue": "6469616d6f6e64",
-                  "id": 4097,
+                  "id": 3960,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4088,7 +4088,7 @@
                 },
                 {
                   "hexValue": "636172626f6e2d6669627265",
-                  "id": 4098,
+                  "id": 3961,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4103,7 +4103,7 @@
                   "value": "carbon-fibre"
                 }
               ],
-              "id": 4099,
+              "id": 3962,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -4120,12 +4120,12 @@
           },
           {
             "constant": false,
-            "id": 4120,
+            "id": 3983,
             "mutability": "mutable",
             "name": "hiltColor",
             "nameLocation": "759:9:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "742:273:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4135,7 +4135,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4101,
+                "id": 3964,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "742:6:18",
@@ -4144,7 +4144,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4102,
+              "id": 3965,
               "nodeType": "ArrayTypeName",
               "src": "742:8:18",
               "typeDescriptions": {
@@ -4156,7 +4156,7 @@
               "components": [
                 {
                   "hexValue": "23666666666666",
-                  "id": 4103,
+                  "id": 3966,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4172,7 +4172,7 @@
                 },
                 {
                   "hexValue": "23666666663032",
-                  "id": 4104,
+                  "id": 3967,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4188,7 +4188,7 @@
                 },
                 {
                   "hexValue": "23666636363030",
-                  "id": 4105,
+                  "id": 3968,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4204,7 +4204,7 @@
                 },
                 {
                   "hexValue": "23666630303030",
-                  "id": 4106,
+                  "id": 3969,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4220,7 +4220,7 @@
                 },
                 {
                   "hexValue": "23666630306666",
-                  "id": 4107,
+                  "id": 3970,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4236,7 +4236,7 @@
                 },
                 {
                   "hexValue": "23303030303830",
-                  "id": 4108,
+                  "id": 3971,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4252,7 +4252,7 @@
                 },
                 {
                   "hexValue": "23303030306666",
-                  "id": 4109,
+                  "id": 3972,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4268,7 +4268,7 @@
                 },
                 {
                   "hexValue": "23303066666666",
-                  "id": 4110,
+                  "id": 3973,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4284,7 +4284,7 @@
                 },
                 {
                   "hexValue": "23303066663030",
-                  "id": 4111,
+                  "id": 3974,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4300,7 +4300,7 @@
                 },
                 {
                   "hexValue": "23303038303030",
-                  "id": 4112,
+                  "id": 3975,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4316,7 +4316,7 @@
                 },
                 {
                   "hexValue": "23383033333030",
-                  "id": 4113,
+                  "id": 3976,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4332,7 +4332,7 @@
                 },
                 {
                   "hexValue": "23643435353030",
-                  "id": 4114,
+                  "id": 3977,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4348,7 +4348,7 @@
                 },
                 {
                   "hexValue": "23393136663666",
-                  "id": 4115,
+                  "id": 3978,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4364,7 +4364,7 @@
                 },
                 {
                   "hexValue": "23366335333533",
-                  "id": 4116,
+                  "id": 3979,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4380,7 +4380,7 @@
                 },
                 {
                   "hexValue": "23343833373337",
-                  "id": 4117,
+                  "id": 3980,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4396,7 +4396,7 @@
                 },
                 {
                   "hexValue": "23323431633163",
-                  "id": 4118,
+                  "id": 3981,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4411,7 +4411,7 @@
                   "value": "#241c1c"
                 }
               ],
-              "id": 4119,
+              "id": 3982,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -4428,12 +4428,12 @@
           },
           {
             "constant": false,
-            "id": 4132,
+            "id": 3995,
             "mutability": "mutable",
             "name": "swordColor",
             "nameLocation": "1037:10:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4257,
+            "scope": 4120,
             "src": "1020:154:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4443,7 +4443,7 @@
             },
             "typeName": {
               "baseType": {
-                "id": 4121,
+                "id": 3984,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "1020:6:18",
@@ -4452,7 +4452,7 @@
                   "typeString": "string"
                 }
               },
-              "id": 4122,
+              "id": 3985,
               "nodeType": "ArrayTypeName",
               "src": "1020:8:18",
               "typeDescriptions": {
@@ -4464,7 +4464,7 @@
               "components": [
                 {
                   "hexValue": "23383033333030",
-                  "id": 4123,
+                  "id": 3986,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4480,7 +4480,7 @@
                 },
                 {
                   "hexValue": "23616339333933",
-                  "id": 4124,
+                  "id": 3987,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4496,7 +4496,7 @@
                 },
                 {
                   "hexValue": "23666636363030",
-                  "id": 4125,
+                  "id": 3988,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4512,7 +4512,7 @@
                 },
                 {
                   "hexValue": "23366335333533",
-                  "id": 4126,
+                  "id": 3989,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4528,7 +4528,7 @@
                 },
                 {
                   "hexValue": "23666663633030",
-                  "id": 4127,
+                  "id": 3990,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4544,7 +4544,7 @@
                 },
                 {
                   "hexValue": "23303038303030",
-                  "id": 4128,
+                  "id": 3991,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4560,7 +4560,7 @@
                 },
                 {
                   "hexValue": "23303066666666",
-                  "id": 4129,
+                  "id": 3992,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4576,7 +4576,7 @@
                 },
                 {
                   "hexValue": "23323431633163",
-                  "id": 4130,
+                  "id": 3993,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -4591,7 +4591,7 @@
                   "value": "#241c1c"
                 }
               ],
-              "id": 4131,
+              "id": 3994,
               "isConstant": false,
               "isInlineArray": true,
               "isLValue": false,
@@ -4608,7 +4608,7 @@
           },
           {
             "body": {
-              "id": 4198,
+              "id": 4061,
               "nodeType": "Block",
               "src": "1379:632:18",
               "statements": [
@@ -4623,7 +4623,7 @@
                                 "arguments": [
                                   {
                                     "hexValue": "7b",
-                                    "id": 4157,
+                                    "id": 4020,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4639,7 +4639,7 @@
                                   },
                                   {
                                     "hexValue": "276e616d65273a202753776f72642023",
-                                    "id": 4158,
+                                    "id": 4021,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4656,11 +4656,11 @@
                                   {
                                     "arguments": [
                                       {
-                                        "id": 4161,
+                                        "id": 4024,
                                         "name": "_swordId",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4134,
+                                        "referencedDeclaration": 3997,
                                         "src": "1553:8:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint256",
@@ -4676,7 +4676,7 @@
                                         }
                                       ],
                                       "expression": {
-                                        "id": 4159,
+                                        "id": 4022,
                                         "name": "Strings",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
@@ -4687,7 +4687,7 @@
                                           "typeString": "type(library Strings)"
                                         }
                                       },
-                                      "id": 4160,
+                                      "id": 4023,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
@@ -4701,7 +4701,7 @@
                                         "typeString": "function (uint256) pure returns (string memory)"
                                       }
                                     },
-                                    "id": 4162,
+                                    "id": 4025,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -4718,7 +4718,7 @@
                                   },
                                   {
                                     "hexValue": "27",
-                                    "id": 4163,
+                                    "id": 4026,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4734,7 +4734,7 @@
                                   },
                                   {
                                     "hexValue": "2c",
-                                    "id": 4164,
+                                    "id": 4027,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4750,7 +4750,7 @@
                                   },
                                   {
                                     "hexValue": "276465736372697074696f6e273a20275468697320697320616e204e46542074686174206c6574732070656f706c6520706c617920696e207468652067616d65204d657267652053776f7264732127",
-                                    "id": 4165,
+                                    "id": 4028,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4766,7 +4766,7 @@
                                   },
                                   {
                                     "hexValue": "2c",
-                                    "id": 4166,
+                                    "id": 4029,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4782,7 +4782,7 @@
                                   },
                                   {
                                     "hexValue": "27696d616765273a2027646174613a696d6167652f7376672b786d6c3b6261736536342c",
-                                    "id": 4167,
+                                    "id": 4030,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -4804,24 +4804,24 @@
                                             "arguments": [
                                               {
                                                 "baseExpression": {
-                                                  "id": 4174,
+                                                  "id": 4037,
                                                   "name": "hiltColor",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4120,
+                                                  "referencedDeclaration": 3983,
                                                   "src": "1798:9:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                                     "typeString": "string storage ref[] storage ref"
                                                   }
                                                 },
-                                                "id": 4176,
+                                                "id": 4039,
                                                 "indexExpression": {
-                                                  "id": 4175,
+                                                  "id": 4038,
                                                   "name": "_hilt",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4140,
+                                                  "referencedDeclaration": 4003,
                                                   "src": "1808:5:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
@@ -4840,11 +4840,11 @@
                                                 }
                                               },
                                               {
-                                                "id": 4177,
+                                                "id": 4040,
                                                 "name": "_swordType",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 4142,
+                                                "referencedDeclaration": 4005,
                                                 "src": "1816:10:18",
                                                 "typeDescriptions": {
                                                   "typeIdentifier": "t_uint8",
@@ -4853,24 +4853,24 @@
                                               },
                                               {
                                                 "baseExpression": {
-                                                  "id": 4178,
+                                                  "id": 4041,
                                                   "name": "swordColor",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4132,
+                                                  "referencedDeclaration": 3995,
                                                   "src": "1828:10:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                                     "typeString": "string storage ref[] storage ref"
                                                   }
                                                 },
-                                                "id": 4180,
+                                                "id": 4043,
                                                 "indexExpression": {
-                                                  "id": 4179,
+                                                  "id": 4042,
                                                   "name": "_swordMaterial",
                                                   "nodeType": "Identifier",
                                                   "overloadedDeclarations": [],
-                                                  "referencedDeclaration": 4144,
+                                                  "referencedDeclaration": 4007,
                                                   "src": "1839:14:18",
                                                   "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
@@ -4905,32 +4905,32 @@
                                                 }
                                               ],
                                               "expression": {
-                                                "id": 4172,
+                                                "id": 4035,
                                                 "name": "SwordSvgHelper",
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
-                                                "referencedDeclaration": 4843,
+                                                "referencedDeclaration": 4706,
                                                 "src": "1770:14:18",
                                                 "typeDescriptions": {
-                                                  "typeIdentifier": "t_type$_t_contract$_SwordSvgHelper_$4843_$",
+                                                  "typeIdentifier": "t_type$_t_contract$_SwordSvgHelper_$4706_$",
                                                   "typeString": "type(library SwordSvgHelper)"
                                                 }
                                               },
-                                              "id": 4173,
+                                              "id": 4036,
                                               "isConstant": false,
                                               "isLValue": false,
                                               "isPure": false,
                                               "lValueRequested": false,
                                               "memberName": "_assembleSvg",
                                               "nodeType": "MemberAccess",
-                                              "referencedDeclaration": 4768,
+                                              "referencedDeclaration": 4631,
                                               "src": "1770:27:18",
                                               "typeDescriptions": {
                                                 "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$_t_uint8_$_t_string_memory_ptr_$returns$_t_string_memory_ptr_$",
                                                 "typeString": "function (string memory,uint8,string memory) pure returns (string memory)"
                                               }
                                             },
-                                            "id": 4181,
+                                            "id": 4044,
                                             "isConstant": false,
                                             "isLValue": false,
                                             "isPure": false,
@@ -4953,7 +4953,7 @@
                                               "typeString": "string memory"
                                             }
                                           ],
-                                          "id": 4171,
+                                          "id": 4034,
                                           "isConstant": false,
                                           "isLValue": false,
                                           "isPure": true,
@@ -4965,14 +4965,14 @@
                                             "typeString": "type(bytes storage pointer)"
                                           },
                                           "typeName": {
-                                            "id": 4170,
+                                            "id": 4033,
                                             "name": "bytes",
                                             "nodeType": "ElementaryTypeName",
                                             "src": "1764:5:18",
                                             "typeDescriptions": {}
                                           }
                                         },
-                                        "id": 4182,
+                                        "id": 4045,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -4996,32 +4996,32 @@
                                         }
                                       ],
                                       "expression": {
-                                        "id": 4168,
+                                        "id": 4031,
                                         "name": "Base64",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4315,
+                                        "referencedDeclaration": 4178,
                                         "src": "1750:6:18",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Base64_$4315_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Base64_$4178_$",
                                           "typeString": "type(library Base64)"
                                         }
                                       },
-                                      "id": 4169,
+                                      "id": 4032,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "memberName": "encode",
                                       "nodeType": "MemberAccess",
-                                      "referencedDeclaration": 4314,
+                                      "referencedDeclaration": 4177,
                                       "src": "1750:13:18",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_string_memory_ptr_$",
                                         "typeString": "function (bytes memory) pure returns (string memory)"
                                       }
                                     },
-                                    "id": 4183,
+                                    "id": 4046,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -5038,7 +5038,7 @@
                                   },
                                   {
                                     "hexValue": "27",
-                                    "id": 4184,
+                                    "id": 4047,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -5055,11 +5055,11 @@
                                   {
                                     "arguments": [
                                       {
-                                        "id": 4186,
+                                        "id": 4049,
                                         "name": "_attackPower",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4136,
+                                        "referencedDeclaration": 3999,
                                         "src": "1892:12:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -5067,11 +5067,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4187,
+                                        "id": 4050,
                                         "name": "_generation",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4138,
+                                        "referencedDeclaration": 4001,
                                         "src": "1906:11:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint32",
@@ -5079,11 +5079,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4188,
+                                        "id": 4051,
                                         "name": "_swordType",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4142,
+                                        "referencedDeclaration": 4005,
                                         "src": "1919:10:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -5091,11 +5091,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4189,
+                                        "id": 4052,
                                         "name": "_swordMaterial",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4144,
+                                        "referencedDeclaration": 4007,
                                         "src": "1931:14:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -5103,11 +5103,11 @@
                                         }
                                       },
                                       {
-                                        "id": 4190,
+                                        "id": 4053,
                                         "name": "_hilt",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 4140,
+                                        "referencedDeclaration": 4003,
                                         "src": "1947:5:18",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_uint8",
@@ -5138,18 +5138,18 @@
                                           "typeString": "uint8"
                                         }
                                       ],
-                                      "id": 4185,
+                                      "id": 4048,
                                       "name": "_makeAttributes",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 4256,
+                                      "referencedDeclaration": 4119,
                                       "src": "1876:15:18",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_function_internal_view$_t_uint8_$_t_uint32_$_t_uint8_$_t_uint8_$_t_uint8_$returns$_t_string_memory_ptr_$",
                                         "typeString": "function (uint8,uint32,uint8,uint8,uint8) view returns (string memory)"
                                       }
                                     },
-                                    "id": 4191,
+                                    "id": 4054,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -5166,7 +5166,7 @@
                                   },
                                   {
                                     "hexValue": "7d",
-                                    "id": 4192,
+                                    "id": 4055,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
@@ -5233,7 +5233,7 @@
                                     }
                                   ],
                                   "expression": {
-                                    "id": 4155,
+                                    "id": 4018,
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
@@ -5244,7 +5244,7 @@
                                       "typeString": "abi"
                                     }
                                   },
-                                  "id": 4156,
+                                  "id": 4019,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -5257,7 +5257,7 @@
                                     "typeString": "function () pure returns (bytes memory)"
                                   }
                                 },
-                                "id": 4193,
+                                "id": 4056,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -5280,7 +5280,7 @@
                                   "typeString": "bytes memory"
                                 }
                               ],
-                              "id": 4154,
+                              "id": 4017,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -5292,14 +5292,14 @@
                                 "typeString": "type(string storage pointer)"
                               },
                               "typeName": {
-                                "id": 4153,
+                                "id": 4016,
                                 "name": "string",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "1451:6:18",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 4194,
+                            "id": 4057,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5322,7 +5322,7 @@
                               "typeString": "string memory"
                             }
                           ],
-                          "id": 4152,
+                          "id": 4015,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -5334,14 +5334,14 @@
                             "typeString": "type(bytes storage pointer)"
                           },
                           "typeName": {
-                            "id": 4151,
+                            "id": 4014,
                             "name": "bytes",
                             "nodeType": "ElementaryTypeName",
                             "src": "1436:5:18",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 4195,
+                        "id": 4058,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -5365,32 +5365,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 4149,
+                        "id": 4012,
                         "name": "Base64",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4315,
+                        "referencedDeclaration": 4178,
                         "src": "1415:6:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Base64_$4315_$",
+                          "typeIdentifier": "t_type$_t_contract$_Base64_$4178_$",
                           "typeString": "type(library Base64)"
                         }
                       },
-                      "id": 4150,
+                      "id": 4013,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "encode",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4177,
                       "src": "1415:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_string_memory_ptr_$",
                         "typeString": "function (bytes memory) pure returns (string memory)"
                       }
                     },
-                    "id": 4196,
+                    "id": 4059,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5405,14 +5405,14 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4148,
-                  "id": 4197,
+                  "functionReturnParameters": 4011,
+                  "id": 4060,
                   "nodeType": "Return",
                   "src": "1408:598:18"
                 }
               ]
             },
-            "id": 4199,
+            "id": 4062,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -5420,17 +5420,17 @@
             "nameLocation": "1188:13:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4145,
+              "id": 4008,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4134,
+                  "id": 3997,
                   "mutability": "mutable",
                   "name": "_swordId",
                   "nameLocation": "1215:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1207:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5439,7 +5439,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4133,
+                    "id": 3996,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1207:7:18",
@@ -5452,12 +5452,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4136,
+                  "id": 3999,
                   "mutability": "mutable",
                   "name": "_attackPower",
                   "nameLocation": "1235:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1229:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5466,7 +5466,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4135,
+                    "id": 3998,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1229:5:18",
@@ -5479,12 +5479,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4138,
+                  "id": 4001,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "1260:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1253:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5493,7 +5493,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4137,
+                    "id": 4000,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1253:6:18",
@@ -5506,12 +5506,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4140,
+                  "id": 4003,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "1283:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1277:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5520,7 +5520,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4139,
+                    "id": 4002,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1277:5:18",
@@ -5533,12 +5533,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4142,
+                  "id": 4005,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "1300:10:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1294:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5547,7 +5547,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4141,
+                    "id": 4004,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1294:5:18",
@@ -5560,12 +5560,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4144,
+                  "id": 4007,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "1322:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1316:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5574,7 +5574,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4143,
+                    "id": 4006,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1316:5:18",
@@ -5589,17 +5589,17 @@
               "src": "1201:139:18"
             },
             "returnParameters": {
-              "id": 4148,
+              "id": 4011,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4147,
+                  "id": 4010,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4199,
+                  "scope": 4062,
                   "src": "1364:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -5608,7 +5608,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4146,
+                    "id": 4009,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:6:18",
@@ -5622,7 +5622,7 @@
               ],
               "src": "1363:15:18"
             },
-            "scope": 4257,
+            "scope": 4120,
             "src": "1179:832:18",
             "stateMutability": "view",
             "virtual": false,
@@ -5630,23 +5630,23 @@
           },
           {
             "body": {
-              "id": 4255,
+              "id": 4118,
               "nodeType": "Block",
               "src": "2190:705:18",
               "statements": [
                 {
                   "assignments": [
-                    4215
+                    4078
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4215,
+                      "id": 4078,
                       "mutability": "mutable",
                       "name": "attributes",
                       "nameLocation": "2212:10:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4255,
+                      "scope": 4118,
                       "src": "2198:24:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -5655,7 +5655,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 4214,
+                        "id": 4077,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2198:6:18",
@@ -5667,14 +5667,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4252,
+                  "id": 4115,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
                             "hexValue": "2761747472696275746573273a20",
-                            "id": 4220,
+                            "id": 4083,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5690,7 +5690,7 @@
                           },
                           {
                             "hexValue": "5b",
-                            "id": 4221,
+                            "id": 4084,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5706,7 +5706,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202741747461636b20506f776572272c2020202776616c7565273a2027",
-                            "id": 4222,
+                            "id": 4085,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5723,11 +5723,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4225,
+                                "id": 4088,
                                 "name": "_attackPower",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4201,
+                                "referencedDeclaration": 4064,
                                 "src": "2400:12:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint8",
@@ -5743,7 +5743,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4223,
+                                "id": 4086,
                                 "name": "Strings",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -5754,7 +5754,7 @@
                                   "typeString": "type(library Strings)"
                                 }
                               },
-                              "id": 4224,
+                              "id": 4087,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -5768,7 +5768,7 @@
                                 "typeString": "function (uint256) pure returns (string memory)"
                               }
                             },
-                            "id": 4226,
+                            "id": 4089,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5785,7 +5785,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4227,
+                            "id": 4090,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5801,7 +5801,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202747656e65726174696f6e272c20202020202776616c756527203a27",
-                            "id": 4228,
+                            "id": 4091,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5818,11 +5818,11 @@
                           {
                             "arguments": [
                               {
-                                "id": 4231,
+                                "id": 4094,
                                 "name": "_generation",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 4203,
+                                "referencedDeclaration": 4066,
                                 "src": "2502:11:18",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint32",
@@ -5838,7 +5838,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 4229,
+                                "id": 4092,
                                 "name": "Strings",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -5849,7 +5849,7 @@
                                   "typeString": "type(library Strings)"
                                 }
                               },
-                              "id": 4230,
+                              "id": 4093,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -5863,7 +5863,7 @@
                                 "typeString": "function (uint256) pure returns (string memory)"
                               }
                             },
-                            "id": 4232,
+                            "id": 4095,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -5880,7 +5880,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4233,
+                            "id": 4096,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5896,7 +5896,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202753776f72642054797065272c20202020202776616c756527203a27",
-                            "id": 4234,
+                            "id": 4097,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5912,24 +5912,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4235,
+                              "id": 4098,
                               "name": "swordTypeNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4088,
+                              "referencedDeclaration": 3951,
                               "src": "2587:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4237,
+                            "id": 4100,
                             "indexExpression": {
-                              "id": 4236,
+                              "id": 4099,
                               "name": "_swordType",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4205,
+                              "referencedDeclaration": 4068,
                               "src": "2602:10:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -5949,7 +5949,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4238,
+                            "id": 4101,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5965,7 +5965,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202753776f7264204d6174657269616c272c202776616c756527203a27",
-                            "id": 4239,
+                            "id": 4102,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5981,24 +5981,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4240,
+                              "id": 4103,
                               "name": "swordMaterialNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4100,
+                              "referencedDeclaration": 3963,
                               "src": "2686:18:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4242,
+                            "id": 4105,
                             "indexExpression": {
-                              "id": 4241,
+                              "id": 4104,
                               "name": "_swordMaterial",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4207,
+                              "referencedDeclaration": 4070,
                               "src": "2705:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -6018,7 +6018,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4243,
+                            "id": 4106,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -6034,7 +6034,7 @@
                           },
                           {
                             "hexValue": "7b202774726169745f74797065273a202747656e65726174696f6e272c20202020202776616c756527203a27",
-                            "id": 4244,
+                            "id": 4107,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -6050,24 +6050,24 @@
                           },
                           {
                             "baseExpression": {
-                              "id": 4245,
+                              "id": 4108,
                               "name": "hiltColorNames",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4080,
+                              "referencedDeclaration": 3943,
                               "src": "2793:14:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                                 "typeString": "string storage ref[] storage ref"
                               }
                             },
-                            "id": 4247,
+                            "id": 4110,
                             "indexExpression": {
-                              "id": 4246,
+                              "id": 4109,
                               "name": "_hilt",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4209,
+                              "referencedDeclaration": 4072,
                               "src": "2808:5:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
@@ -6087,7 +6087,7 @@
                           },
                           {
                             "hexValue": "277d",
-                            "id": 4248,
+                            "id": 4111,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -6103,7 +6103,7 @@
                           },
                           {
                             "hexValue": "5d",
-                            "id": 4249,
+                            "id": 4112,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -6194,7 +6194,7 @@
                             }
                           ],
                           "expression": {
-                            "id": 4218,
+                            "id": 4081,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -6205,7 +6205,7 @@
                               "typeString": "abi"
                             }
                           },
-                          "id": 4219,
+                          "id": 4082,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -6218,7 +6218,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 4250,
+                        "id": 4113,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6241,7 +6241,7 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 4217,
+                      "id": 4080,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -6253,14 +6253,14 @@
                         "typeString": "type(string storage pointer)"
                       },
                       "typeName": {
-                        "id": 4216,
+                        "id": 4079,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2234:6:18",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 4251,
+                    "id": 4114,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6280,25 +6280,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4253,
+                    "id": 4116,
                     "name": "attributes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4215,
+                    "referencedDeclaration": 4078,
                     "src": "2878:10:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4213,
-                  "id": 4254,
+                  "functionReturnParameters": 4076,
+                  "id": 4117,
                   "nodeType": "Return",
                   "src": "2871:17:18"
                 }
               ]
             },
-            "id": 4256,
+            "id": 4119,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -6306,17 +6306,17 @@
             "nameLocation": "2024:15:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4210,
+              "id": 4073,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4201,
+                  "id": 4064,
                   "mutability": "mutable",
                   "name": "_attackPower",
                   "nameLocation": "2051:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2045:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6325,7 +6325,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4200,
+                    "id": 4063,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2045:5:18",
@@ -6338,12 +6338,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4203,
+                  "id": 4066,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "2076:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2069:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6352,7 +6352,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4202,
+                    "id": 4065,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2069:6:18",
@@ -6365,12 +6365,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4205,
+                  "id": 4068,
                   "mutability": "mutable",
                   "name": "_swordType",
                   "nameLocation": "2099:10:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2093:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6379,7 +6379,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4204,
+                    "id": 4067,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2093:5:18",
@@ -6392,12 +6392,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4207,
+                  "id": 4070,
                   "mutability": "mutable",
                   "name": "_swordMaterial",
                   "nameLocation": "2121:14:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2115:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6406,7 +6406,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4206,
+                    "id": 4069,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2115:5:18",
@@ -6419,12 +6419,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4209,
+                  "id": 4072,
                   "mutability": "mutable",
                   "name": "_hilt",
                   "nameLocation": "2147:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2141:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6433,7 +6433,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4208,
+                    "id": 4071,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "2141:5:18",
@@ -6448,17 +6448,17 @@
               "src": "2039:114:18"
             },
             "returnParameters": {
-              "id": 4213,
+              "id": 4076,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4212,
+                  "id": 4075,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4256,
+                  "scope": 4119,
                   "src": "2175:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -6467,7 +6467,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4211,
+                    "id": 4074,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2175:6:18",
@@ -6481,14 +6481,14 @@
               ],
               "src": "2174:15:18"
             },
-            "scope": 4257,
+            "scope": 4120,
             "src": "2015:880:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "private"
           }
         ],
-        "scope": 4258,
+        "scope": 4121,
         "src": "195:2702:18",
         "usedErrors": []
       }
@@ -6501,7 +6501,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T09:54:22.613Z",
+  "updatedAt": "2021-12-22T12:36:49.722Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

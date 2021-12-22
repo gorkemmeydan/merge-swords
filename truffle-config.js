@@ -79,6 +79,10 @@ module.exports = {
     // timeout: 100000
   },
 
+  plugins: [
+    'truffle-contract-size'
+  ],
+
   // Configure your compilers
   contracts_build_directory: "./src/contracts/",
   compilers: {

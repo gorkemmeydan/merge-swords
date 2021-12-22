@@ -5,8 +5,10 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 import "./libraries/SafeMath8.sol";
 
+import "./SwordUriHelper.sol";
+
 // Helper library for gene computations
-contract GeneScience {
+contract GeneScience is SwordUriHelper{
   using SafeMath for uint256;
   using SafeMath8 for uint8;
 

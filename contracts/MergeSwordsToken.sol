@@ -17,26 +17,14 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   uint256 private mergeFee = 0.05 ether;
   uint256 private attackFee = 0.01 ether;
 
-  function updateBasicSwordFee(uint256 _fee) external onlyOwner {
-    basicSwordFee = _fee;
-  }
-
-  function updateMergeFee(uint256 _fee) external onlyOwner {
-    mergeFee = _fee;
-  }
-
-  function updateAttackFee(uint256 _fee) external onlyOwner {
-    attackFee = _fee;
-  }
-
   using Counters for Counters.Counter;
   using SafeMath for uint256;
   using SafeMath32 for uint32;
 
   event NewSword(address indexed owner, uint256 id);
   event BurnSword(address indexed owner, uint256 id);
-  event WonBattle(address indexed owner, AttackLog[] attackLog);
-  event LostBattle(address indexed owner, AttackLog[] attackLog);
+  event WonBattle(address indexed owner, AttackLog attackLog);
+  event LostBattle(address indexed owner, AttackLog attackLog);
 
   Counters.Counter private _tokenIds;
 
@@ -50,6 +38,23 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   modifier doesNotOwnSword() {
     require(ownerSwordCount[msg.sender] == 0, "Should not own any sword");
     _;
+  }
+
+  modifier onlySwordOwner(uint256 _swordId, address _callerAddress) {
+    require(ownerOf(_swordId) == _callerAddress, "Only sword owner can call");
+    _;
+  }
+
+  function updateBasicSwordFee(uint256 _fee) external onlyOwner {
+    basicSwordFee = _fee;
+  }
+
+  function updateMergeFee(uint256 _fee) external onlyOwner {
+    mergeFee = _fee;
+  }
+
+  function updateAttackFee(uint256 _fee) external onlyOwner {
+    attackFee = _fee;
   }
 
   function getBasicSword() public payable doesNotOwnSword {
@@ -78,11 +83,6 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
     _tokenIds.increment();
   }
 
-  modifier onlySwordOwner(uint256 _swordId, address _callerAddress) {
-    require(ownerOf(_swordId) == _callerAddress, "Only sword owner can call");
-    _;
-  }
-
   function mergeSwords(uint256 swordOneId, uint256 swordTwoId)
     public
     payable
@@ -91,7 +91,7 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   {
     require(msg.value == mergeFee, "Not enough fee");
 
-    // creat a new sword
+    // create a new sword
     Sword memory newSword = _createFromTwoSwords(
       _getSwordDnaFromId(swordOneId),
       _getSwordDnaFromId(swordTwoId),
@@ -132,9 +132,9 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
 
   function battleMonster(uint256 _swordId) public payable onlySwordOwner(_swordId, msg.sender) {
     require(msg.value == attackFee, "Not enough fee");
-    (AttackLog[] memory attackLog, bool didUserWon) = attackMonster(_getAttackPowerFromSwordId(_swordId));
+    (AttackLog memory attackLog) = attackMonster(_getAttackPowerFromSwordId(_swordId));
 
-    if (didUserWon) {
+    if (attackLog.didUserWin) {
       emit WonBattle(msg.sender, attackLog);
 
       // give a new sword as a reward to user
@@ -148,5 +148,22 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   function _getAttackPowerFromSwordId(uint256 _swordId) internal view returns (uint8) {
     Sword memory sword = idToSword[_swordId];
     return sword.attackPower;
+  }
+
+  // getters
+  function getUserSwordCount(address _user) public view returns(uint256) {
+    return ownerSwordCount[_user];
+  }
+
+  function getUserSwords(address _user) public view returns(Sword[] memory) {
+    Sword[] memory userSwords = new Sword[](ownerSwordCount[_user]);
+    uint256 counter;
+    for (uint256 i = 0; i <  swords.length; i++) {
+      if (swordToOwner[i] == _user) {
+        userSwords[counter] = swords[i];
+        counter++;
+      }
+    }
+    return userSwords; 
   }
 }

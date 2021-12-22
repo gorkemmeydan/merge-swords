@@ -4,9 +4,8 @@ pragma solidity >=0.4.22 <0.9.0;
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 import "./GeneScience.sol";
-import "./SwordUriHelper.sol";
 
-contract SwordFactory is GeneScience, SwordUriHelper {
+contract SwordFactory is GeneScience {
   using SafeMath for uint256;
 
   // cooldown of each sword to be used or merged again
@@ -16,17 +15,15 @@ contract SwordFactory is GeneScience, SwordUriHelper {
     uint256 dna;
     uint8 attackPower;
     uint32 generation;
-    uint32 readyTime;
     uint16 winCount;
     uint16 lossCount;
   }
 
-  function _createSword(uint256 _dna, uint32 _generation) internal view returns (Sword memory) {
+  function _createSword(uint256 _dna, uint32 _generation) internal pure returns (Sword memory) {
     Sword memory newSword = Sword(
       _dna,
       _calculateAttackPowerFromDna(_dna),
       _generation,
-      uint32(block.timestamp + cooldownTime),
       0,
       0
     );
@@ -35,7 +32,7 @@ contract SwordFactory is GeneScience, SwordUriHelper {
   }
 
   // create a basic sword for new comers
-  function _createBasicSwordObject() internal view returns (Sword memory) {
+  function _createBasicSwordObject() internal pure returns (Sword memory) {
     uint256 basicDna = _generateBasicDna();
     Sword memory newSword = _createSword(basicDna, 0);
     return newSword;

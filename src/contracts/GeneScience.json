@@ -1453,37 +1453,37 @@
     "absolutePath": "project:/contracts/GeneScience.sol",
     "exportedSymbols": {
       "Base64": [
-        4315
+        4178
       ],
       "GeneScience": [
         2850
       ],
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "SafeMath": [
         2168
       ],
       "SafeMath8": [
-        4734
+        4597
       ],
       "Strings": [
         1820
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ],
       "SwordUriHelper": [
-        4257
+        4120
       ]
     },
     "id": 2851,
@@ -1523,7 +1523,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2851,
-        "sourceUnit": 4735,
+        "sourceUnit": 4598,
         "src": "125:35:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1535,7 +1535,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2851,
-        "sourceUnit": 4258,
+        "sourceUnit": 4121,
         "src": "162:30:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1548,7 +1548,7 @@
               "id": 2174,
               "name": "SwordUriHelper",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4257,
+              "referencedDeclaration": 4120,
               "src": "258:14:13"
             },
             "id": 2175,
@@ -1563,7 +1563,7 @@
         "id": 2850,
         "linearizedBaseContracts": [
           2850,
-          4257
+          4120
         ],
         "name": "GeneScience",
         "nameLocation": "243:11:13",
@@ -1597,7 +1597,7 @@
               "id": 2179,
               "name": "SafeMath8",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4734,
+              "referencedDeclaration": 4597,
               "src": "312:9:13"
             },
             "nodeType": "UsingForDirective",
@@ -6809,7 +6809,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4733,
+                            "referencedDeclaration": 4596,
                             "src": "4752:9:13",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint8_$_t_uint8_$returns$_t_uint8_$bound_to$_t_uint8_$",
@@ -10526,37 +10526,37 @@
     "absolutePath": "project:/contracts/GeneScience.sol",
     "exportedSymbols": {
       "Base64": [
-        4315
+        4178
       ],
       "GeneScience": [
         2850
       ],
       "GladiusSvgHelper": [
-        4346
+        4209
       ],
       "KatanaSvgHelper": [
-        4377
+        4240
       ],
       "KondaSvgHelper": [
-        4408
+        4271
       ],
       "SaberSvgHelper": [
-        4439
+        4302
       ],
       "SafeMath": [
         2168
       ],
       "SafeMath8": [
-        4734
+        4597
       ],
       "Strings": [
         1820
       ],
       "SwordSvgHelper": [
-        4843
+        4706
       ],
       "SwordUriHelper": [
-        4257
+        4120
       ]
     },
     "id": 2851,
@@ -10596,7 +10596,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2851,
-        "sourceUnit": 4735,
+        "sourceUnit": 4598,
         "src": "125:35:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10608,7 +10608,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2851,
-        "sourceUnit": 4258,
+        "sourceUnit": 4121,
         "src": "162:30:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -10621,7 +10621,7 @@
               "id": 2174,
               "name": "SwordUriHelper",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4257,
+              "referencedDeclaration": 4120,
               "src": "258:14:13"
             },
             "id": 2175,
@@ -10636,7 +10636,7 @@
         "id": 2850,
         "linearizedBaseContracts": [
           2850,
-          4257
+          4120
         ],
         "name": "GeneScience",
         "nameLocation": "243:11:13",
@@ -10670,7 +10670,7 @@
               "id": 2179,
               "name": "SafeMath8",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4734,
+              "referencedDeclaration": 4597,
               "src": "312:9:13"
             },
             "nodeType": "UsingForDirective",
@@ -15882,7 +15882,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4733,
+                            "referencedDeclaration": 4596,
                             "src": "4752:9:13",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint8_$_t_uint8_$returns$_t_uint8_$bound_to$_t_uint8_$",
@@ -19601,7 +19601,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-20T09:54:22.574Z",
+  "updatedAt": "2021-12-22T12:36:49.661Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
