@@ -1,0 +1,30 @@
+.gamePageWrapper {
+  height: 80%;
+}
+
+.controlsWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonsWrapper {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around
+}
+
+.inventoryWrapper {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: rgb(130, 130, 255);
+
+  padding: 20px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,22 @@
+.welcomeTextContainer {
+  padding-top: 0px;
+}
+
+.welcomeText {
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.subText {
+  font-size: 50px;
+  padding: 15px;
+  color: white;
+}
+
+.gradientText {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

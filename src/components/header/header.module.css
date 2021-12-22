@@ -1,0 +1,47 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.goBackButton {
+  margin-left: 10%;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.goBackButton:hover {
+  border-color: rgb(130, 130, 255);
+}
+
+.appNameGoBackWrapper {
+  display: flex;
+  white-space: nowrap;
+  padding-left: 2%;
+}
+
+.appName {
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.userOperations {
+  padding-right: 2%;
+  display: flex;
+  font-weight: 500;
+}

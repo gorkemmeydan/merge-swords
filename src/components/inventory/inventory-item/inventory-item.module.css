@@ -1,0 +1,12 @@
+.inventoryItemWrapper {
+  width: 30%; 
+  border:1px solid #fff; 
+  border-radius: 10px;
+  height: 200px;
+  color: white;
+  margin: 5px;
+}
+
+.inventoryItemWrapper:hover {
+  cursor: pointer;
+}

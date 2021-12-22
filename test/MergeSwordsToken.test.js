@@ -33,7 +33,7 @@ contract("MergeSwordsToken", (accounts) => {
     result = await contractInstance.getBasicSword({from: alice, value: web3.utils.toWei('0.1', 'ether')});
     expect(result.receipt.status).to.equal(true);
 
-     run for times to check both win and loss scenario
+    // run for times to check both win and loss scenario
     for (let i = 0; i < 10 ; i++) {
       result = await contractInstance.battleMonster(web3.eth.abi.encodeParameter('uint256',0), {from: alice, value: web3.utils.toWei('0.01', 'ether')});
       expect(result.receipt.status).to.equal(true);
