@@ -112,7 +112,7 @@ contract SwordUriHelper  {
                 "{ 'trait_type': 'Generation',     'value' :'", Strings.toString(_generation) , "'}",
                 "{ 'trait_type': 'Sword Type',     'value' :'", swordTypeNames[_swordType] , "'}",
                 "{ 'trait_type': 'Sword Material', 'value' :'", swordMaterialNames[_swordMaterial] , "'}",
-                "{ 'trait_type': 'Generation',     'value' :'", hiltColorNames[_hilt] , "'}",
+                "{ 'trait_type': 'Hilt Color',     'value' :'", hiltColorNames[_hilt] , "'}",
               "]"
           )
         );

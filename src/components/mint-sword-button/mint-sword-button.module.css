@@ -1,0 +1,56 @@
+.mintSwordButton {
+  height: 150px;
+  width: 300px;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+  border: 5px solid transparent;
+}
+
+.mintSwordButton:hover {
+  border-color: rgb(130, 130, 255);
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 80% 50%;
+  }
+  100% {
+    background-position: 20% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 80% 50%;
+  }
+  100% {
+    background-position: 20% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 20% 50%;
+  }
+  50% {
+    background-position: 80% 50%;
+  }
+  100% {
+    background-position: 20% 50%;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import MintSwordButtonContainer from "../mint-sword-button";
 import RouteButton from "../route-button";
 
 import styles from "./game-buttons.module.css";
@@ -9,9 +10,7 @@ const GameButtons = () => {
   const renderMintSword = () => {
     if(doesNotOwnSword) {
       return (
-        <div className={styles.buttonWrapper}>
-          <RouteButton buttonText="Mint Sword ⚔️" linkPath="" inactive={true} />
-        </div>
+        <MintSwordButtonContainer isLoading={false}/>
       )
     } else return null;
   }

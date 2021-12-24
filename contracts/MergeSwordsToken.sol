@@ -90,6 +90,7 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
     onlySwordOwner(swordTwoId, msg.sender)
   {
     require(msg.value == mergeFee, "Not enough fee");
+    require(swordOneId != swordTwoId, "Swords must be different");
 
     // create a new sword
     Sword memory newSword = _createFromTwoSwords(

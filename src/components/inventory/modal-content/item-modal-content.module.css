@@ -1,0 +1,22 @@
+.itemModalContentWrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.itemArt {
+  display: flex;
+  width: 400px;
+  height: 400px;
+}
+
+.itemTraitsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.itemTrait {
+  font-size: 20px;
+}
