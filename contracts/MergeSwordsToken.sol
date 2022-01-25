@@ -2,24 +2,19 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 import "./SwordAttack.sol";
 
-import "./libraries/SafeMath32.sol";
-
 contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   constructor() ERC721("MERGESWORDS", "SWORD") {}
 
-  uint256 private basicSwordFee = 0.1 ether;
-  uint256 private mergeFee = 0.05 ether;
-  uint256 private attackFee = 0.01 ether;
-
   using Counters for Counters.Counter;
-  using SafeMath for uint256;
-  using SafeMath32 for uint32;
+
+  uint256 private basicSwordFee = 0.01 ether;
+  uint256 private mergeFee = 0.005 ether;
+  uint256 private attackFee = 0.001 ether;
 
   event NewSword(address indexed owner, uint256 id);
   event BurnSword(address indexed owner, uint256 id);
@@ -60,7 +55,7 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
   function getBasicSword() public payable doesNotOwnSword {
     require(msg.value == basicSwordFee, "Not enough fee");
 
-    Sword memory newSword = _createBasicSwordObject();
+    Sword memory newSword = _createBasicSwordObject(_tokenIds.current());
 
     _mintSwordFromObject(newSword, msg.sender);
   }
@@ -71,11 +66,10 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
     _safeMint(_senderAddr, _tokenIds.current());
 
     // set token uri
-    string memory finalTokenUri = _generateSwordUri(_tokenIds.current(), _newSword);
-    _setTokenURI(_tokenIds.current(), finalTokenUri);
+    _setTokenURI(_tokenIds.current(), _generateSwordUri(_tokenIds.current(), _newSword));
 
     swordToOwner[_tokenIds.current()] = _senderAddr;
-    ownerSwordCount[_senderAddr] = ownerSwordCount[_senderAddr].add(1);
+    ownerSwordCount[_senderAddr] = ownerSwordCount[_senderAddr] + 1;
     idToSword[_tokenIds.current()] = _newSword;
 
     emit NewSword(_senderAddr, _tokenIds.current());
@@ -94,6 +88,7 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
 
     // create a new sword
     Sword memory newSword = _createFromTwoSwords(
+      _tokenIds.current(),
       _getSwordDnaFromId(swordOneId),
       _getSwordDnaFromId(swordTwoId),
       _calcChildGeneration(swordOneId, swordTwoId)
@@ -107,7 +102,7 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
 
   function _burnSwordNft(uint256 _swordId, address _senderAddr) internal {
     swordToOwner[_swordId] = address(0);
-    ownerSwordCount[_senderAddr] = ownerSwordCount[_senderAddr].sub(1);
+    ownerSwordCount[_senderAddr] = ownerSwordCount[_senderAddr] - 1;
 
     _burn(_swordId);
 
@@ -125,46 +120,46 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
 
     // select the oldest parent
     if (parentOne.generation >= parentTwo.generation) {
-      return parentOne.generation.add(1);
+      return (parentOne.generation + 1);
     } else {
-      return parentTwo.generation.add(1);
+      return (parentTwo.generation + 1);
     }
   }
 
   function battleMonster(uint256 _swordId) public payable onlySwordOwner(_swordId, msg.sender) {
     require(msg.value == attackFee, "Not enough fee");
-    (AttackLog memory attackLog) = attackMonster(_getAttackPowerFromSwordId(_swordId));
+    AttackLog memory attackLog = attackMonster(_getAttackPowerFromSwordId(_swordId));
 
     if (attackLog.didUserWin) {
       emit WonBattle(msg.sender, attackLog);
 
       // give a new sword as a reward to user
-      Sword memory sword = _createSimilarSword(_getSwordDnaFromId(_swordId));
+      Sword memory sword = _createSimilarSword(_tokenIds.current(), _getSwordDnaFromId(_swordId));
       _mintSwordFromObject(sword, msg.sender);
     } else {
       emit LostBattle(msg.sender, attackLog);
     }
   }
 
-  function _getAttackPowerFromSwordId(uint256 _swordId) internal view returns (uint8) {
+  function _getAttackPowerFromSwordId(uint256 _swordId) internal view returns (uint256) {
     Sword memory sword = idToSword[_swordId];
     return sword.attackPower;
   }
 
   // getters
-  function getUserSwordCount(address _user) public view returns(uint256) {
+  function getUserSwordCount(address _user) public view returns (uint256) {
     return ownerSwordCount[_user];
   }
 
-  function getUserSwords(address _user) public view returns(Sword[] memory) {
+  function getUserSwords(address _user) public view returns (Sword[] memory) {
     Sword[] memory userSwords = new Sword[](ownerSwordCount[_user]);
     uint256 counter;
-    for (uint256 i = 0; i <  swords.length; i++) {
+    for (uint256 i = 0; i < swords.length; i++) {
       if (swordToOwner[i] == _user) {
         userSwords[counter] = swords[i];
         counter++;
       }
     }
-    return userSwords; 
+    return userSwords;
   }
 }

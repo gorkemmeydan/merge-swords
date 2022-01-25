@@ -5,39 +5,37 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "./libraries/Base64.sol";
 
-import "./libraries/SwordSvgHelper.sol";
-
-contract SwordUriHelper  {
+contract SwordUriHelper {
   string[] private hiltColorNames = [
-    "white",
-    "yellow",
-    "orange",
-    "red",
-    "purple",
-    "dark blue",
-    "blue",
-    "light blue",
-    "green",
-    "dark green",
-    "brown",
-    "light brown",
-    "light grey",
-    "grey",
-    "dark grey",
-    "black"
+    "White",
+    "Yellow",
+    "Orange",
+    "Red",
+    "Purple",
+    "Dark blue",
+    "Blue",
+    "Light blue",
+    "Green",
+    "Dark Green",
+    "Brown",
+    "Light Brown",
+    "Light Grey",
+    "Grey",
+    "Dark Grey",
+    "Black"
   ];
 
-  string[] private swordTypeNames = ["gladius", "saber", "katana", "konda"];
+  string[] private swordTypeNames = ["Gladius", "Saber", "Katana", "Konda"];
 
   string[] private swordMaterialNames = [
-    "wood",
-    "stone",
-    "bronze",
-    "steel",
-    "gold",
-    "emerald",
-    "diamond",
-    "carbon-fibre"
+    "Wood",
+    "Stone",
+    "Bronze",
+    "Steel",
+    "Gold",
+    "Emerald",
+    "Diamond",
+    "Carbon-fibre"
   ];
 
   string[] private hiltColor = [
@@ -70,53 +68,88 @@ contract SwordUriHelper  {
     "#241c1c"
   ];
 
-  function _makeSwordUri(
-    uint256 _swordId,
-    uint8 _attackPower,
-    uint32 _generation,
-    uint8 _hilt,
-    uint8 _swordType,
-    uint8 _swordMaterial
-  ) internal view returns (string memory) {
+  struct SwordUriProps {
+    uint256 _swordId;
+    uint256 _attackPower;
+    uint32 _generation;
+    uint256 _hilt;
+    uint256 _swordType;
+    uint256 _swordMaterial;
+  }
+
+  function _makeSwordUri(SwordUriProps memory props) internal view returns (string memory) {
     // prettier-ignore
-    return Base64.encode(
-      bytes(
+    return Base64.encode(_makeEncodedString(props));
+  }
+
+  function _makeEncodedString(SwordUriProps memory props) private view returns (string memory) {
+    return
+      string(
+        abi.encodePacked(
+          "{'name': 'Sword #",
+          Strings.toString(props._swordId),
+          "',",
+          "'description': 'This is an NFT that lets people play in the game Merge Swords!',",
+          "'image': 'data:image/svg+xml;base64,",
+          _makeImage(props._hilt, props._swordType, props._swordMaterial),
+          "'",
+          _makeAttributes(props._attackPower, props._generation, props._swordType, props._swordMaterial, props._hilt),
+          "}"
+        )
+      );
+  }
+
+  function _makeImage(
+    uint256 _hilt,
+    uint256 _swordType,
+    uint256 _swordMaterial
+  ) private view returns (string memory) {
+    return
+      Base64.encode(
         string(
           abi.encodePacked(
-            "{",
-            "'name': 'Sword #", Strings.toString(_swordId), "'",
-            ",",
-            "'description': 'This is an NFT that lets people play in the game Merge Swords!'",
-            ",",
-            "'image': 'data:image/svg+xml;base64,", Base64.encode(bytes(SwordSvgHelper._assembleSvg(hiltColor[_hilt], _swordType, swordColor[_swordMaterial]))), "'",
-            _makeAttributes(_attackPower, _generation, _swordType, _swordMaterial, _hilt),
-            "}"
+            "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base{fill:",
+            hiltColor[_hilt],
+            ";font-family:serif;font-size:24px;paint-order:stroke;stroke:#ffffff;stroke-width:1.5px;}</style><rect width='100%' height='100%' fill='",
+            swordColor[_swordMaterial],
+            "' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>",
+            swordTypeNames[_swordType],
+            "</text></svg>"
           )
         )
-      )
-    );
+      );
   }
 
   function _makeAttributes(
-    uint8 _attackPower,
+    uint256 _attackPower,
     uint32 _generation,
-    uint8 _swordType,
-    uint8 _swordMaterial,
-    uint8 _hilt) private view returns(string memory) {
-      string memory attributes = 
-        string(
-          abi.encodePacked(
-            "'attributes': ",
-              "[",
-                "{ 'trait_type': 'Attack Power',   'value': '", Strings.toString(_attackPower), "'}",
-                "{ 'trait_type': 'Generation',     'value' :'", Strings.toString(_generation) , "'}",
-                "{ 'trait_type': 'Sword Type',     'value' :'", swordTypeNames[_swordType] , "'}",
-                "{ 'trait_type': 'Sword Material', 'value' :'", swordMaterialNames[_swordMaterial] , "'}",
-                "{ 'trait_type': 'Hilt Color',     'value' :'", hiltColorNames[_hilt] , "'}",
-              "]"
-          )
-        );
+    uint256 _swordType,
+    uint256 _swordMaterial,
+    uint256 _hilt
+  ) private view returns (string memory) {
+    string memory attributes = string(
+      abi.encodePacked(
+        "'attributes': ",
+        "[",
+        "{ 'trait_type': 'Attack Power',   'value': '",
+        Strings.toString(_attackPower),
+        "'}",
+        "{ 'trait_type': 'Generation',     'value' :'",
+        Strings.toString(_generation),
+        "'}",
+        "{ 'trait_type': 'Sword Type',     'value' :'",
+        swordTypeNames[_swordType],
+        "'}",
+        "{ 'trait_type': 'Sword Material', 'value' :'",
+        swordMaterialNames[_swordMaterial],
+        "'}",
+        "{ 'trait_type': 'Hilt Color',     'value' :'",
+        hiltColorNames[_hilt],
+        "'}",
+        "]"
+      )
+    );
 
-      return attributes;
-    }
+    return attributes;
+  }
 }

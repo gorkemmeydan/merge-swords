@@ -1,17 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-
-import "./libraries/SafeMath8.sol";
-
 import "./SwordUriHelper.sol";
 
 // Helper library for gene computations
-contract GeneScience is SwordUriHelper{
-  using SafeMath for uint256;
-  using SafeMath8 for uint8;
-
+contract GeneScience is SwordUriHelper {
   // nonce for random number generation
   uint256 private randNonceGeneScience = 0;
 
@@ -27,29 +20,29 @@ contract GeneScience is SwordUriHelper{
 
   uint8 private dominantChance = 70;
   uint8 private recessiveChance = 30;
-  uint8 private mutationChance = 10;
+  uint8 private mutationChance = 50;
 
-  function _mergeSwordsDna(uint256 _firstParentDna, uint256 _secondParentDna) internal view returns (uint256) {
+  function _mergeSwordsDna(uint256 _firstParentDna, uint256 _secondParentDna) internal returns (uint256) {
     // extract genes from dna
     (
-      uint16 hiltColorPair1,
-      uint16 swordTypePair1,
-      uint16 swordMaterialPair1,
-      uint16 baseAttackPowerPair1
+      uint256 hiltColorPair1,
+      uint256 swordTypePair1,
+      uint256 swordMaterialPair1,
+      uint256 baseAttackPowerPair1
     ) = _extractGenePairsFromDna(_firstParentDna);
 
     (
-      uint16 hiltColorPair2,
-      uint16 swordTypePair2,
-      uint16 swordMaterialPair2,
-      uint16 baseAttackPowerPair2
+      uint256 hiltColorPair2,
+      uint256 swordTypePair2,
+      uint256 swordMaterialPair2,
+      uint256 baseAttackPowerPair2
     ) = _extractGenePairsFromDna(_secondParentDna);
 
     // calculate gene pairs for each trait
-    uint16 newHiltColorPair = _calcGenePair(hiltColorPair1, hiltColorPair2, 4, 2);
-    uint16 newSwordTypePair = _calcGenePair(swordTypePair1, swordTypePair2, 2, 1);
-    uint16 newSwordMaterialPair = _calcGenePair(swordMaterialPair1, swordMaterialPair2, 3, 1);
-    uint16 newBaseAttackPowerPair = _calcGenePair(baseAttackPowerPair1, baseAttackPowerPair2, 4, 2);
+    uint256 newHiltColorPair = _calcGenePair(hiltColorPair1, hiltColorPair2, 4, 2);
+    uint256 newSwordTypePair = _calcGenePair(swordTypePair1, swordTypePair2, 2, 1);
+    uint256 newSwordMaterialPair = _calcGenePair(swordMaterialPair1, swordMaterialPair2, 3, 1);
+    uint256 newBaseAttackPowerPair = _calcGenePair(baseAttackPowerPair1, baseAttackPowerPair2, 4, 2);
 
     // glue new genes together
     uint256 mergedDna = _glueGenePairs(
@@ -62,16 +55,16 @@ contract GeneScience is SwordUriHelper{
   }
 
   function _glueGenePairs(
-    uint16 _hiltColorPair,
-    uint16 _swordTypePair,
-    uint16 _swordMaterialPair,
-    uint16 _baseAttackPowerPair
+    uint256 _hiltColorPair,
+    uint256 _swordTypePair,
+    uint256 _swordMaterialPair,
+    uint256 _baseAttackPowerPair
   ) internal pure returns (uint256) {
     uint256 newDna = 0;
-    newDna.add(_baseAttackPowerPair); // 4 digits
-    newDna.add(_swordMaterialPair * 10000); // 2 digits
-    newDna.add(_swordTypePair * 1000000); // 2 digits
-    newDna.add(_hiltColorPair * 100000000); // 4 digits
+    newDna = newDna + _baseAttackPowerPair; // 4 digits
+    newDna = newDna + (_swordMaterialPair * 10000); // 2 digits
+    newDna = newDna + (_swordTypePair * 1000000); // 2 digits
+    newDna = newDna + (_hiltColorPair * 100000000); // 4 digits
 
     return newDna;
   }
@@ -80,50 +73,50 @@ contract GeneScience is SwordUriHelper{
     internal
     pure
     returns (
-      uint16,
-      uint16,
-      uint16,
-      uint16
+      uint256,
+      uint256,
+      uint256,
+      uint256
     )
   {
     uint256 currentDna = _dna;
 
     // first four digits are base attack power pair
-    uint16 baseAttackPowerPair = uint16(currentDna % 10000);
+    uint256 baseAttackPowerPair = currentDna % 10000;
     currentDna = currentDna / 10000;
 
     // second 2 digits are sword material pair
-    uint16 swordMaterialPair = uint16(currentDna % 100);
+    uint256 swordMaterialPair = currentDna % 100;
     currentDna = currentDna / 100;
 
     // third 2 digits are sword type pair
-    uint16 swordTypePair = uint16(currentDna % 100);
+    uint256 swordTypePair = currentDna % 100;
     currentDna = currentDna / 100;
 
     // last 4 digits are hilt color pair
-    uint16 hiltColorPair = uint16(currentDna % 10000);
+    uint256 hiltColorPair = currentDna % 10000;
 
     return (hiltColorPair, swordTypePair, swordMaterialPair, baseAttackPowerPair);
   }
 
   function _calcGenePair(
-    uint16 _genePair1,
-    uint16 _genePair2,
-    uint8 _bitSizePerGene,
-    uint8 _digitPerGene
-  ) internal view returns (uint16) {
-    uint8 maxNum = uint8(2**_bitSizePerGene - 1);
-    uint16 digitNum = uint16(10**_digitPerGene);
+    uint256 _genePair1,
+    uint256 _genePair2,
+    uint256 _bitSizePerGene,
+    uint256 _digitPerGene
+  ) internal returns (uint256) {
+    uint256 maxNum = 2**_bitSizePerGene - 1;
+    uint256 digitNum = 10**_digitPerGene;
 
     // calculate each dominant and recessive gene from pair
-    uint8 p1R = uint8(_genePair1 % digitNum);
-    uint8 p1D = uint8(_genePair1 / digitNum);
-    uint8 p2R = uint8(_genePair2 % digitNum);
-    uint8 p2D = uint8(_genePair2 / digitNum);
+    uint256 p1R = _genePair1 % digitNum;
+    uint256 p1D = _genePair1 / digitNum;
+    uint256 p2R = _genePair2 % digitNum;
+    uint256 p2D = _genePair2 / digitNum;
 
-    uint8 geneP1 = _calcGenePart(p1D, p1R, maxNum);
-    uint8 geneP2 = _calcGenePart(p2D, p2R, maxNum);
-    uint16 genePair = 0;
+    uint256 geneP1 = _calcGenePart(p1D, p1R, maxNum);
+    uint256 geneP2 = _calcGenePart(p2D, p2R, maxNum);
+    uint256 genePair = 0;
 
     if (_calcIfDominantIsFirstParent()) {
       genePair = geneP1 * digitNum + geneP2;
@@ -135,11 +128,11 @@ contract GeneScience is SwordUriHelper{
   }
 
   function _calcGenePart(
-    uint8 _gene1,
-    uint8 _gene2,
-    uint8 _maxNumber
-  ) internal view returns (uint8) {
-    uint8 returnedGene = 0;
+    uint256 _gene1,
+    uint256 _gene2,
+    uint256 _maxNumber
+  ) internal returns (uint256) {
+    uint256 returnedGene = 0;
     if (_calcIfDominant()) {
       returnedGene = _gene1;
     } else {
@@ -153,37 +146,37 @@ contract GeneScience is SwordUriHelper{
     return returnedGene;
   }
 
-  function _mutateGene(uint8 _gene, uint8 _maxNumber) internal pure returns (uint8) {
+  function _mutateGene(uint256 _gene, uint256 _maxNumber) internal pure returns (uint256) {
     // current mutation adds 1
     // if gene is at max number, go back to zero
     if (_gene == _maxNumber) {
       return 0;
     } else {
-      return _gene.add(1);
+      return (_gene + 1);
     }
   }
 
-  function _calcIfDominantIsFirstParent() private view returns (bool) {
+  function _calcIfDominantIsFirstParent() private returns (bool) {
     // 0 -> first parent , 1 -> second parent
-    randNonceGeneScience.add(1);
+    randNonceGeneScience = randNonceGeneScience + 1;
     return (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, randNonceGeneScience))) % 2) > 0;
   }
 
-  function _calcIfDominant() internal view returns (bool) {
-    randNonceGeneScience.add(1);
+  function _calcIfDominant() internal returns (bool) {
+    randNonceGeneScience = randNonceGeneScience + 1;
     return
       (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, randNonceGeneScience))) % 100) <
       dominantChance;
   }
 
-  function _calcIfMutation() internal view returns (bool) {
-    randNonceGeneScience.add(1);
+  function _calcIfMutation() internal returns (bool) {
+    randNonceGeneScience = randNonceGeneScience + 1;
     return
       (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, randNonceGeneScience))) % 100) <
       mutationChance;
   }
 
-  function _calculateAttackPowerFromDna(uint256 _dna) internal pure returns (uint8) {
+  function _calculateAttackPowerFromDna(uint256 _dna) internal pure returns (uint256) {
     /*
       attack power formula:
       (swordType+1) * (baseAttackPower + 1 + swordMaterial)
@@ -193,15 +186,15 @@ contract GeneScience is SwordUriHelper{
     // get dominant genes from dna
 
     // digits 3-4 correspond to dominant base attack power
-    uint8 baseAttackPower = uint8((_dna % 10000) / 100);
+    uint256 baseAttackPower = (_dna % 10000) / 100;
 
     // digit 6 is the dominant sword material
-    uint8 swordMaterial = uint8((_dna % 1000000) / 100000);
+    uint256 swordMaterial = (_dna % 1000000) / 100000;
 
     // digit 8 is the dominant sword type
-    uint8 swordType = uint8((_dna % 100000000) / 10000000);
+    uint256 swordType = (_dna % 100000000) / 10000000;
 
-    uint8 attackPower = uint8((swordType + 1) * (baseAttackPower + 1 + swordMaterial));
+    uint256 attackPower = (swordType + 1) * (baseAttackPower + 1 + swordMaterial);
     return attackPower;
   }
 
@@ -214,9 +207,9 @@ contract GeneScience is SwordUriHelper{
     internal
     pure
     returns (
-      uint8,
-      uint8,
-      uint8
+      uint256,
+      uint256,
+      uint256
     )
   {
     uint256 currentDna = _dna;
@@ -225,18 +218,18 @@ contract GeneScience is SwordUriHelper{
     currentDna = currentDna / 10000;
 
     // second 2 digits are sword material pair
-    uint16 swordMaterialPair = uint16(currentDna % 100);
-    uint8 dominantSwordMaterial = uint8(swordMaterialPair / 10);
+    uint256 swordMaterialPair = currentDna % 100;
+    uint256 dominantSwordMaterial = swordMaterialPair / 10;
     currentDna = currentDna / 100;
 
     // third 2 digits are sword type pair
-    uint16 swordTypePair = uint16(currentDna % 100);
-    uint8 dominantSwordType = uint8(swordTypePair / 10);
+    uint256 swordTypePair = currentDna % 100;
+    uint256 dominantSwordType = swordTypePair / 10;
     currentDna = currentDna / 100;
 
     // last 4 digits are hilt color pair
-    uint16 hiltColorPair = uint16(currentDna % 10000);
-    uint8 dominantHiltColor = uint8(hiltColorPair / 100);
+    uint256 hiltColorPair = currentDna % 10000;
+    uint256 dominantHiltColor = hiltColorPair / 100;
 
     return (dominantHiltColor, dominantSwordType, dominantSwordMaterial);
   }
