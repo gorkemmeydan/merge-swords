@@ -150,6 +150,9 @@ contract MergeSwordsToken is ERC721URIStorage, NFTMarketplace, Ownable, SwordAtt
   // direct item transfer between parts
   function transferToAdress(uint256 _swordId, address _to) public onlySwordOwner(_swordId, msg.sender) {
     transferFrom(msg.sender, _to, _swordId);
+    swordToOwner[_swordId] = _to;
+    ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] - 1;
+    ownerSwordCount[_to] = ownerSwordCount[_to] + 1;
   }
 
   // the one finishes the game can claim prize
@@ -160,6 +163,24 @@ contract MergeSwordsToken is ERC721URIStorage, NFTMarketplace, Ownable, SwordAtt
       _burnSwordNft(_swordId, msg.sender);
       payable(msg.sender).transfer(address(this).balance);
     }
+  }
+
+  function addToMarketPlace(uint256 _swordId, uint256 _price) public {
+    createMarketItem(address(this), _swordId, _price, msg.sender);
+    swordToOwner[_swordId] = payable(address(0)); // remove from owner
+    ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] - 1; // decrease sword count
+  }
+
+  function withdrawFromMarketPlace(uint256 _swordId) public {
+    withdrawMarketItem(address(this), _swordId, msg.sender);
+    swordToOwner[_swordId] = payable(msg.sender); // add back to owner
+    ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] + 1; // increase sword count
+  }
+
+  function buyFromMarketPlace(uint256 _swordId) public payable {
+    createMarketSale(address(this), _swordId, msg.value, msg.sender);
+    swordToOwner[_swordId] = payable(msg.sender); // add to new owner
+    ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] + 1; // increase sword count
   }
 
   function _getAttackPowerFromSwordId(uint256 _swordId) internal view returns (uint256) {

@@ -36,7 +36,8 @@ contract NFTMarketplace is ReentrancyGuard {
   function createMarketItem(
     address nftContract,
     uint256 tokenId,
-    uint256 price
+    uint256 price,
+    address sender
   ) public payable nonReentrant {
     require(price > 0, "Price must be at least 1 wei");
     require(nftContract == address(this), "Only game items");
@@ -48,41 +49,50 @@ contract NFTMarketplace is ReentrancyGuard {
       itemId,
       nftContract,
       tokenId,
-      payable(msg.sender),
+      payable(sender),
       payable(address(0)),
       price,
       false
     );
 
-    IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);
+    IERC721(nftContract).transferFrom(sender, address(this), tokenId);
 
-    emit MarketItemCreated(itemId, nftContract, tokenId, msg.sender, address(0), price, false);
+    emit MarketItemCreated(itemId, nftContract, tokenId, sender, address(0), price, false);
   }
 
-  function withdrawMarketItem(address nftContract, uint256 itemId) public nonReentrant {
+  function withdrawMarketItem(
+    address nftContract,
+    uint256 itemId,
+    address sender
+  ) public nonReentrant {
     require(nftContract == address(this), "Only game items");
-    require(msg.sender == idToMarketItem[itemId].seller, "Only owner");
+    require(sender == idToMarketItem[itemId].seller, "Only owner");
 
     // make it like sold for free back
     idToMarketItem[itemId].sold = true;
     idToMarketItem[itemId].seller = payable(address(0)); // remove from sold items
     uint256 tokenId = idToMarketItem[itemId].tokenId;
-    IERC721(nftContract).transferFrom(address(this), msg.sender, tokenId);
+    IERC721(nftContract).transferFrom(address(this), sender, tokenId);
     _itemsSold.increment();
   }
 
   // Creates the sale of a marketplace item
   // Transfers ownership of the item, as well as funds between parties
-  function createMarketSale(address nftContract, uint256 itemId) public payable nonReentrant {
+  function createMarketSale(
+    address nftContract,
+    uint256 itemId,
+    uint256 value,
+    address sender
+  ) public payable nonReentrant {
     uint256 price = idToMarketItem[itemId].price;
     uint256 tokenId = idToMarketItem[itemId].tokenId;
-    require(msg.value == price, "Asking price is not equal");
+    require(value == price, "Asking price is not equal");
     require(nftContract == address(this), "Only game items");
 
-    idToMarketItem[itemId].owner = payable(msg.sender);
+    idToMarketItem[itemId].owner = payable(sender);
     idToMarketItem[itemId].sold = true;
-    idToMarketItem[itemId].seller.transfer(msg.value);
-    IERC721(nftContract).transferFrom(address(this), msg.sender, tokenId);
+    idToMarketItem[itemId].seller.transfer(value);
+    IERC721(nftContract).transferFrom(address(this), sender, tokenId);
 
     _itemsSold.increment();
   }

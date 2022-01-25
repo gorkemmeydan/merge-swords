@@ -22,8 +22,7 @@ contract SwordAttack is SwordFactory {
     uint256 monsterAttackPower = calculateMonsterAttackPower(_attackPower);
 
     // normalize their attack powers to not oneshot each other
-    uint256 userNormalizedAP = normalizeAttackPower(_attackPower, monsterAttackPower);
-    uint256 monsterNormalizedAP = normalizeAttackPower(monsterAttackPower, _attackPower);
+    (uint256 userNormalizedAP, uint256 monsterNormalizedAP) = normalizeAttackPower(_attackPower, monsterAttackPower);
 
     // randomly select the first attacker
     // 1 means user starts
@@ -84,9 +83,18 @@ contract SwordAttack is SwordFactory {
     }
   }
 
-  function normalizeAttackPower(uint256 _firstAP, uint256 _secondAP) private pure returns (uint256) {
-    uint256 temp = _firstAP * 10;
-    return temp / _secondAP;
+  function normalizeAttackPower(uint256 _user, uint256 _enemy) private pure returns (uint256, uint256) {
+    if (_user > _enemy) {
+      uint256 normalized = 10000 / _user;
+      normalized = _enemy * normalized;
+      normalized = normalized / 1000;
+      return (10, normalized);
+    } else {
+      uint256 normalized = 10000 / _enemy;
+      normalized = _user * normalized;
+      normalized = normalized / 1000;
+      return (normalized, 10);
+    }
   }
 
   function randomNumberUpTo(uint8 _upperLimit) private returns (uint8) {
@@ -113,9 +121,9 @@ contract SwordAttack is SwordFactory {
 
     // monster attack power randomly bigger or smaller than user
     if (posOrNegative) {
-      return _attackPower + (_attackPower % monsterModifierMod);
+      return _attackPower + (_attackPower / monsterModifierMod);
     } else {
-      uint256 randomMod = _attackPower % monsterModifierMod;
+      uint256 randomMod = _attackPower / monsterModifierMod;
       if (randomMod != _attackPower) {
         return _attackPower - randomMod;
       } else {
