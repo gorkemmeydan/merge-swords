@@ -30,6 +30,10 @@
   padding-left: 2%;
 }
 
+.appNameGoBackWrapper:hover {
+  cursor: pointer;
+}
+
 .appName {
   color: white;
   font-size: 36px;
@@ -44,4 +48,5 @@
   padding-right: 2%;
   display: flex;
   font-weight: 500;
+  column-gap: 1vw;
 }

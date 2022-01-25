@@ -7,3 +7,12 @@
 
   overflow: hidden;
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}

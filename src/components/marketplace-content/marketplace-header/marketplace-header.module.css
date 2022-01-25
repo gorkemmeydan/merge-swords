@@ -1,0 +1,27 @@
+.marketplaceHeader {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  color: white;
+}
+
+.marketplaceLinkWrapper {
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.marketplaceLinkWrapper:hover {
+  cursor: pointer;
+  border-color: rgb(130, 130, 255);
+}
+
+.active {
+  text-decoration: underline;
+}

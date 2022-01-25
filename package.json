@@ -15,11 +15,13 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.4",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-typed": "^1.2.0",
     "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "truffle-contract-size": "^2.0.1",
     "web-vitals": "^1.0.1"
@@ -56,6 +58,8 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.28.0",
     "ganache-cli": "^6.12.2",
     "husky": "^7.0.4",
     "prettier": "^2.5.1",

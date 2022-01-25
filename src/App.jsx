@@ -10,6 +10,7 @@ import MergePage from "./pages/merge/MergePage";
 import RequireAccount from "./router/RequireAccount";
 import TrashPage from "./pages/trash/TrashPage";
 import TransferPage from "./pages/transfer/TransferPage";
+import MarketplacePage from "./pages/marketplace/MarketplacePage";
 
 function App() {
   return (
@@ -54,6 +55,38 @@ function App() {
             element={
               <RequireAccount>
                 <TransferPage />
+              </RequireAccount>
+            }
+          />
+          <Route
+            path="/game/marketplace/history"
+            element={
+              <RequireAccount>
+                <MarketplacePage />
+              </RequireAccount>
+            }
+          />
+          <Route
+            path="/game/marketplace/listed"
+            element={
+              <RequireAccount>
+                <MarketplacePage />
+              </RequireAccount>
+            }
+          />
+          <Route
+            path="/game/marketplace/new"
+            element={
+              <RequireAccount>
+                <MarketplacePage />
+              </RequireAccount>
+            }
+          />
+          <Route
+            path="/game/marketplace"
+            element={
+              <RequireAccount>
+                <MarketplacePage />
               </RequireAccount>
             }
           />
