@@ -1,0 +1,21 @@
+.x-modal .modal-content {
+  background-color: #0d1116;
+  color: white;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.inventory-wrapper {
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: rgb(130, 130, 255);
+
+  padding: 1vw;
+  overflow-y: scroll;
+}

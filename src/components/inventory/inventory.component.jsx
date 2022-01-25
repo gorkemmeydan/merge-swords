@@ -1,22 +1,23 @@
 import React from "react";
+
+import PropTypes from "prop-types";
+
 import InventoryItem from "./inventory-item/inventory-item.component";
 
 import styles from "./inventory.module.css";
 
-const Inventory = () => {
-  const items = [1,2,3,4,5,6,7,8,9,10];
-
+const Inventory = ({ items }) => {
   return (
     <div className={styles.inventoryWrapper}>
-      {
-        items.map((id) => {
-          return (
-            <InventoryItem key={id}/>
-          )
-        })
-      }
+      {items.map((item, id) => {
+        return <InventoryItem key={id} item={item} />;
+      })}
     </div>
-  )
-}
+  );
+};
+
+Inventory.propTypes = {
+  items: PropTypes.array,
+};
 
 export default Inventory;

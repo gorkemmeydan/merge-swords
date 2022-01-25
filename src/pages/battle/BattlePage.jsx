@@ -5,10 +5,10 @@ import Header from "../../components/header";
 const BattlePage = () => {
   return (
     <div>
-      <Header withBackButton={true}/>
+      <Header withBackButton={true} />
       <Battle />
     </div>
   );
-}
+};
 
 export default BattlePage;

@@ -1,31 +1,6 @@
-import React from "react";
-import MintSwordButtonContainer from "../mint-sword-button";
-import RouteButton from "../route-button";
+import WithSpinner from "../with-spinner";
+import GameButtons from "./game-buttons.component";
 
-import styles from "./game-buttons.module.css";
+const GameButtonsContainer = WithSpinner(GameButtons);
 
-const GameButtons = () => {
-  const doesNotOwnSword = true;
-
-  const renderMintSword = () => {
-    if(doesNotOwnSword) {
-      return (
-        <MintSwordButtonContainer isLoading={false}/>
-      )
-    } else return null;
-  }
-
-  return (
-    <>
-      <div className={styles.buttonWrapper}>
-        <RouteButton buttonText="Battle 🗡️" linkPath="/game/battle"/>
-      </div>
-      <div className={styles.buttonWrapper}>
-        <RouteButton buttonText="Merge 🧬" linkPath="/game/merge"/>
-      </div>
-      {renderMintSword()}
-    </>
-  )
-}
-
-export default GameButtons;
+export default GameButtonsContainer;

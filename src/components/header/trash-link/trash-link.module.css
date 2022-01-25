@@ -1,0 +1,11 @@
+.trashLinkWrapper {
+  color: white;
+  font-size: 1.7rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.trashLinkWrapper:hover {
+  cursor: pointer;
+  border-color: rgb(130, 130, 255);
+}

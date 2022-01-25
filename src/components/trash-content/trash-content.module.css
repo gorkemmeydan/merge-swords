@@ -1,0 +1,33 @@
+.trashContentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.selectWrapper {
+  margin-top: 10vh;
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selectButton {
+  width: 15vw;
+  height: 15vw;
+  border: 3px solid;
+  border-color: rgb(130, 130, 255);
+  border-radius: 30px;
+  background-color: rgb(130, 130, 255);
+  font-size: 2.5rem;
+  font-family: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectButton:hover {
+  cursor: pointer;
+}

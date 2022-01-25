@@ -1,0 +1,7 @@
+const InventoryActionTypes = {
+  INVENTORY_REQUEST: "INVENTORY_REQUEST",
+  INVENTORY_SUCCESS: "INVENTORY_SUCCESS",
+  INVENTORY_FAILED: "INVENTORY_FAILED",
+};
+
+export default InventoryActionTypes;

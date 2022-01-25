@@ -1,0 +1,8 @@
+const TrashActionTypes = {
+  SET_SWORD_TRASH: "SET_SWORD_TRASH",
+  TRASH_REQUEST: "TRASH_REQUEST",
+  TRASH_SUCCESS: "TRASH_SUCCESS",
+  TRASH_FAILED: "TRASH_FAILED",
+};
+
+export default TrashActionTypes;

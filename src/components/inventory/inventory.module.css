@@ -1,6 +1,7 @@
 .inventoryWrapper {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
+  height: 100%;
   flex: 1;
-  justify-content:space-between;
+  justify-content: space-between;
 }

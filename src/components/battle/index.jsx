@@ -1,21 +1,20 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import BattleContent from "./battle-content/battle-content.component";
 import ReplayContent from "./replay-content/replay-content.component";
 
 const Battle = () => {
-  const replaying = false;
-  
-  const renderBattleContent = () => {
-    if (!replaying) {
-      return <BattleContent />
-    } else {
-      return <ReplayContent />
-    }
-  }
+  const battle = useSelector((state) => state.battle);
 
-  return (
-    renderBattleContent()
-  )
-}
+  const renderBattleContent = () => {
+    if (!battle.isAttackLogActive) {
+      return <BattleContent />;
+    } else {
+      return <ReplayContent />;
+    }
+  };
+
+  return renderBattleContent();
+};
 
 export default Battle;

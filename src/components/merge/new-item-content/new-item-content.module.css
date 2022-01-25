@@ -1,0 +1,34 @@
+.newItemContentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newItem {
+  text-align: center;
+  width: 20vw;
+  height: 10vw;
+  font-size: 6rem;
+  border: grey solid 3px;
+  border-radius: 10px;
+}
+
+.newItem:hover {
+  cursor: pointer;
+}
+
+.continueButton {
+  margin-top: 3vh;
+  width: 10vw;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+.continueButton:hover {
+  cursor: pointer;
+}
