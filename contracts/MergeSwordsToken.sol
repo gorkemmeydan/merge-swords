@@ -6,8 +6,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 import "./SwordAttack.sol";
+import "./NFTMarketplace.sol";
 
-contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
+contract MergeSwordsToken is ERC721URIStorage, NFTMarketplace, Ownable, SwordAttack {
   constructor() ERC721("MERGESWORDS", "SWORD") {}
 
   using Counters for Counters.Counter;
@@ -141,6 +142,26 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
     }
   }
 
+  // for deleting unneccessary items
+  function sendSwordToTrash(uint256 _swordId) public onlySwordOwner(_swordId, msg.sender) {
+    _burnSwordNft(_swordId, msg.sender);
+  }
+
+  // direct item transfer between parts
+  function transferToAdress(uint256 _swordId, address _to) public onlySwordOwner(_swordId, msg.sender) {
+    transferFrom(msg.sender, _to, _swordId);
+  }
+
+  // the one finishes the game can claim prize
+  function claimPrize(uint256 _swordId) public onlySwordOwner(_swordId, msg.sender) {
+    uint256 attackPower = _getAttackPowerFromSwordId(_swordId);
+    // check if reached max level
+    if (attackPower == 92) {
+      _burnSwordNft(_swordId, msg.sender);
+      payable(msg.sender).transfer(address(this).balance);
+    }
+  }
+
   function _getAttackPowerFromSwordId(uint256 _swordId) internal view returns (uint256) {
     Sword memory sword = idToSword[_swordId];
     return sword.attackPower;
@@ -161,5 +182,10 @@ contract MergeSwordsToken is ERC721URIStorage, Ownable, SwordAttack {
       }
     }
     return userSwords;
+  }
+
+  function getSwordFromId(uint256 _id) public view returns (Sword memory) {
+    require(_id < _tokenIds.current(), "Sword does not exist");
+    return idToSword[_id];
   }
 }
