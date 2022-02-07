@@ -16,6 +16,7 @@ contract NFTMarketplace is ReentrancyGuard {
     uint256 itemId;
     address nftContract;
     uint256 tokenId;
+    uint256 dna;
     address payable seller;
     address payable owner;
     uint256 price;
@@ -36,6 +37,7 @@ contract NFTMarketplace is ReentrancyGuard {
   function createMarketItem(
     address nftContract,
     uint256 tokenId,
+    uint256 dna,
     uint256 price,
     address sender
   ) public payable nonReentrant {
@@ -49,6 +51,7 @@ contract NFTMarketplace is ReentrancyGuard {
       itemId,
       nftContract,
       tokenId,
+      dna,
       payable(sender),
       payable(address(0)),
       price,
@@ -105,7 +108,8 @@ contract NFTMarketplace is ReentrancyGuard {
 
     MarketItem[] memory items = new MarketItem[](unsoldItemCount);
     for (uint256 i = 0; i < itemCount; i++) {
-      if (idToMarketItem[i + 1].owner == address(0)) {
+      // discard the withdrawn items
+      if (idToMarketItem[i + 1].owner == address(0) && idToMarketItem[i + 1].seller != address(0)) {
         uint256 currentId = i + 1;
         MarketItem storage currentItem = idToMarketItem[currentId];
         items[currentIndex] = currentItem;
@@ -116,20 +120,20 @@ contract NFTMarketplace is ReentrancyGuard {
   }
 
   // Returns only items that a user has purchased
-  function fetchMyNFTs() public view returns (MarketItem[] memory) {
+  function fetchMyNFTs(address _user) public view returns (MarketItem[] memory) {
     uint256 totalItemCount = _itemIds.current();
     uint256 itemCount = 0;
     uint256 currentIndex = 0;
 
     for (uint256 i = 0; i < totalItemCount; i++) {
-      if (idToMarketItem[i + 1].owner == msg.sender) {
+      if (idToMarketItem[i + 1].owner == _user) {
         itemCount += 1;
       }
     }
 
     MarketItem[] memory items = new MarketItem[](itemCount);
     for (uint256 i = 0; i < totalItemCount; i++) {
-      if (idToMarketItem[i + 1].owner == msg.sender) {
+      if (idToMarketItem[i + 1].owner == _user) {
         uint256 currentId = i + 1;
         MarketItem storage currentItem = idToMarketItem[currentId];
         items[currentIndex] = currentItem;
@@ -140,20 +144,20 @@ contract NFTMarketplace is ReentrancyGuard {
   }
 
   // Returns only items a user has created
-  function fetchItemsCreated() public view returns (MarketItem[] memory) {
+  function fetchItemsCreated(address _user) public view returns (MarketItem[] memory) {
     uint256 totalItemCount = _itemIds.current();
     uint256 itemCount = 0;
     uint256 currentIndex = 0;
 
     for (uint256 i = 0; i < totalItemCount; i++) {
-      if (idToMarketItem[i + 1].seller == msg.sender) {
+      if (idToMarketItem[i + 1].seller == _user) {
         itemCount += 1;
       }
     }
 
     MarketItem[] memory items = new MarketItem[](itemCount);
     for (uint256 i = 0; i < totalItemCount; i++) {
-      if (idToMarketItem[i + 1].seller == msg.sender) {
+      if (idToMarketItem[i + 1].seller == _user) {
         uint256 currentId = i + 1;
         MarketItem storage currentItem = idToMarketItem[currentId];
         items[currentIndex] = currentItem;

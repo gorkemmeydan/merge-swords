@@ -166,19 +166,21 @@ contract MergeSwordsToken is ERC721URIStorage, NFTMarketplace, Ownable, SwordAtt
   }
 
   function addToMarketPlace(uint256 _swordId, uint256 _price) public {
-    createMarketItem(address(this), _swordId, _price, msg.sender);
+    // owner should approve for contract to transfer his NFTs
+    approve(address(this), _swordId);
+    createMarketItem(address(this), _swordId, idToSword[_swordId].dna, _price, msg.sender);
     swordToOwner[_swordId] = payable(address(0)); // remove from owner
     ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] - 1; // decrease sword count
   }
 
-  function withdrawFromMarketPlace(uint256 _swordId) public {
-    withdrawMarketItem(address(this), _swordId, msg.sender);
+  function withdrawFromMarketPlace(uint256 _swordId, uint256 _marketId) public {
+    withdrawMarketItem(address(this), _marketId, msg.sender);
     swordToOwner[_swordId] = payable(msg.sender); // add back to owner
     ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] + 1; // increase sword count
   }
 
-  function buyFromMarketPlace(uint256 _swordId) public payable {
-    createMarketSale(address(this), _swordId, msg.value, msg.sender);
+  function buyFromMarketPlace(uint256 _swordId, uint256 _marketId) public payable {
+    createMarketSale(address(this), _marketId, msg.value, msg.sender);
     swordToOwner[_swordId] = payable(msg.sender); // add to new owner
     ownerSwordCount[msg.sender] = ownerSwordCount[msg.sender] + 1; // increase sword count
   }
