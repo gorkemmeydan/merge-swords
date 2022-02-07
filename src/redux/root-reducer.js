@@ -7,6 +7,7 @@ import battleReducer from "./battle/battle.reducer";
 import mergeReducer from "./merge/merge.reducer";
 import trashReducer from "./trash/trash.reducer";
 import transferReducer from "./transfer/transfer.reducer";
+import marketplaceReducer from "./marketplace/marketplace.reducer";
 
 const rootReducer = combineReducers({
   blockchain: blockchainReducer,
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   merge: mergeReducer,
   trash: trashReducer,
   transfer: transferReducer,
+  marketplace: marketplaceReducer,
 });
 
 export default rootReducer;

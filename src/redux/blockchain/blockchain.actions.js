@@ -105,17 +105,11 @@ export const connect = () => {
         const networkId = await window.ethereum.request({
           method: "net_version",
         });
-        // console.log(networkId);
-        // 1337
         const mergeSwordsTokenNetworkData = await MergeSwordsToken.networks[networkId];
         console.log(mergeSwordsTokenNetworkData.adress);
         console.log(accounts[0]);
         if (mergeSwordsTokenNetworkData) {
-          const mergeSwordsToken = new web3.eth.Contract(
-            MergeSwordsToken.abi,
-            mergeSwordsTokenNetworkData.adress
-            // "0x247700BBab4dC984547444eCaa95f4E3Ed5dEC74"
-          );
+          const mergeSwordsToken = new web3.eth.Contract(MergeSwordsToken.abi, mergeSwordsTokenNetworkData.adress);
           dispatch(
             connectSuccess({
               account: accounts[0],
@@ -130,7 +124,7 @@ export const connect = () => {
           window.ethereum.on("chainChanged", () => {
             window.location.reload();
           });
-          // Add listeners end
+          window.location.reload();
         } else {
           dispatch(connectFailed("Change network to Polygon."));
         }

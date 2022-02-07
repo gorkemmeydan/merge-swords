@@ -31,7 +31,7 @@ const WalletInfo = () => {
 
   return (
     <div className={styles.walletInfo}>
-      <div className={styles.userBalance}>{etherBalance ? etherBalance.toFixed(3) : 0} ETH</div>
+      <div className={styles.userBalance}>{etherBalance ? etherBalance.toFixed(3) : 0} AVAX</div>
       <div className={styles.userAccount}>
         {account && `${account.slice(0, 6)}...${account.slice(account.length - 4, account.length)}`}
         <Identicon />

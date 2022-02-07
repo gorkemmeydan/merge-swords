@@ -1,0 +1,29 @@
+.marketplaceItemWrapper {
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.marketplaceItemArt {
+  margin-bottom: 1px;
+}
+
+.marketplaceItemArt:hover {
+  cursor: pointer;
+}
+
+.informationAndActions {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.marketplaceItemButton {
+  border: none;
+  background-color: rgb(130, 130, 255);
+  border-radius: 6px;
+}

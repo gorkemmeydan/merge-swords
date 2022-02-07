@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "../../components/header";
-import Marketplace from "../../components/marketplace";
 import MarketplaceContent from "../../components/marketplace-content";
+import MarketplaceNew from "../../components/marketplace-new";
 
-const MarketplacePage = () => {
+const MarketplaceNewPage = () => {
   return (
     <div>
       <Header withBackButton={true} />
       <MarketplaceContent>
-        <Marketplace />
+        <MarketplaceNew />
       </MarketplaceContent>
     </div>
   );
 };
 
-export default MarketplacePage;
+export default MarketplaceNewPage;

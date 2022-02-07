@@ -11,6 +11,9 @@ import RequireAccount from "./router/RequireAccount";
 import TrashPage from "./pages/trash/TrashPage";
 import TransferPage from "./pages/transfer/TransferPage";
 import MarketplacePage from "./pages/marketplace/MarketplacePage";
+import MarketplaceNewPage from "./pages/marketplace/MarketplaceNewPage";
+import MarketplaceListedPage from "./pages/marketplace/MarketplaceListedPage";
+import MarketplaceHistoryPage from "./pages/marketplace/MarketplaceHistoryPage";
 
 function App() {
   return (
@@ -62,7 +65,7 @@ function App() {
             path="/game/marketplace/history"
             element={
               <RequireAccount>
-                <MarketplacePage />
+                <MarketplaceHistoryPage />
               </RequireAccount>
             }
           />
@@ -70,7 +73,7 @@ function App() {
             path="/game/marketplace/listed"
             element={
               <RequireAccount>
-                <MarketplacePage />
+                <MarketplaceListedPage />
               </RequireAccount>
             }
           />
@@ -78,7 +81,7 @@ function App() {
             path="/game/marketplace/new"
             element={
               <RequireAccount>
-                <MarketplacePage />
+                <MarketplaceNewPage />
               </RequireAccount>
             }
           />

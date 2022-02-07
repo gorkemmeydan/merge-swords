@@ -1726,7 +1726,7 @@
     "absolutePath": "project:/contracts/GeneScience.sol",
     "exportedSymbols": {
       "Base64": [
-        5013
+        5046
       ],
       "GeneScience": [
         2513
@@ -1735,7 +1735,7 @@
         1860
       ],
       "SwordUriHelper": [
-        4711
+        4744
       ]
     },
     "id": 2514,
@@ -1763,7 +1763,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2514,
-        "sourceUnit": 4712,
+        "sourceUnit": 4745,
         "src": "66:30:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1776,7 +1776,7 @@
               "id": 1900,
               "name": "SwordUriHelper",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4711,
+              "referencedDeclaration": 4744,
               "src": "162:14:13"
             },
             "id": 1901,
@@ -1791,7 +1791,7 @@
         "id": 2513,
         "linearizedBaseContracts": [
           2513,
-          4711
+          4744
         ],
         "name": "GeneScience",
         "nameLocation": "147:11:13",
@@ -9908,7 +9908,7 @@
     "absolutePath": "project:/contracts/GeneScience.sol",
     "exportedSymbols": {
       "Base64": [
-        5013
+        5046
       ],
       "GeneScience": [
         2513
@@ -9917,7 +9917,7 @@
         1860
       ],
       "SwordUriHelper": [
-        4711
+        4744
       ]
     },
     "id": 2514,
@@ -9945,7 +9945,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 2514,
-        "sourceUnit": 4712,
+        "sourceUnit": 4745,
         "src": "66:30:13",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9958,7 +9958,7 @@
               "id": 1900,
               "name": "SwordUriHelper",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4711,
+              "referencedDeclaration": 4744,
               "src": "162:14:13"
             },
             "id": 1901,
@@ -9973,7 +9973,7 @@
         "id": 2513,
         "linearizedBaseContracts": [
           2513,
-          4711
+          4744
         ],
         "name": "GeneScience",
         "nameLocation": "147:11:13",
@@ -18092,7 +18092,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-25T14:52:15.487Z",
+  "updatedAt": "2022-02-07T08:01:57.124Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

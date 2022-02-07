@@ -16,7 +16,7 @@ const ItemDetailsModal = (props) => {
         </Modal.Header>
 
         <Modal.Body>
-          <ItemModalContent item={props.item} />
+          <ItemModalContent item={props.item} isMarket={props.isMarket} />
         </Modal.Body>
       </Modal>
     </>
@@ -24,6 +24,7 @@ const ItemDetailsModal = (props) => {
 };
 
 ItemDetailsModal.propTypes = {
+  isMarket: PropTypes.bool,
   show: PropTypes.bool,
   onHide: PropTypes.func,
   name: PropTypes.string,

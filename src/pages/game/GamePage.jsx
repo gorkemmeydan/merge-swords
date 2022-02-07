@@ -18,10 +18,6 @@ const GamePage = () => {
     dispatch(getInventory());
   }, []);
 
-  // useEffect(() => {
-  //   console.log(inventory.items);
-  // }, [inventory]);
-
   return (
     <div className={styles.gamePageWrapper}>
       <Header />

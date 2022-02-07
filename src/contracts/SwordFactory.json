@@ -1726,7 +1726,7 @@
     "absolutePath": "project:/contracts/SwordFactory.sol",
     "exportedSymbols": {
       "Base64": [
-        5013
+        5046
       ],
       "GeneScience": [
         2513
@@ -1735,18 +1735,18 @@
         1860
       ],
       "SwordFactory": [
-        4466
+        4499
       ],
       "SwordUriHelper": [
-        4711
+        4744
       ]
     },
-    "id": 4467,
+    "id": 4500,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4298,
+        "id": 4331,
         "literals": [
           "solidity",
           ">=",
@@ -1762,10 +1762,10 @@
       {
         "absolutePath": "project:/contracts/GeneScience.sol",
         "file": "./GeneScience.sol",
-        "id": 4299,
+        "id": 4332,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4467,
+        "scope": 4500,
         "sourceUnit": 2514,
         "src": "66:27:18",
         "symbolAliases": [],
@@ -1776,13 +1776,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 4300,
+              "id": 4333,
               "name": "GeneScience",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2513,
               "src": "120:11:18"
             },
-            "id": 4301,
+            "id": 4334,
             "nodeType": "InheritanceSpecifier",
             "src": "120:11:18"
           }
@@ -1791,11 +1791,11 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4466,
+        "id": 4499,
         "linearizedBaseContracts": [
-          4466,
+          4499,
           2513,
-          4711
+          4744
         ],
         "name": "SwordFactory",
         "nameLocation": "104:12:18",
@@ -1803,16 +1803,16 @@
         "nodes": [
           {
             "canonicalName": "SwordFactory.Sword",
-            "id": 4314,
+            "id": 4347,
             "members": [
               {
                 "constant": false,
-                "id": 4303,
+                "id": 4336,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "163:2:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "155:10:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1821,7 +1821,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4302,
+                  "id": 4335,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:7:18",
@@ -1834,12 +1834,12 @@
               },
               {
                 "constant": false,
-                "id": 4305,
+                "id": 4338,
                 "mutability": "mutable",
                 "name": "dna",
                 "nameLocation": "179:3:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "171:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1848,7 +1848,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4304,
+                  "id": 4337,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "171:7:18",
@@ -1861,12 +1861,12 @@
               },
               {
                 "constant": false,
-                "id": 4307,
+                "id": 4340,
                 "mutability": "mutable",
                 "name": "attackPower",
                 "nameLocation": "196:11:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "188:19:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1875,7 +1875,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4306,
+                  "id": 4339,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "188:7:18",
@@ -1888,12 +1888,12 @@
               },
               {
                 "constant": false,
-                "id": 4309,
+                "id": 4342,
                 "mutability": "mutable",
                 "name": "generation",
                 "nameLocation": "220:10:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "213:17:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1902,7 +1902,7 @@
                   "typeString": "uint32"
                 },
                 "typeName": {
-                  "id": 4308,
+                  "id": 4341,
                   "name": "uint32",
                   "nodeType": "ElementaryTypeName",
                   "src": "213:6:18",
@@ -1915,12 +1915,12 @@
               },
               {
                 "constant": false,
-                "id": 4311,
+                "id": 4344,
                 "mutability": "mutable",
                 "name": "winCount",
                 "nameLocation": "243:8:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "236:15:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1929,7 +1929,7 @@
                   "typeString": "uint16"
                 },
                 "typeName": {
-                  "id": 4310,
+                  "id": 4343,
                   "name": "uint16",
                   "nodeType": "ElementaryTypeName",
                   "src": "236:6:18",
@@ -1942,12 +1942,12 @@
               },
               {
                 "constant": false,
-                "id": 4313,
+                "id": 4346,
                 "mutability": "mutable",
                 "name": "lossCount",
                 "nameLocation": "264:9:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "257:16:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1956,7 +1956,7 @@
                   "typeString": "uint16"
                 },
                 "typeName": {
-                  "id": 4312,
+                  "id": 4345,
                   "name": "uint16",
                   "nodeType": "ElementaryTypeName",
                   "src": "257:6:18",
@@ -1971,65 +1971,65 @@
             "name": "Sword",
             "nameLocation": "143:5:18",
             "nodeType": "StructDefinition",
-            "scope": 4466,
+            "scope": 4499,
             "src": "136:142:18",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4342,
+              "id": 4375,
               "nodeType": "Block",
               "src": "404:128:18",
               "statements": [
                 {
                   "assignments": [
-                    4328
+                    4361
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4328,
+                      "id": 4361,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "423:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4342,
+                      "scope": 4375,
                       "src": "410:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4327,
+                        "id": 4360,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4326,
+                          "id": 4359,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "410:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "410:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4339,
+                  "id": 4372,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4330,
+                        "id": 4363,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4316,
+                        "referencedDeclaration": 4349,
                         "src": "440:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2037,11 +2037,11 @@
                         }
                       },
                       {
-                        "id": 4331,
+                        "id": 4364,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4318,
+                        "referencedDeclaration": 4351,
                         "src": "445:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2051,11 +2051,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 4333,
+                            "id": 4366,
                             "name": "_dna",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4318,
+                            "referencedDeclaration": 4351,
                             "src": "480:4:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2070,7 +2070,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 4332,
+                          "id": 4365,
                           "name": "_calculateAttackPowerFromDna",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2081,7 +2081,7 @@
                             "typeString": "function (uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 4334,
+                        "id": 4367,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2097,11 +2097,11 @@
                         }
                       },
                       {
-                        "id": 4335,
+                        "id": 4368,
                         "name": "_generation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4320,
+                        "referencedDeclaration": 4353,
                         "src": "487:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -2110,7 +2110,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4336,
+                        "id": 4369,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2126,7 +2126,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4337,
+                        "id": 4370,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2168,18 +2168,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4329,
+                      "id": 4362,
                       "name": "Sword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "434:5:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Sword_$4314_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Sword_$4347_storage_ptr_$",
                         "typeString": "type(struct SwordFactory.Sword storage pointer)"
                       }
                     },
-                    "id": 4338,
+                    "id": 4371,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2190,7 +2190,7 @@
                     "src": "434:71:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -2199,25 +2199,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4340,
+                    "id": 4373,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4328,
+                    "referencedDeclaration": 4361,
                     "src": "519:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4325,
-                  "id": 4341,
+                  "functionReturnParameters": 4358,
+                  "id": 4374,
                   "nodeType": "Return",
                   "src": "512:15:18"
                 }
               ]
             },
-            "id": 4343,
+            "id": 4376,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -2225,17 +2225,17 @@
             "nameLocation": "291:12:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4321,
+              "id": 4354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4316,
+                  "id": 4349,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "317:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "309:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2244,7 +2244,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4315,
+                    "id": 4348,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "309:7:18",
@@ -2257,12 +2257,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4318,
+                  "id": 4351,
                   "mutability": "mutable",
                   "name": "_dna",
                   "nameLocation": "334:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "326:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2271,7 +2271,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4317,
+                    "id": 4350,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "326:7:18",
@@ -2284,12 +2284,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4320,
+                  "id": 4353,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "351:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "344:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2298,7 +2298,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4319,
+                    "id": 4352,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "344:6:18",
@@ -2313,38 +2313,38 @@
               "src": "303:63:18"
             },
             "returnParameters": {
-              "id": 4325,
+              "id": 4358,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4324,
+                  "id": 4357,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "390:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4323,
+                    "id": 4356,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4322,
+                      "id": 4355,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "390:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "390:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -2353,7 +2353,7 @@
               ],
               "src": "389:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "282:250:18",
             "stateMutability": "pure",
             "virtual": false,
@@ -2361,23 +2361,23 @@
           },
           {
             "body": {
-              "id": 4367,
+              "id": 4400,
               "nodeType": "Block",
               "src": "660:130:18",
               "statements": [
                 {
                   "assignments": [
-                    4352
+                    4385
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4352,
+                      "id": 4385,
                       "mutability": "mutable",
                       "name": "basicDna",
                       "nameLocation": "674:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4367,
+                      "scope": 4400,
                       "src": "666:16:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2386,7 +2386,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4351,
+                        "id": 4384,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "666:7:18",
@@ -2398,12 +2398,12 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4355,
+                  "id": 4388,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 4353,
+                      "id": 4386,
                       "name": "_generateBasicDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2414,7 +2414,7 @@
                         "typeString": "function () pure returns (uint256)"
                       }
                     },
-                    "id": 4354,
+                    "id": 4387,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2434,53 +2434,53 @@
                 },
                 {
                   "assignments": [
-                    4358
+                    4391
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4358,
+                      "id": 4391,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "723:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4367,
+                      "scope": 4400,
                       "src": "710:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4357,
+                        "id": 4390,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4356,
+                          "id": 4389,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "710:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "710:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4364,
+                  "id": 4397,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4360,
+                        "id": 4393,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4345,
+                        "referencedDeclaration": 4378,
                         "src": "747:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2488,11 +2488,11 @@
                         }
                       },
                       {
-                        "id": 4361,
+                        "id": 4394,
                         "name": "basicDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4352,
+                        "referencedDeclaration": 4385,
                         "src": "752:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2501,7 +2501,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4362,
+                        "id": 4395,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2531,18 +2531,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4359,
+                      "id": 4392,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "734:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4363,
+                    "id": 4396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2553,7 +2553,7 @@
                     "src": "734:30:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -2562,25 +2562,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4365,
+                    "id": 4398,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4358,
+                    "referencedDeclaration": 4391,
                     "src": "777:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4350,
-                  "id": 4366,
+                  "functionReturnParameters": 4383,
+                  "id": 4399,
                   "nodeType": "Return",
                   "src": "770:15:18"
                 }
               ]
             },
-            "id": 4368,
+            "id": 4401,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -2588,17 +2588,17 @@
             "nameLocation": "586:23:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4346,
+              "id": 4379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4345,
+                  "id": 4378,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "618:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4368,
+                  "scope": 4401,
                   "src": "610:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2607,7 +2607,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4344,
+                    "id": 4377,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:7:18",
@@ -2622,38 +2622,38 @@
               "src": "609:13:18"
             },
             "returnParameters": {
-              "id": 4350,
+              "id": 4383,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4349,
+                  "id": 4382,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4368,
+                  "scope": 4401,
                   "src": "646:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4348,
+                    "id": 4381,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4347,
+                      "id": 4380,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "646:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "646:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -2662,7 +2662,7 @@
               ],
               "src": "645:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "577:213:18",
             "stateMutability": "pure",
             "virtual": false,
@@ -2670,23 +2670,23 @@
           },
           {
             "body": {
-              "id": 4400,
+              "id": 4433,
               "nodeType": "Block",
               "src": "953:170:18",
               "statements": [
                 {
                   "assignments": [
-                    4383
+                    4416
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4383,
+                      "id": 4416,
                       "mutability": "mutable",
                       "name": "newSwordDna",
                       "nameLocation": "967:11:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4400,
+                      "scope": 4433,
                       "src": "959:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2695,7 +2695,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4382,
+                        "id": 4415,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "959:7:18",
@@ -2707,15 +2707,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4388,
+                  "id": 4421,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4385,
+                        "id": 4418,
                         "name": "_swordOneDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4372,
+                        "referencedDeclaration": 4405,
                         "src": "997:12:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2723,11 +2723,11 @@
                         }
                       },
                       {
-                        "id": 4386,
+                        "id": 4419,
                         "name": "_swordTwoDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4374,
+                        "referencedDeclaration": 4407,
                         "src": "1011:12:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2746,7 +2746,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4384,
+                      "id": 4417,
                       "name": "_mergeSwordsDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2757,7 +2757,7 @@
                         "typeString": "function (uint256,uint256) returns (uint256)"
                       }
                     },
-                    "id": 4387,
+                    "id": 4420,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2777,53 +2777,53 @@
                 },
                 {
                   "assignments": [
-                    4391
+                    4424
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4391,
+                      "id": 4424,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "1043:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4400,
+                      "scope": 4433,
                       "src": "1030:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4390,
+                        "id": 4423,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4389,
+                          "id": 4422,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "1030:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "1030:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4397,
+                  "id": 4430,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4393,
+                        "id": 4426,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4370,
+                        "referencedDeclaration": 4403,
                         "src": "1067:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2831,11 +2831,11 @@
                         }
                       },
                       {
-                        "id": 4394,
+                        "id": 4427,
                         "name": "newSwordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4383,
+                        "referencedDeclaration": 4416,
                         "src": "1072:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2843,11 +2843,11 @@
                         }
                       },
                       {
-                        "id": 4395,
+                        "id": 4428,
                         "name": "_generation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4376,
+                        "referencedDeclaration": 4409,
                         "src": "1085:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -2870,18 +2870,18 @@
                           "typeString": "uint32"
                         }
                       ],
-                      "id": 4392,
+                      "id": 4425,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "1054:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4396,
+                    "id": 4429,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2892,7 +2892,7 @@
                     "src": "1054:43:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -2901,25 +2901,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4398,
+                    "id": 4431,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4391,
+                    "referencedDeclaration": 4424,
                     "src": "1110:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4381,
-                  "id": 4399,
+                  "functionReturnParameters": 4414,
+                  "id": 4432,
                   "nodeType": "Return",
                   "src": "1103:15:18"
                 }
               ]
             },
-            "id": 4401,
+            "id": 4434,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -2927,17 +2927,17 @@
             "nameLocation": "803:20:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4377,
+              "id": 4410,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4370,
+                  "id": 4403,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "837:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "829:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2946,7 +2946,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4369,
+                    "id": 4402,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "829:7:18",
@@ -2959,12 +2959,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4372,
+                  "id": 4405,
                   "mutability": "mutable",
                   "name": "_swordOneDna",
                   "nameLocation": "854:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "846:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2973,7 +2973,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4371,
+                    "id": 4404,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "846:7:18",
@@ -2986,12 +2986,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4374,
+                  "id": 4407,
                   "mutability": "mutable",
                   "name": "_swordTwoDna",
                   "nameLocation": "880:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "872:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3000,7 +3000,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4373,
+                    "id": 4406,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "872:7:18",
@@ -3013,12 +3013,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4376,
+                  "id": 4409,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "905:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "898:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3027,7 +3027,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4375,
+                    "id": 4408,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "898:6:18",
@@ -3042,38 +3042,38 @@
               "src": "823:97:18"
             },
             "returnParameters": {
-              "id": 4381,
+              "id": 4414,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4380,
+                  "id": 4413,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "939:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4379,
+                    "id": 4412,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4378,
+                      "id": 4411,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "939:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "939:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -3082,7 +3082,7 @@
               ],
               "src": "938:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "794:329:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -3090,23 +3090,23 @@
           },
           {
             "body": {
-              "id": 4429,
+              "id": 4462,
               "nodeType": "Block",
               "src": "1220:292:18",
               "statements": [
                 {
                   "assignments": [
-                    4412
+                    4445
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4412,
+                      "id": 4445,
                       "mutability": "mutable",
                       "name": "newSwordDna",
                       "nameLocation": "1297:11:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4429,
+                      "scope": 4462,
                       "src": "1289:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3115,7 +3115,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4411,
+                        "id": 4444,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1289:7:18",
@@ -3127,15 +3127,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4417,
+                  "id": 4450,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4414,
+                        "id": 4447,
                         "name": "_swordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4438,
                         "src": "1327:9:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3143,11 +3143,11 @@
                         }
                       },
                       {
-                        "id": 4415,
+                        "id": 4448,
                         "name": "_swordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4438,
                         "src": "1338:9:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3166,7 +3166,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4413,
+                      "id": 4446,
                       "name": "_mergeSwordsDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3177,7 +3177,7 @@
                         "typeString": "function (uint256,uint256) returns (uint256)"
                       }
                     },
-                    "id": 4416,
+                    "id": 4449,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3197,53 +3197,53 @@
                 },
                 {
                   "assignments": [
-                    4420
+                    4453
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4420,
+                      "id": 4453,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "1442:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4429,
+                      "scope": 4462,
                       "src": "1429:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4419,
+                        "id": 4452,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4418,
+                          "id": 4451,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "1429:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "1429:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4426,
+                  "id": 4459,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4422,
+                        "id": 4455,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4403,
+                        "referencedDeclaration": 4436,
                         "src": "1466:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3251,11 +3251,11 @@
                         }
                       },
                       {
-                        "id": 4423,
+                        "id": 4456,
                         "name": "newSwordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4412,
+                        "referencedDeclaration": 4445,
                         "src": "1471:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3264,7 +3264,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4424,
+                        "id": 4457,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3294,18 +3294,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4421,
+                      "id": 4454,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "1453:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4425,
+                    "id": 4458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3316,7 +3316,7 @@
                     "src": "1453:33:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -3325,25 +3325,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4427,
+                    "id": 4460,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4420,
+                    "referencedDeclaration": 4453,
                     "src": "1499:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4410,
-                  "id": 4428,
+                  "functionReturnParameters": 4443,
+                  "id": 4461,
                   "nodeType": "Return",
                   "src": "1492:15:18"
                 }
               ]
             },
-            "id": 4430,
+            "id": 4463,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3351,17 +3351,17 @@
             "nameLocation": "1136:19:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4406,
+              "id": 4439,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4403,
+                  "id": 4436,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "1164:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1156:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3370,7 +3370,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4402,
+                    "id": 4435,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1156:7:18",
@@ -3383,12 +3383,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4405,
+                  "id": 4438,
                   "mutability": "mutable",
                   "name": "_swordDna",
                   "nameLocation": "1177:9:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1169:17:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3397,7 +3397,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4404,
+                    "id": 4437,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1169:7:18",
@@ -3412,38 +3412,38 @@
               "src": "1155:32:18"
             },
             "returnParameters": {
-              "id": 4410,
+              "id": 4443,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4409,
+                  "id": 4442,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1206:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4408,
+                    "id": 4441,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4407,
+                      "id": 4440,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "1206:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "1206:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -3452,7 +3452,7 @@
               ],
               "src": "1205:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "1127:385:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -3460,25 +3460,25 @@
           },
           {
             "body": {
-              "id": 4464,
+              "id": 4497,
               "nodeType": "Block",
               "src": "1620:229:18",
               "statements": [
                 {
                   "assignments": [
-                    4441,
-                    4443,
-                    4445
+                    4474,
+                    4476,
+                    4478
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4441,
+                      "id": 4474,
                       "mutability": "mutable",
                       "name": "hilt",
                       "nameLocation": "1635:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1627:12:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3487,7 +3487,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4440,
+                        "id": 4473,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1627:7:18",
@@ -3500,12 +3500,12 @@
                     },
                     {
                       "constant": false,
-                      "id": 4443,
+                      "id": 4476,
                       "mutability": "mutable",
                       "name": "swordType",
                       "nameLocation": "1649:9:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1641:17:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3514,7 +3514,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4442,
+                        "id": 4475,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1641:7:18",
@@ -3527,12 +3527,12 @@
                     },
                     {
                       "constant": false,
-                      "id": 4445,
+                      "id": 4478,
                       "mutability": "mutable",
                       "name": "swordMaterial",
                       "nameLocation": "1668:13:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1660:21:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3541,7 +3541,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4444,
+                        "id": 4477,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1660:7:18",
@@ -3553,30 +3553,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4450,
+                  "id": 4483,
                   "initialValue": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4447,
+                          "id": 4480,
                           "name": "_sword",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4435,
+                          "referencedDeclaration": 4468,
                           "src": "1704:6:18",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                            "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                             "typeString": "struct SwordFactory.Sword memory"
                           }
                         },
-                        "id": 4448,
+                        "id": 4481,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "dna",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4305,
+                        "referencedDeclaration": 4338,
                         "src": "1704:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3591,7 +3591,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4446,
+                      "id": 4479,
                       "name": "_calcUriAttributes",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -3602,7 +3602,7 @@
                         "typeString": "function (uint256) pure returns (uint256,uint256,uint256)"
                       }
                     },
-                    "id": 4449,
+                    "id": 4482,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3626,11 +3626,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 4453,
+                            "id": 4486,
                             "name": "_swordId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4432,
+                            "referencedDeclaration": 4465,
                             "src": "1763:8:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3639,25 +3639,25 @@
                           },
                           {
                             "expression": {
-                              "id": 4454,
+                              "id": 4487,
                               "name": "_sword",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4435,
+                              "referencedDeclaration": 4468,
                               "src": "1773:6:18",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                                "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                                 "typeString": "struct SwordFactory.Sword memory"
                               }
                             },
-                            "id": 4455,
+                            "id": 4488,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "attackPower",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4307,
+                            "referencedDeclaration": 4340,
                             "src": "1773:18:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3666,25 +3666,25 @@
                           },
                           {
                             "expression": {
-                              "id": 4456,
+                              "id": 4489,
                               "name": "_sword",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4435,
+                              "referencedDeclaration": 4468,
                               "src": "1793:6:18",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                                "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                                 "typeString": "struct SwordFactory.Sword memory"
                               }
                             },
-                            "id": 4457,
+                            "id": 4490,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "generation",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4309,
+                            "referencedDeclaration": 4342,
                             "src": "1793:17:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -3692,11 +3692,11 @@
                             }
                           },
                           {
-                            "id": 4458,
+                            "id": 4491,
                             "name": "hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4441,
+                            "referencedDeclaration": 4474,
                             "src": "1812:4:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3704,11 +3704,11 @@
                             }
                           },
                           {
-                            "id": 4459,
+                            "id": 4492,
                             "name": "swordType",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4443,
+                            "referencedDeclaration": 4476,
                             "src": "1818:9:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3716,11 +3716,11 @@
                             }
                           },
                           {
-                            "id": 4460,
+                            "id": 4493,
                             "name": "swordMaterial",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4445,
+                            "referencedDeclaration": 4478,
                             "src": "1829:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3755,18 +3755,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 4452,
+                          "id": 4485,
                           "name": "SwordUriProps",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4555,
+                          "referencedDeclaration": 4588,
                           "src": "1749:13:18",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_SwordUriProps_$4555_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_SwordUriProps_$4588_storage_ptr_$",
                             "typeString": "type(struct SwordUriHelper.SwordUriProps storage pointer)"
                           }
                         },
-                        "id": 4461,
+                        "id": 4494,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3777,7 +3777,7 @@
                         "src": "1749:94:18",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_SwordUriProps_$4555_memory_ptr",
+                          "typeIdentifier": "t_struct$_SwordUriProps_$4588_memory_ptr",
                           "typeString": "struct SwordUriHelper.SwordUriProps memory"
                         }
                       }
@@ -3785,22 +3785,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_SwordUriProps_$4555_memory_ptr",
+                          "typeIdentifier": "t_struct$_SwordUriProps_$4588_memory_ptr",
                           "typeString": "struct SwordUriHelper.SwordUriProps memory"
                         }
                       ],
-                      "id": 4451,
+                      "id": 4484,
                       "name": "_makeSwordUri",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4571,
+                      "referencedDeclaration": 4604,
                       "src": "1735:13:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_SwordUriProps_$4555_memory_ptr_$returns$_t_string_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_SwordUriProps_$4588_memory_ptr_$returns$_t_string_memory_ptr_$",
                         "typeString": "function (struct SwordUriHelper.SwordUriProps memory) view returns (string memory)"
                       }
                     },
-                    "id": 4462,
+                    "id": 4495,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3815,14 +3815,14 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4439,
-                  "id": 4463,
+                  "functionReturnParameters": 4472,
+                  "id": 4496,
                   "nodeType": "Return",
                   "src": "1722:122:18"
                 }
               ]
             },
-            "id": 4465,
+            "id": 4498,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3830,17 +3830,17 @@
             "nameLocation": "1525:17:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4436,
+              "id": 4469,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4432,
+                  "id": 4465,
                   "mutability": "mutable",
                   "name": "_swordId",
                   "nameLocation": "1551:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1543:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3849,7 +3849,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4431,
+                    "id": 4464,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1543:7:18",
@@ -3862,33 +3862,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 4435,
+                  "id": 4468,
                   "mutability": "mutable",
                   "name": "_sword",
                   "nameLocation": "1574:6:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1561:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4434,
+                    "id": 4467,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4433,
+                      "id": 4466,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "1561:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "1561:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -3898,17 +3898,17 @@
               "src": "1542:39:18"
             },
             "returnParameters": {
-              "id": 4439,
+              "id": 4472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4438,
+                  "id": 4471,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1605:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3917,7 +3917,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4437,
+                    "id": 4470,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1605:6:18",
@@ -3931,14 +3931,14 @@
               ],
               "src": "1604:15:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "1516:333:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 4467,
+        "scope": 4500,
         "src": "95:1756:18",
         "usedErrors": []
       }
@@ -3949,7 +3949,7 @@
     "absolutePath": "project:/contracts/SwordFactory.sol",
     "exportedSymbols": {
       "Base64": [
-        5013
+        5046
       ],
       "GeneScience": [
         2513
@@ -3958,18 +3958,18 @@
         1860
       ],
       "SwordFactory": [
-        4466
+        4499
       ],
       "SwordUriHelper": [
-        4711
+        4744
       ]
     },
-    "id": 4467,
+    "id": 4500,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4298,
+        "id": 4331,
         "literals": [
           "solidity",
           ">=",
@@ -3985,10 +3985,10 @@
       {
         "absolutePath": "project:/contracts/GeneScience.sol",
         "file": "./GeneScience.sol",
-        "id": 4299,
+        "id": 4332,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4467,
+        "scope": 4500,
         "sourceUnit": 2514,
         "src": "66:27:18",
         "symbolAliases": [],
@@ -3999,13 +3999,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 4300,
+              "id": 4333,
               "name": "GeneScience",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2513,
               "src": "120:11:18"
             },
-            "id": 4301,
+            "id": 4334,
             "nodeType": "InheritanceSpecifier",
             "src": "120:11:18"
           }
@@ -4014,11 +4014,11 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4466,
+        "id": 4499,
         "linearizedBaseContracts": [
-          4466,
+          4499,
           2513,
-          4711
+          4744
         ],
         "name": "SwordFactory",
         "nameLocation": "104:12:18",
@@ -4026,16 +4026,16 @@
         "nodes": [
           {
             "canonicalName": "SwordFactory.Sword",
-            "id": 4314,
+            "id": 4347,
             "members": [
               {
                 "constant": false,
-                "id": 4303,
+                "id": 4336,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "163:2:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "155:10:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4044,7 +4044,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4302,
+                  "id": 4335,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:7:18",
@@ -4057,12 +4057,12 @@
               },
               {
                 "constant": false,
-                "id": 4305,
+                "id": 4338,
                 "mutability": "mutable",
                 "name": "dna",
                 "nameLocation": "179:3:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "171:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4071,7 +4071,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4304,
+                  "id": 4337,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "171:7:18",
@@ -4084,12 +4084,12 @@
               },
               {
                 "constant": false,
-                "id": 4307,
+                "id": 4340,
                 "mutability": "mutable",
                 "name": "attackPower",
                 "nameLocation": "196:11:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "188:19:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4098,7 +4098,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 4306,
+                  "id": 4339,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "188:7:18",
@@ -4111,12 +4111,12 @@
               },
               {
                 "constant": false,
-                "id": 4309,
+                "id": 4342,
                 "mutability": "mutable",
                 "name": "generation",
                 "nameLocation": "220:10:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "213:17:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4125,7 +4125,7 @@
                   "typeString": "uint32"
                 },
                 "typeName": {
-                  "id": 4308,
+                  "id": 4341,
                   "name": "uint32",
                   "nodeType": "ElementaryTypeName",
                   "src": "213:6:18",
@@ -4138,12 +4138,12 @@
               },
               {
                 "constant": false,
-                "id": 4311,
+                "id": 4344,
                 "mutability": "mutable",
                 "name": "winCount",
                 "nameLocation": "243:8:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "236:15:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4152,7 +4152,7 @@
                   "typeString": "uint16"
                 },
                 "typeName": {
-                  "id": 4310,
+                  "id": 4343,
                   "name": "uint16",
                   "nodeType": "ElementaryTypeName",
                   "src": "236:6:18",
@@ -4165,12 +4165,12 @@
               },
               {
                 "constant": false,
-                "id": 4313,
+                "id": 4346,
                 "mutability": "mutable",
                 "name": "lossCount",
                 "nameLocation": "264:9:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 4314,
+                "scope": 4347,
                 "src": "257:16:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -4179,7 +4179,7 @@
                   "typeString": "uint16"
                 },
                 "typeName": {
-                  "id": 4312,
+                  "id": 4345,
                   "name": "uint16",
                   "nodeType": "ElementaryTypeName",
                   "src": "257:6:18",
@@ -4194,65 +4194,65 @@
             "name": "Sword",
             "nameLocation": "143:5:18",
             "nodeType": "StructDefinition",
-            "scope": 4466,
+            "scope": 4499,
             "src": "136:142:18",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 4342,
+              "id": 4375,
               "nodeType": "Block",
               "src": "404:128:18",
               "statements": [
                 {
                   "assignments": [
-                    4328
+                    4361
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4328,
+                      "id": 4361,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "423:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4342,
+                      "scope": 4375,
                       "src": "410:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4327,
+                        "id": 4360,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4326,
+                          "id": 4359,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "410:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "410:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4339,
+                  "id": 4372,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4330,
+                        "id": 4363,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4316,
+                        "referencedDeclaration": 4349,
                         "src": "440:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4260,11 +4260,11 @@
                         }
                       },
                       {
-                        "id": 4331,
+                        "id": 4364,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4318,
+                        "referencedDeclaration": 4351,
                         "src": "445:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4274,11 +4274,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 4333,
+                            "id": 4366,
                             "name": "_dna",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4318,
+                            "referencedDeclaration": 4351,
                             "src": "480:4:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4293,7 +4293,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 4332,
+                          "id": 4365,
                           "name": "_calculateAttackPowerFromDna",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -4304,7 +4304,7 @@
                             "typeString": "function (uint256) pure returns (uint256)"
                           }
                         },
-                        "id": 4334,
+                        "id": 4367,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4320,11 +4320,11 @@
                         }
                       },
                       {
-                        "id": 4335,
+                        "id": 4368,
                         "name": "_generation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4320,
+                        "referencedDeclaration": 4353,
                         "src": "487:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -4333,7 +4333,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4336,
+                        "id": 4369,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -4349,7 +4349,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4337,
+                        "id": 4370,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -4391,18 +4391,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4329,
+                      "id": 4362,
                       "name": "Sword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "434:5:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Sword_$4314_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Sword_$4347_storage_ptr_$",
                         "typeString": "type(struct SwordFactory.Sword storage pointer)"
                       }
                     },
-                    "id": 4338,
+                    "id": 4371,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4413,7 +4413,7 @@
                     "src": "434:71:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -4422,25 +4422,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4340,
+                    "id": 4373,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4328,
+                    "referencedDeclaration": 4361,
                     "src": "519:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4325,
-                  "id": 4341,
+                  "functionReturnParameters": 4358,
+                  "id": 4374,
                   "nodeType": "Return",
                   "src": "512:15:18"
                 }
               ]
             },
-            "id": 4343,
+            "id": 4376,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -4448,17 +4448,17 @@
             "nameLocation": "291:12:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4321,
+              "id": 4354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4316,
+                  "id": 4349,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "317:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "309:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4467,7 +4467,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4315,
+                    "id": 4348,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "309:7:18",
@@ -4480,12 +4480,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4318,
+                  "id": 4351,
                   "mutability": "mutable",
                   "name": "_dna",
                   "nameLocation": "334:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "326:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4494,7 +4494,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4317,
+                    "id": 4350,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "326:7:18",
@@ -4507,12 +4507,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4320,
+                  "id": 4353,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "351:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "344:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4521,7 +4521,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4319,
+                    "id": 4352,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "344:6:18",
@@ -4536,38 +4536,38 @@
               "src": "303:63:18"
             },
             "returnParameters": {
-              "id": 4325,
+              "id": 4358,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4324,
+                  "id": 4357,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4343,
+                  "scope": 4376,
                   "src": "390:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4323,
+                    "id": 4356,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4322,
+                      "id": 4355,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "390:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "390:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -4576,7 +4576,7 @@
               ],
               "src": "389:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "282:250:18",
             "stateMutability": "pure",
             "virtual": false,
@@ -4584,23 +4584,23 @@
           },
           {
             "body": {
-              "id": 4367,
+              "id": 4400,
               "nodeType": "Block",
               "src": "660:130:18",
               "statements": [
                 {
                   "assignments": [
-                    4352
+                    4385
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4352,
+                      "id": 4385,
                       "mutability": "mutable",
                       "name": "basicDna",
                       "nameLocation": "674:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4367,
+                      "scope": 4400,
                       "src": "666:16:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4609,7 +4609,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4351,
+                        "id": 4384,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "666:7:18",
@@ -4621,12 +4621,12 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4355,
+                  "id": 4388,
                   "initialValue": {
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 4353,
+                      "id": 4386,
                       "name": "_generateBasicDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -4637,7 +4637,7 @@
                         "typeString": "function () pure returns (uint256)"
                       }
                     },
-                    "id": 4354,
+                    "id": 4387,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4657,53 +4657,53 @@
                 },
                 {
                   "assignments": [
-                    4358
+                    4391
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4358,
+                      "id": 4391,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "723:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4367,
+                      "scope": 4400,
                       "src": "710:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4357,
+                        "id": 4390,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4356,
+                          "id": 4389,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "710:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "710:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4364,
+                  "id": 4397,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4360,
+                        "id": 4393,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4345,
+                        "referencedDeclaration": 4378,
                         "src": "747:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4711,11 +4711,11 @@
                         }
                       },
                       {
-                        "id": 4361,
+                        "id": 4394,
                         "name": "basicDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4352,
+                        "referencedDeclaration": 4385,
                         "src": "752:8:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4724,7 +4724,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4362,
+                        "id": 4395,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -4754,18 +4754,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4359,
+                      "id": 4392,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "734:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4363,
+                    "id": 4396,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4776,7 +4776,7 @@
                     "src": "734:30:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -4785,25 +4785,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4365,
+                    "id": 4398,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4358,
+                    "referencedDeclaration": 4391,
                     "src": "777:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4350,
-                  "id": 4366,
+                  "functionReturnParameters": 4383,
+                  "id": 4399,
                   "nodeType": "Return",
                   "src": "770:15:18"
                 }
               ]
             },
-            "id": 4368,
+            "id": 4401,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -4811,17 +4811,17 @@
             "nameLocation": "586:23:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4346,
+              "id": 4379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4345,
+                  "id": 4378,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "618:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4368,
+                  "scope": 4401,
                   "src": "610:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4830,7 +4830,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4344,
+                    "id": 4377,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "610:7:18",
@@ -4845,38 +4845,38 @@
               "src": "609:13:18"
             },
             "returnParameters": {
-              "id": 4350,
+              "id": 4383,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4349,
+                  "id": 4382,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4368,
+                  "scope": 4401,
                   "src": "646:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4348,
+                    "id": 4381,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4347,
+                      "id": 4380,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "646:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "646:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -4885,7 +4885,7 @@
               ],
               "src": "645:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "577:213:18",
             "stateMutability": "pure",
             "virtual": false,
@@ -4893,23 +4893,23 @@
           },
           {
             "body": {
-              "id": 4400,
+              "id": 4433,
               "nodeType": "Block",
               "src": "953:170:18",
               "statements": [
                 {
                   "assignments": [
-                    4383
+                    4416
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4383,
+                      "id": 4416,
                       "mutability": "mutable",
                       "name": "newSwordDna",
                       "nameLocation": "967:11:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4400,
+                      "scope": 4433,
                       "src": "959:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -4918,7 +4918,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4382,
+                        "id": 4415,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "959:7:18",
@@ -4930,15 +4930,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4388,
+                  "id": 4421,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4385,
+                        "id": 4418,
                         "name": "_swordOneDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4372,
+                        "referencedDeclaration": 4405,
                         "src": "997:12:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4946,11 +4946,11 @@
                         }
                       },
                       {
-                        "id": 4386,
+                        "id": 4419,
                         "name": "_swordTwoDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4374,
+                        "referencedDeclaration": 4407,
                         "src": "1011:12:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4969,7 +4969,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4384,
+                      "id": 4417,
                       "name": "_mergeSwordsDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -4980,7 +4980,7 @@
                         "typeString": "function (uint256,uint256) returns (uint256)"
                       }
                     },
-                    "id": 4387,
+                    "id": 4420,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5000,53 +5000,53 @@
                 },
                 {
                   "assignments": [
-                    4391
+                    4424
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4391,
+                      "id": 4424,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "1043:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4400,
+                      "scope": 4433,
                       "src": "1030:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4390,
+                        "id": 4423,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4389,
+                          "id": 4422,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "1030:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "1030:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4397,
+                  "id": 4430,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4393,
+                        "id": 4426,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4370,
+                        "referencedDeclaration": 4403,
                         "src": "1067:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5054,11 +5054,11 @@
                         }
                       },
                       {
-                        "id": 4394,
+                        "id": 4427,
                         "name": "newSwordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4383,
+                        "referencedDeclaration": 4416,
                         "src": "1072:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5066,11 +5066,11 @@
                         }
                       },
                       {
-                        "id": 4395,
+                        "id": 4428,
                         "name": "_generation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4376,
+                        "referencedDeclaration": 4409,
                         "src": "1085:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
@@ -5093,18 +5093,18 @@
                           "typeString": "uint32"
                         }
                       ],
-                      "id": 4392,
+                      "id": 4425,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "1054:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4396,
+                    "id": 4429,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5115,7 +5115,7 @@
                     "src": "1054:43:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -5124,25 +5124,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4398,
+                    "id": 4431,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4391,
+                    "referencedDeclaration": 4424,
                     "src": "1110:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4381,
-                  "id": 4399,
+                  "functionReturnParameters": 4414,
+                  "id": 4432,
                   "nodeType": "Return",
                   "src": "1103:15:18"
                 }
               ]
             },
-            "id": 4401,
+            "id": 4434,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -5150,17 +5150,17 @@
             "nameLocation": "803:20:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4377,
+              "id": 4410,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4370,
+                  "id": 4403,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "837:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "829:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5169,7 +5169,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4369,
+                    "id": 4402,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "829:7:18",
@@ -5182,12 +5182,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4372,
+                  "id": 4405,
                   "mutability": "mutable",
                   "name": "_swordOneDna",
                   "nameLocation": "854:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "846:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5196,7 +5196,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4371,
+                    "id": 4404,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "846:7:18",
@@ -5209,12 +5209,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4374,
+                  "id": 4407,
                   "mutability": "mutable",
                   "name": "_swordTwoDna",
                   "nameLocation": "880:12:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "872:20:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5223,7 +5223,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4373,
+                    "id": 4406,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "872:7:18",
@@ -5236,12 +5236,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4376,
+                  "id": 4409,
                   "mutability": "mutable",
                   "name": "_generation",
                   "nameLocation": "905:11:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "898:18:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5250,7 +5250,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 4375,
+                    "id": 4408,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "898:6:18",
@@ -5265,38 +5265,38 @@
               "src": "823:97:18"
             },
             "returnParameters": {
-              "id": 4381,
+              "id": 4414,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4380,
+                  "id": 4413,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4401,
+                  "scope": 4434,
                   "src": "939:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4379,
+                    "id": 4412,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4378,
+                      "id": 4411,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "939:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "939:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -5305,7 +5305,7 @@
               ],
               "src": "938:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "794:329:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5313,23 +5313,23 @@
           },
           {
             "body": {
-              "id": 4429,
+              "id": 4462,
               "nodeType": "Block",
               "src": "1220:292:18",
               "statements": [
                 {
                   "assignments": [
-                    4412
+                    4445
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4412,
+                      "id": 4445,
                       "mutability": "mutable",
                       "name": "newSwordDna",
                       "nameLocation": "1297:11:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4429,
+                      "scope": 4462,
                       "src": "1289:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -5338,7 +5338,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4411,
+                        "id": 4444,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1289:7:18",
@@ -5350,15 +5350,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4417,
+                  "id": 4450,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4414,
+                        "id": 4447,
                         "name": "_swordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4438,
                         "src": "1327:9:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5366,11 +5366,11 @@
                         }
                       },
                       {
-                        "id": 4415,
+                        "id": 4448,
                         "name": "_swordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4405,
+                        "referencedDeclaration": 4438,
                         "src": "1338:9:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5389,7 +5389,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4413,
+                      "id": 4446,
                       "name": "_mergeSwordsDna",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -5400,7 +5400,7 @@
                         "typeString": "function (uint256,uint256) returns (uint256)"
                       }
                     },
-                    "id": 4416,
+                    "id": 4449,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5420,53 +5420,53 @@
                 },
                 {
                   "assignments": [
-                    4420
+                    4453
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4420,
+                      "id": 4453,
                       "mutability": "mutable",
                       "name": "newSword",
                       "nameLocation": "1442:8:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4429,
+                      "scope": 4462,
                       "src": "1429:21:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                        "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                         "typeString": "struct SwordFactory.Sword"
                       },
                       "typeName": {
-                        "id": 4419,
+                        "id": 4452,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 4418,
+                          "id": 4451,
                           "name": "Sword",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 4314,
+                          "referencedDeclaration": 4347,
                           "src": "1429:5:18"
                         },
-                        "referencedDeclaration": 4314,
+                        "referencedDeclaration": 4347,
                         "src": "1429:5:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                          "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                           "typeString": "struct SwordFactory.Sword"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4426,
+                  "id": 4459,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4422,
+                        "id": 4455,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4403,
+                        "referencedDeclaration": 4436,
                         "src": "1466:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5474,11 +5474,11 @@
                         }
                       },
                       {
-                        "id": 4423,
+                        "id": 4456,
                         "name": "newSwordDna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4412,
+                        "referencedDeclaration": 4445,
                         "src": "1471:11:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5487,7 +5487,7 @@
                       },
                       {
                         "hexValue": "30",
-                        "id": 4424,
+                        "id": 4457,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5517,18 +5517,18 @@
                           "typeString": "int_const 0"
                         }
                       ],
-                      "id": 4421,
+                      "id": 4454,
                       "name": "_createSword",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4343,
+                      "referencedDeclaration": 4376,
                       "src": "1453:12:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4314_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$_t_uint32_$returns$_t_struct$_Sword_$4347_memory_ptr_$",
                         "typeString": "function (uint256,uint256,uint32) pure returns (struct SwordFactory.Sword memory)"
                       }
                     },
-                    "id": 4425,
+                    "id": 4458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5539,7 +5539,7 @@
                     "src": "1453:33:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
@@ -5548,25 +5548,25 @@
                 },
                 {
                   "expression": {
-                    "id": 4427,
+                    "id": 4460,
                     "name": "newSword",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 4420,
+                    "referencedDeclaration": 4453,
                     "src": "1499:8:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                       "typeString": "struct SwordFactory.Sword memory"
                     }
                   },
-                  "functionReturnParameters": 4410,
-                  "id": 4428,
+                  "functionReturnParameters": 4443,
+                  "id": 4461,
                   "nodeType": "Return",
                   "src": "1492:15:18"
                 }
               ]
             },
-            "id": 4430,
+            "id": 4463,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -5574,17 +5574,17 @@
             "nameLocation": "1136:19:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4406,
+              "id": 4439,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4403,
+                  "id": 4436,
                   "mutability": "mutable",
                   "name": "_id",
                   "nameLocation": "1164:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1156:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5593,7 +5593,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4402,
+                    "id": 4435,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1156:7:18",
@@ -5606,12 +5606,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 4405,
+                  "id": 4438,
                   "mutability": "mutable",
                   "name": "_swordDna",
                   "nameLocation": "1177:9:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1169:17:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5620,7 +5620,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4404,
+                    "id": 4437,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1169:7:18",
@@ -5635,38 +5635,38 @@
               "src": "1155:32:18"
             },
             "returnParameters": {
-              "id": 4410,
+              "id": 4443,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4409,
+                  "id": 4442,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4430,
+                  "scope": 4463,
                   "src": "1206:12:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4408,
+                    "id": 4441,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4407,
+                      "id": 4440,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "1206:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "1206:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -5675,7 +5675,7 @@
               ],
               "src": "1205:14:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "1127:385:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5683,25 +5683,25 @@
           },
           {
             "body": {
-              "id": 4464,
+              "id": 4497,
               "nodeType": "Block",
               "src": "1620:229:18",
               "statements": [
                 {
                   "assignments": [
-                    4441,
-                    4443,
-                    4445
+                    4474,
+                    4476,
+                    4478
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4441,
+                      "id": 4474,
                       "mutability": "mutable",
                       "name": "hilt",
                       "nameLocation": "1635:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1627:12:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -5710,7 +5710,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4440,
+                        "id": 4473,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1627:7:18",
@@ -5723,12 +5723,12 @@
                     },
                     {
                       "constant": false,
-                      "id": 4443,
+                      "id": 4476,
                       "mutability": "mutable",
                       "name": "swordType",
                       "nameLocation": "1649:9:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1641:17:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -5737,7 +5737,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4442,
+                        "id": 4475,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1641:7:18",
@@ -5750,12 +5750,12 @@
                     },
                     {
                       "constant": false,
-                      "id": 4445,
+                      "id": 4478,
                       "mutability": "mutable",
                       "name": "swordMaterial",
                       "nameLocation": "1668:13:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4464,
+                      "scope": 4497,
                       "src": "1660:21:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -5764,7 +5764,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4444,
+                        "id": 4477,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1660:7:18",
@@ -5776,30 +5776,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4450,
+                  "id": 4483,
                   "initialValue": {
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4447,
+                          "id": 4480,
                           "name": "_sword",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4435,
+                          "referencedDeclaration": 4468,
                           "src": "1704:6:18",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                            "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                             "typeString": "struct SwordFactory.Sword memory"
                           }
                         },
-                        "id": 4448,
+                        "id": 4481,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "dna",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 4305,
+                        "referencedDeclaration": 4338,
                         "src": "1704:10:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5814,7 +5814,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4446,
+                      "id": 4479,
                       "name": "_calcUriAttributes",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -5825,7 +5825,7 @@
                         "typeString": "function (uint256) pure returns (uint256,uint256,uint256)"
                       }
                     },
-                    "id": 4449,
+                    "id": 4482,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5849,11 +5849,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 4453,
+                            "id": 4486,
                             "name": "_swordId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4432,
+                            "referencedDeclaration": 4465,
                             "src": "1763:8:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5862,25 +5862,25 @@
                           },
                           {
                             "expression": {
-                              "id": 4454,
+                              "id": 4487,
                               "name": "_sword",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4435,
+                              "referencedDeclaration": 4468,
                               "src": "1773:6:18",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                                "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                                 "typeString": "struct SwordFactory.Sword memory"
                               }
                             },
-                            "id": 4455,
+                            "id": 4488,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "attackPower",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4307,
+                            "referencedDeclaration": 4340,
                             "src": "1773:18:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5889,25 +5889,25 @@
                           },
                           {
                             "expression": {
-                              "id": 4456,
+                              "id": 4489,
                               "name": "_sword",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4435,
+                              "referencedDeclaration": 4468,
                               "src": "1793:6:18",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                                "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                                 "typeString": "struct SwordFactory.Sword memory"
                               }
                             },
-                            "id": 4457,
+                            "id": 4490,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "generation",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 4309,
+                            "referencedDeclaration": 4342,
                             "src": "1793:17:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
@@ -5915,11 +5915,11 @@
                             }
                           },
                           {
-                            "id": 4458,
+                            "id": 4491,
                             "name": "hilt",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4441,
+                            "referencedDeclaration": 4474,
                             "src": "1812:4:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5927,11 +5927,11 @@
                             }
                           },
                           {
-                            "id": 4459,
+                            "id": 4492,
                             "name": "swordType",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4443,
+                            "referencedDeclaration": 4476,
                             "src": "1818:9:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5939,11 +5939,11 @@
                             }
                           },
                           {
-                            "id": 4460,
+                            "id": 4493,
                             "name": "swordMaterial",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4445,
+                            "referencedDeclaration": 4478,
                             "src": "1829:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5978,18 +5978,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 4452,
+                          "id": 4485,
                           "name": "SwordUriProps",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4555,
+                          "referencedDeclaration": 4588,
                           "src": "1749:13:18",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_SwordUriProps_$4555_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_SwordUriProps_$4588_storage_ptr_$",
                             "typeString": "type(struct SwordUriHelper.SwordUriProps storage pointer)"
                           }
                         },
-                        "id": 4461,
+                        "id": 4494,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -6000,7 +6000,7 @@
                         "src": "1749:94:18",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_SwordUriProps_$4555_memory_ptr",
+                          "typeIdentifier": "t_struct$_SwordUriProps_$4588_memory_ptr",
                           "typeString": "struct SwordUriHelper.SwordUriProps memory"
                         }
                       }
@@ -6008,22 +6008,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_SwordUriProps_$4555_memory_ptr",
+                          "typeIdentifier": "t_struct$_SwordUriProps_$4588_memory_ptr",
                           "typeString": "struct SwordUriHelper.SwordUriProps memory"
                         }
                       ],
-                      "id": 4451,
+                      "id": 4484,
                       "name": "_makeSwordUri",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4571,
+                      "referencedDeclaration": 4604,
                       "src": "1735:13:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_SwordUriProps_$4555_memory_ptr_$returns$_t_string_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_SwordUriProps_$4588_memory_ptr_$returns$_t_string_memory_ptr_$",
                         "typeString": "function (struct SwordUriHelper.SwordUriProps memory) view returns (string memory)"
                       }
                     },
-                    "id": 4462,
+                    "id": 4495,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6038,14 +6038,14 @@
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 4439,
-                  "id": 4463,
+                  "functionReturnParameters": 4472,
+                  "id": 4496,
                   "nodeType": "Return",
                   "src": "1722:122:18"
                 }
               ]
             },
-            "id": 4465,
+            "id": 4498,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -6053,17 +6053,17 @@
             "nameLocation": "1525:17:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4436,
+              "id": 4469,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4432,
+                  "id": 4465,
                   "mutability": "mutable",
                   "name": "_swordId",
                   "nameLocation": "1551:8:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1543:16:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6072,7 +6072,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4431,
+                    "id": 4464,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1543:7:18",
@@ -6085,33 +6085,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 4435,
+                  "id": 4468,
                   "mutability": "mutable",
                   "name": "_sword",
                   "nameLocation": "1574:6:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1561:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Sword_$4314_memory_ptr",
+                    "typeIdentifier": "t_struct$_Sword_$4347_memory_ptr",
                     "typeString": "struct SwordFactory.Sword"
                   },
                   "typeName": {
-                    "id": 4434,
+                    "id": 4467,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 4433,
+                      "id": 4466,
                       "name": "Sword",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 4314,
+                      "referencedDeclaration": 4347,
                       "src": "1561:5:18"
                     },
-                    "referencedDeclaration": 4314,
+                    "referencedDeclaration": 4347,
                     "src": "1561:5:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Sword_$4314_storage_ptr",
+                      "typeIdentifier": "t_struct$_Sword_$4347_storage_ptr",
                       "typeString": "struct SwordFactory.Sword"
                     }
                   },
@@ -6121,17 +6121,17 @@
               "src": "1542:39:18"
             },
             "returnParameters": {
-              "id": 4439,
+              "id": 4472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4438,
+                  "id": 4471,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4465,
+                  "scope": 4498,
                   "src": "1605:13:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -6140,7 +6140,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 4437,
+                    "id": 4470,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1605:6:18",
@@ -6154,14 +6154,14 @@
               ],
               "src": "1604:15:18"
             },
-            "scope": 4466,
+            "scope": 4499,
             "src": "1516:333:18",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 4467,
+        "scope": 4500,
         "src": "95:1756:18",
         "usedErrors": []
       }
@@ -6174,7 +6174,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-25T14:52:15.598Z",
+  "updatedAt": "2022-02-07T08:01:57.245Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
