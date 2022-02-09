@@ -54,7 +54,7 @@ const MarketplaceItem = ({ item, withBuying, withNone }) => {
       </div>
       <div>{item.name}</div>
       <div className={styles.informationAndActions}>
-        <div>{item.price} AVAX</div>
+        <div>{item.price} MATIC</div>
         {renderActionButton()}
       </div>
       <ItemDetailsModal

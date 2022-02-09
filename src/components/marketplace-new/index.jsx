@@ -72,7 +72,7 @@ const MarketplaceNew = () => {
         <Form>
           <Form.Group className="mb-3" controlId="priceForm.ControlInput1">
             <Form.Label style={{ color: "white" }}>Listing Price</Form.Label>
-            <Form.Control size="lg" placeholder="in AVAX" onChange={(e) => setPrice(e.target.value)} />
+            <Form.Control size="lg" placeholder="in MATIC" onChange={(e) => setPrice(e.target.value)} />
           </Form.Group>
         </Form>
         {renderTransferButton()}

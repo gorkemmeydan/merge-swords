@@ -25,7 +25,7 @@ const ItemModalContent = ({ item, isMarket }) => {
       return (
         <>
           <div className={styles.itemTrait}>Attack Power: {item.attackPower}</div>
-          <div className={styles.itemTrait}>Price: {item.price} AVAX</div>
+          <div className={styles.itemTrait}>Price: {item.price} MATIC</div>
           <div className={styles.itemTrait}>
             Seller: {item.seller.slice(0, 6)}...{item.seller.slice(item.seller.length - 4)}
           </div>

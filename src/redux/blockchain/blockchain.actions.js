@@ -62,7 +62,7 @@ export const checkAccount = () => {
         const networkId = await window.ethereum.request({
           method: "net_version",
         });
-        // 1337
+        // Polygon Mumbai
         const mergeSwordsTokenNetworkData = await MergeSwordsToken.networks[networkId];
         if (mergeSwordsTokenNetworkData) {
           const mergeSwordsToken = new web3.eth.Contract(MergeSwordsToken.abi, mergeSwordsTokenNetworkData.address);
@@ -82,7 +82,7 @@ export const checkAccount = () => {
           });
           // Add listeners end
         } else {
-          dispatch(connectFailed("Change network to Polygon."));
+          dispatch(connectFailed("Change network to Polygon Mumbai."));
         }
       } catch (err) {
         dispatch(connectFailed("Something went wrong."));
@@ -140,7 +140,6 @@ export const connect = () => {
 export const updateAccount = (account) => {
   return async (dispatch) => {
     dispatch(updateAccountRequest({ account: account }));
-    // dispatch(fetchData(account));
   };
 };
 
